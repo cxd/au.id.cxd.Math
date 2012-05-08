@@ -55,6 +55,9 @@
     <Reference Include="org.graphdrawing.graphml">
       <HintPath>..\..\build\ui\org.graphdrawing.graphml.dll</HintPath>
     </Reference>
+    <Reference Include="au.id.cxd.Math">
+      <HintPath>..\..\build\au.id.cxd.Math.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainWindow.cs" />
