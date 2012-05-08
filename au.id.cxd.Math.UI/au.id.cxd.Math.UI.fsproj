@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{f7d0118b-094d-4b76-b28d-ee4bf356e1d4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>au.id.cxd.Math.UI</RootNamespace>
+    <AssemblyName>au.id.cxd.Math.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <Name>au.id.cxd.Math.UI</Name>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <Tailcalls>false</Tailcalls>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <WarningLevel>3</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <DocumentationFile>bin\Debug\au.id.cxd.Math.UI.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <Tailcalls>true</Tailcalls>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <WarningLevel>3</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <DocumentationFile>bin\Release\au.id.cxd.Math.UI.XML</DocumentationFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\FSharp\1.0\Microsoft.FSharp.Targets" Condition="!Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
+  <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" Condition=" Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
+  <ItemGroup>
+    <Resource Include="MainWindow.xaml" />
+    <Compile Include="MathUIProject.fs" />
+    <Compile Include="DualChartTypes.fs" />
+    <Compile Include="UIApplication.fs" />
+    <Compile Include="MainWindow.fs" />
+    <Content Include="Example_loadXaml.txt" />
+    <Resource Include="Application.xaml" />
+    <Compile Include="SingleValueBarChart.fs" />
+    <Compile Include="ChartUI.fs" />
+    <Compile Include="RankOrderPlotUI.fs" />
+    <Compile Include="ScatterChartUI.fs" />
+    <Compile Include="ScatterLoessCurveUI.fs" />
+    <Compile Include="DualChartUI.fs" />
+    <Compile Include="MathUIAttributeGrid.fs" />
+    <Compile Include="MathUI.fs" />
+    <Compile Include="Program.fs" />
+    <EmbeddedResource Include="SingleValueReport.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="FSChart">
+      <HintPath>..\lib\FSChart.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="FSharp.Core" />
+    <Reference Include="MSDN.FSharp.Charting">
+      <HintPath>..\lib\MSDN.FSharp.Charting.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="PresentationUI" />
+    <Reference Include="ReachFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+    <ProjectReference Include="..\au.id.cxd.Math\au.id.cxd.Math.fsproj">
+      <Name>au.id.cxd.Math</Name>
+      <Project>{81916d72-d3ec-4d14-b18d-4c5a40988542}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\au.id.Math.UIBuilder\au.id.Math.UIBuilder.fsproj">
+      <Name>au.id.Math.UIBuilder</Name>
+      <Project>{51521ed3-e37c-46d7-989c-95d8d5b0e659}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	     Other similar extension points exist, see Microsoft.Common.targets.
+	<Target Name="BeforeBuild">
+	</Target>
+	<Target Name="AfterBuild">
+	</Target>
+	-->
+</Project>

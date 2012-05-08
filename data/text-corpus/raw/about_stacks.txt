@@ -1,0 +1,9 @@
+Documents Stack
+Welcome to Mac OS X Leopard. The Dock in Leopard has a sleek new look and a new feature called Stacks. With Stacks you can quickly access important and frequently used files right from the Dock. Stacks are simple to create. Just drag any folder to the right side of the Dock and it becomes a stack. Click a stack and it will spring from the Dock in either a fan or grid. To open a file in a stack, just click the file once. Mac OS X Leopard includes two pre-made stacks called Documents and Downloads. You opened this file from the Documents stack. The Documents stack is a great place to keep things like presentations, spreadsheets, and word processing files. You can drag and drop files to the stack or save them to the stack when you save a document in an application. Stacks automatically display their contents in a fan or grid based on the number of items in the Stack. If you prefer one style over the other, you can set the stack to always open in that style. Stacks intelligently show the most relevant items first or you can set the sort order to make sure the items you care about most always appear at the top of the stack. To customize a stack, position the pointer over the stack icon and then hold down the mouse button until a menu appears. To delete a file from a stack, just open the stack and drag the item you wish to remove to the Trash. In fact, when you're done reading this document, feel free to throw it out.
+
+Documents
+
+Downloads
+
+TM and © Apple Inc. 2007 All rights reserved.
+

@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="au.id.cxd.Math.OSX.UI/AppDelegate.cs">
+    <Files>
+      <File FileName="au.id.cxd.Math.OSX.UI/Main.cs" Line="15" Column="4" />
+      <File FileName="au.id.cxd.Math.OSX.UI/MainWindow.cs" Line="29" Column="4" />
+      <File FileName="au.id.cxd.Math.OSX.UI/AppDelegate.cs" Line="32" Column="4" />
+      <File FileName="au.id.cxd.Math.OSX.UI/MainWindow.designer.cs" Line="14" Column="6" />
+      <File FileName="au.id.cxd.Math.OSX.UI/AppDelegate.designer.cs" Line="8" Column="3" />
+      <File FileName="au.id.cxd.Math.OSX.UI/MainWindowController.cs" Line="40" Column="1" />
+      <File FileName="au.id.cxd.Math.OSX.UI/Info.plist" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

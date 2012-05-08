@@ -1,0 +1,5874 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>MSDN.FSharp.Charting</name></assembly>
+<members>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.ThreeLineBreak``2(System.IObservable{System.Tuple`2{``0,``1}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Displays a series of vertical boxes, or lines, that reflect
+ changes in price values.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.ThreeLineBreak``1(System.IObservable{``0},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Displays a series of vertical boxes, or lines, that reflect
+ changes in price values.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.ThreeLineBreak``3(System.Collections.Generic.IEnumerable{``0},``1)">
+<summary>
+ Displays a series of vertical boxes, or lines, that reflect
+ changes in price values.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.ThreeLineBreak``2(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,``1}})">
+<summary>
+ Displays a series of vertical boxes, or lines, that reflect
+ changes in price values.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.ThreeLineBreak``1(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ Displays a series of vertical boxes, or lines, that reflect
+ changes in price values.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Stock``5(System.IObservable{System.Tuple`2{``0,System.Tuple`4{``1,``2,``3,``4}}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Displays significant stock price points including the open, close, high,
+ and low price points.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Stock``4(System.IObservable{System.Tuple`4{``0,``1,``2,``3}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Displays significant stock price points including the open, close, high,
+ and low price points.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Stock``9(System.Collections.Generic.IEnumerable{``0},``1,``3,``5,``7)">
+<summary>
+ Displays significant stock price points including the open, close, high,
+ and low price points.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Stock``5(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,System.Tuple`4{``1,``2,``3,``4}}})">
+<summary>
+ Displays significant stock price points including the open, close, high,
+ and low price points.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Stock``4(System.Collections.Generic.IEnumerable{System.Tuple`4{``0,``1,``2,``3}})">
+<summary>
+ Displays significant stock price points including the open, close, high,
+ and low price points.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StepLine``2(System.IObservable{System.Tuple`2{``0,``1}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Similar to the Line chart type, but uses vertical and
+ horizontal lines to connect the data points in a series
+ forming a step-like progression.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StepLine``1(System.IObservable{``0},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Similar to the Line chart type, but uses vertical and
+ horizontal lines to connect the data points in a series
+ forming a step-like progression.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StepLine``3(System.Collections.Generic.IEnumerable{``0},``1)">
+<summary>
+ Similar to the Line chart type, but uses vertical and
+ horizontal lines to connect the data points in a series
+ forming a step-like progression.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StepLine``2(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,``1}})">
+<summary>
+ Similar to the Line chart type, but uses vertical and
+ horizontal lines to connect the data points in a series
+ forming a step-like progression.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StepLine``1(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ Similar to the Line chart type, but uses vertical and
+ horizontal lines to connect the data points in a series
+ forming a step-like progression.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StackedColumn100``2(System.IObservable{System.Tuple`2{``0,``1}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Displays multiple series of data as stacked columns. The cumulative
+ proportion of each stacked element is always 100% of the
+ Y axis.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StackedColumn100``1(System.IObservable{``0},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Displays multiple series of data as stacked columns. The cumulative
+ proportion of each stacked element is always 100% of the
+ Y axis.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StackedColumn100``3(System.Collections.Generic.IEnumerable{``0},``1)">
+<summary>
+ Displays multiple series of data as stacked columns. The cumulative
+ proportion of each stacked element is always 100% of the
+ Y axis.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StackedColumn100``2(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,``1}})">
+<summary>
+ Displays multiple series of data as stacked columns. The cumulative
+ proportion of each stacked element is always 100% of the
+ Y axis.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StackedColumn100``1(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ Displays multiple series of data as stacked columns. The cumulative
+ proportion of each stacked element is always 100% of the
+ Y axis.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StackedColumn``2(System.IObservable{System.Tuple`2{``0,``1}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Used to compare the contribution of each value to a
+ total across categories.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StackedColumn``1(System.IObservable{``0},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Used to compare the contribution of each value to a
+ total across categories.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StackedColumn``3(System.Collections.Generic.IEnumerable{``0},``1)">
+<summary>
+ Used to compare the contribution of each value to a
+ total across categories.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StackedColumn``2(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,``1}})">
+<summary>
+ Used to compare the contribution of each value to a
+ total across categories.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StackedColumn``1(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ Used to compare the contribution of each value to a
+ total across categories.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StackedBar100``2(System.IObservable{System.Tuple`2{``0,``1}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Displays multiple series of data as stacked bars. The cumulative
+ proportion of each stacked element is always 100% of the
+ Y axis.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StackedBar100``1(System.IObservable{``0},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Displays multiple series of data as stacked bars. The cumulative
+ proportion of each stacked element is always 100% of the
+ Y axis.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StackedBar100``3(System.Collections.Generic.IEnumerable{``0},``1)">
+<summary>
+ Displays multiple series of data as stacked bars. The cumulative
+ proportion of each stacked element is always 100% of the
+ Y axis.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StackedBar100``2(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,``1}})">
+<summary>
+ Displays multiple series of data as stacked bars. The cumulative
+ proportion of each stacked element is always 100% of the
+ Y axis.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StackedBar100``1(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ Displays multiple series of data as stacked bars. The cumulative
+ proportion of each stacked element is always 100% of the
+ Y axis.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StackedBar``2(System.IObservable{System.Tuple`2{``0,``1}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Displays series of the same chart type as stacked bars.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StackedBar``1(System.IObservable{``0},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Displays series of the same chart type as stacked bars.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StackedBar``3(System.Collections.Generic.IEnumerable{``0},``1)">
+<summary>
+ Displays series of the same chart type as stacked bars.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StackedBar``2(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,``1}})">
+<summary>
+ Displays series of the same chart type as stacked bars.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StackedBar``1(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ Displays series of the same chart type as stacked bars.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StackedArea100``2(System.IObservable{System.Tuple`2{``0,``1}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Displays multiple seriesÿof data as stacked areas. The cumulative proportion
+ of each stacked element is always 100% of the Y
+ axis.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StackedArea100``1(System.IObservable{``0},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Displays multiple seriesÿof data as stacked areas. The cumulative proportion
+ of each stacked element is always 100% of the Y
+ axis.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StackedArea100``3(System.Collections.Generic.IEnumerable{``0},``1)">
+<summary>
+ Displays multiple seriesÿof data as stacked areas. The cumulative proportion
+ of each stacked element is always 100% of the Y
+ axis.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StackedArea100``2(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,``1}})">
+<summary>
+ Displays multiple seriesÿof data as stacked areas. The cumulative proportion
+ of each stacked element is always 100% of the Y
+ axis.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StackedArea100``1(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ Displays multiple seriesÿof data as stacked areas. The cumulative proportion
+ of each stacked element is always 100% of the Y
+ axis.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StackedArea``2(System.IObservable{System.Tuple`2{``0,``1}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ An Area chart that stacks two or more data series
+ on top of one another.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StackedArea``1(System.IObservable{``0},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ An Area chart that stacks two or more data series
+ on top of one another.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StackedArea``3(System.Collections.Generic.IEnumerable{``0},``1)">
+<summary>
+ An Area chart that stacks two or more data series
+ on top of one another.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StackedArea``2(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,``1}})">
+<summary>
+ An Area chart that stacks two or more data series
+ on top of one another.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.StackedArea``1(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ An Area chart that stacks two or more data series
+ on top of one another.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.SplineRange``3(System.IObservable{System.Tuple`2{``0,System.Tuple`2{``1,``2}}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Displays a range of data by plotting twoÿY values per
+ data point, with each Y value drawn as a line
+ chart.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.SplineRange``2(System.IObservable{System.Tuple`2{``0,``1}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Displays a range of data by plotting twoÿY values per
+ data point, with each Y value drawn as a line
+ chart.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.SplineRange``5(System.Collections.Generic.IEnumerable{``0},``1,``3)">
+<summary>
+ Displays a range of data by plotting twoÿY values per
+ data point, with each Y value drawn as a line
+ chart.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.SplineRange``3(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,System.Tuple`2{``1,``2}}})">
+<summary>
+ Displays a range of data by plotting twoÿY values per
+ data point, with each Y value drawn as a line
+ chart.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.SplineRange``2(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,``1}})">
+<summary>
+ Displays a range of data by plotting twoÿY values per
+ data point, with each Y value drawn as a line
+ chart.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.SplineArea``2(System.IObservable{System.Tuple`2{``0,``1}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ An Area chart that plots a fitted curve through each
+ data point in a series.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.SplineArea``1(System.IObservable{``0},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ An Area chart that plots a fitted curve through each
+ data point in a series.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.SplineArea``3(System.Collections.Generic.IEnumerable{``0},``1)">
+<summary>
+ An Area chart that plots a fitted curve through each
+ data point in a series.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.SplineArea``2(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,``1}})">
+<summary>
+ An Area chart that plots a fitted curve through each
+ data point in a series.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.SplineArea``1(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ An Area chart that plots a fitted curve through each
+ data point in a series.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Spline``2(System.IObservable{System.Tuple`2{``0,``1}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ A Line chart that plots a fitted curve through each
+ data point in a series.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Spline``1(System.IObservable{``0},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ A Line chart that plots a fitted curve through each
+ data point in a series.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Spline``3(System.Collections.Generic.IEnumerable{``0},``1)">
+<summary>
+ A Line chart that plots a fitted curve through each
+ data point in a series.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Spline``2(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,``1}})">
+<summary>
+ A Line chart that plots a fitted curve through each
+ data point in a series.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Spline``1(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ A Line chart that plots a fitted curve through each
+ data point in a series.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Renko``2(System.IObservable{System.Tuple`2{``0,``1}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Displays a series of connecting vertical lines where the thickness
+ and direction of the lines are dependent on the action
+ of the price value.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Renko``1(System.IObservable{``0},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Displays a series of connecting vertical lines where the thickness
+ and direction of the lines are dependent on the action
+ of the price value.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Renko``3(System.Collections.Generic.IEnumerable{``0},``1)">
+<summary>
+ Displays a series of connecting vertical lines where the thickness
+ and direction of the lines are dependent on the action
+ of the price value.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Renko``2(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,``1}})">
+<summary>
+ Displays a series of connecting vertical lines where the thickness
+ and direction of the lines are dependent on the action
+ of the price value.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Renko``1(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ Displays a series of connecting vertical lines where the thickness
+ and direction of the lines are dependent on the action
+ of the price value.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.RangeColumn``3(System.IObservable{System.Tuple`2{``0,System.Tuple`2{``1,``2}}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Displays a range of data by plotting two Y values
+ per data point.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.RangeColumn``2(System.IObservable{System.Tuple`2{``0,``1}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Displays a range of data by plotting two Y values
+ per data point.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.RangeColumn``5(System.Collections.Generic.IEnumerable{``0},``1,``3)">
+<summary>
+ Displays a range of data by plotting two Y values
+ per data point.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.RangeColumn``3(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,System.Tuple`2{``1,``2}}})">
+<summary>
+ Displays a range of data by plotting two Y values
+ per data point.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.RangeColumn``2(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,``1}})">
+<summary>
+ Displays a range of data by plotting two Y values
+ per data point.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.RangeBar``3(System.IObservable{System.Tuple`2{``0,System.Tuple`2{``1,``2}}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Displays separate events that have beginning and end values.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.RangeBar``2(System.IObservable{System.Tuple`2{``0,``1}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Displays separate events that have beginning and end values.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.RangeBar``5(System.Collections.Generic.IEnumerable{``0},``1,``3)">
+<summary>
+ Displays separate events that have beginning and end values.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.RangeBar``3(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,System.Tuple`2{``1,``2}}})">
+<summary>
+ Displays separate events that have beginning and end values.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.RangeBar``2(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,``1}})">
+<summary>
+ Displays separate events that have beginning and end values.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Range``3(System.IObservable{System.Tuple`2{``0,System.Tuple`2{``1,``2}}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Displays a range of data by plottingÿtwoÿY values per data
+ point, with each Y value being drawn as a line
+ chart.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Range``2(System.IObservable{System.Tuple`2{``0,``1}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Displays a range of data by plottingÿtwoÿY values per data
+ point, with each Y value being drawn as a line
+ chart.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Range``5(System.Collections.Generic.IEnumerable{``0},``1,``3)">
+<summary>
+ Displays a range of data by plottingÿtwoÿY values per data
+ point, with each Y value being drawn as a line
+ chart.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Range``3(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,System.Tuple`2{``1,``2}}})">
+<summary>
+ Displays a range of data by plottingÿtwoÿY values per data
+ point, with each Y value being drawn as a line
+ chart.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Range``2(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,``1}})">
+<summary>
+ Displays a range of data by plottingÿtwoÿY values per data
+ point, with each Y value being drawn as a line
+ chart.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Radar``2(System.IObservable{System.Tuple`2{``0,``1}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ A circular chart that is used primarily as a data
+ comparison tool.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Radar``1(System.IObservable{``0},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ A circular chart that is used primarily as a data
+ comparison tool.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Radar``3(System.Collections.Generic.IEnumerable{``0},``1)">
+<summary>
+ A circular chart that is used primarily as a data
+ comparison tool.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Radar``2(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,``1}})">
+<summary>
+ A circular chart that is used primarily as a data
+ comparison tool.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Radar``1(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ A circular chart that is used primarily as a data
+ comparison tool.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Pyramid``2(System.IObservable{System.Tuple`2{``0,``1}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Displays data that, when combined, equals 100%.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Pyramid``1(System.IObservable{``0},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Displays data that, when combined, equals 100%.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Pyramid``3(System.Collections.Generic.IEnumerable{``0},``1)">
+<summary>
+ Displays data that, when combined, equals 100%.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Pyramid``2(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,``1}})">
+<summary>
+ Displays data that, when combined, equals 100%.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Pyramid``1(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ Displays data that, when combined, equals 100%.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Polar``2(System.IObservable{System.Tuple`2{``0,``1}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ A circular graph on which data points are displayed using
+ the angle, and the distance from the center point.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Polar``1(System.IObservable{``0},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ A circular graph on which data points are displayed using
+ the angle, and the distance from the center point.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Polar``3(System.Collections.Generic.IEnumerable{``0},``1)">
+<summary>
+ A circular graph on which data points are displayed using
+ the angle, and the distance from the center point.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Polar``2(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,``1}})">
+<summary>
+ A circular graph on which data points are displayed using
+ the angle, and the distance from the center point.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Polar``1(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ A circular graph on which data points are displayed using
+ the angle, and the distance from the center point.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.PointAndFigure``3(System.IObservable{System.Tuple`2{``0,System.Tuple`2{``1,``2}}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Disregards the passage of time and only displays changes in
+ prices.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.PointAndFigure``2(System.IObservable{System.Tuple`2{``0,``1}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Disregards the passage of time and only displays changes in
+ prices.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.PointAndFigure``5(System.Collections.Generic.IEnumerable{``0},``1,``3)">
+<summary>
+ Disregards the passage of time and only displays changes in
+ prices.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.PointAndFigure``3(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,System.Tuple`2{``1,``2}}})">
+<summary>
+ Disregards the passage of time and only displays changes in
+ prices.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.PointAndFigure``2(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,``1}})">
+<summary>
+ Disregards the passage of time and only displays changes in
+ prices.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Point``2(System.IObservable{System.Tuple`2{``0,``1}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Uses points to represent data points.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Point``1(System.IObservable{``0},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Uses points to represent data points.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Point``3(System.Collections.Generic.IEnumerable{``0},``1)">
+<summary>
+ Uses points to represent data points.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Point``2(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,``1}})">
+<summary>
+ Uses points to represent data points.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Point``1(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ Uses points to represent data points.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Pie``2(System.IObservable{System.Tuple`2{``0,``1}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Shows how proportions of data, shown as pie-shaped pieces,ÿcontribute to
+ the data as aÿwhole.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Pie``1(System.IObservable{``0},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Shows how proportions of data, shown as pie-shaped pieces,ÿcontribute to
+ the data as aÿwhole.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Pie``3(System.Collections.Generic.IEnumerable{``0},``1)">
+<summary>
+ Shows how proportions of data, shown as pie-shaped pieces,ÿcontribute to
+ the data as aÿwhole.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Pie``2(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,``1}})">
+<summary>
+ Shows how proportions of data, shown as pie-shaped pieces,ÿcontribute to
+ the data as aÿwhole.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Pie``1(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ Shows how proportions of data, shown as pie-shaped pieces,ÿcontribute to
+ the data as aÿwhole.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Line``2(System.IObservable{System.Tuple`2{``0,``1}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Illustrates trends in data with the passing of time.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Line``1(System.IObservable{``0},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Illustrates trends in data with the passing of time.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Line``3(System.Collections.Generic.IEnumerable{``0},``1)">
+<summary>
+ Illustrates trends in data with the passing of time.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Line``2(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,``1}})">
+<summary>
+ Illustrates trends in data with the passing of time.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Line``1(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ Illustrates trends in data with the passing of time.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Kagi``2(System.IObservable{System.Tuple`2{``0,``1}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Displays a series of connecting vertical lines where the thickness
+ and direction of the lines are dependent on the action
+ of the price value.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Kagi``1(System.IObservable{``0},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Displays a series of connecting vertical lines where the thickness
+ and direction of the lines are dependent on the action
+ of the price value.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Kagi``3(System.Collections.Generic.IEnumerable{``0},``1)">
+<summary>
+ Displays a series of connecting vertical lines where the thickness
+ and direction of the lines are dependent on the action
+ of the price value.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Kagi``2(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,``1}})">
+<summary>
+ Displays a series of connecting vertical lines where the thickness
+ and direction of the lines are dependent on the action
+ of the price value.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Kagi``1(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ Displays a series of connecting vertical lines where the thickness
+ and direction of the lines are dependent on the action
+ of the price value.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Funnel``2(System.IObservable{System.Tuple`2{``0,``1}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Displays in a funnel shape data that equals 100% when
+ totaled.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Funnel``1(System.IObservable{``0},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Displays in a funnel shape data that equals 100% when
+ totaled.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Funnel``3(System.Collections.Generic.IEnumerable{``0},``1)">
+<summary>
+ Displays in a funnel shape data that equals 100% when
+ totaled.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Funnel``2(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,``1}})">
+<summary>
+ Displays in a funnel shape data that equals 100% when
+ totaled.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Funnel``1(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ Displays in a funnel shape data that equals 100% when
+ totaled.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.FastPoint``2(System.IObservable{System.Tuple`2{``0,``1}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ A variation of the Point chart type that significantly reduces
+ the drawing time of a series that contains a very
+ large number of data points.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.FastPoint``1(System.IObservable{``0},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ A variation of the Point chart type that significantly reduces
+ the drawing time of a series that contains a very
+ large number of data points.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.FastPoint``3(System.Collections.Generic.IEnumerable{``0},``1)">
+<summary>
+ A variation of the Point chart type that significantly reduces
+ the drawing time of a series that contains a very
+ large number of data points.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.FastPoint``2(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,``1}})">
+<summary>
+ A variation of the Point chart type that significantly reduces
+ the drawing time of a series that contains a very
+ large number of data points.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.FastPoint``1(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ A variation of the Point chart type that significantly reduces
+ the drawing time of a series that contains a very
+ large number of data points.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.FastLine``2(System.IObservable{System.Tuple`2{``0,``1}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ A variation of the Line chart that significantly reduces the
+ drawing time of a series that contains a very large
+ number of data points.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.FastLine``1(System.IObservable{``0},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ A variation of the Line chart that significantly reduces the
+ drawing time of a series that contains a very large
+ number of data points.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.FastLine``3(System.Collections.Generic.IEnumerable{``0},``1)">
+<summary>
+ A variation of the Line chart that significantly reduces the
+ drawing time of a series that contains a very large
+ number of data points.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.FastLine``2(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,``1}})">
+<summary>
+ A variation of the Line chart that significantly reduces the
+ drawing time of a series that contains a very large
+ number of data points.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.FastLine``1(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ A variation of the Line chart that significantly reduces the
+ drawing time of a series that contains a very large
+ number of data points.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.ErrorBar``4(System.IObservable{System.Tuple`2{``0,System.Tuple`3{``1,``2,``3}}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Consists of lines with markers that are used to display
+ statistical information about the data displayed inÿa graph.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.ErrorBar``3(System.IObservable{System.Tuple`3{``0,``1,``2}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Consists of lines with markers that are used to display
+ statistical information about the data displayed inÿa graph.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.ErrorBar``7(System.Collections.Generic.IEnumerable{``0},``1,``3,``5)">
+<summary>
+ Consists of lines with markers that are used to display
+ statistical information about the data displayed inÿa graph.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.ErrorBar``4(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,System.Tuple`3{``1,``2,``3}}})">
+<summary>
+ Consists of lines with markers that are used to display
+ statistical information about the data displayed inÿa graph.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.ErrorBar``3(System.Collections.Generic.IEnumerable{System.Tuple`3{``0,``1,``2}})">
+<summary>
+ Consists of lines with markers that are used to display
+ statistical information about the data displayed inÿa graph.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Doughnut``2(System.IObservable{System.Tuple`2{``0,``1}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Similar to the Pie chart type, except that it has
+ a hole in the center.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Doughnut``1(System.IObservable{``0},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Similar to the Pie chart type, except that it has
+ a hole in the center.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Doughnut``3(System.Collections.Generic.IEnumerable{``0},``1)">
+<summary>
+ Similar to the Pie chart type, except that it has
+ a hole in the center.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Doughnut``2(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,``1}})">
+<summary>
+ Similar to the Pie chart type, except that it has
+ a hole in the center.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Doughnut``1(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ Similar to the Pie chart type, except that it has
+ a hole in the center.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Column``2(System.IObservable{System.Tuple`2{``0,``1}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Uses a sequence of columns to compare values across categories.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Column``1(System.IObservable{``0},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Uses a sequence of columns to compare values across categories.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Column``3(System.Collections.Generic.IEnumerable{``0},``1)">
+<summary>
+ Uses a sequence of columns to compare values across categories.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Column``2(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,``1}})">
+<summary>
+ Uses a sequence of columns to compare values across categories.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Column``1(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ Uses a sequence of columns to compare values across categories.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Candlestick``5(System.IObservable{System.Tuple`2{``0,System.Tuple`4{``1,``2,``3,``4}}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Used to display stock information using high, low, open and
+ close values.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Candlestick``4(System.IObservable{System.Tuple`4{``0,``1,``2,``3}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Used to display stock information using high, low, open and
+ close values.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Candlestick``9(System.Collections.Generic.IEnumerable{``0},``1,``3,``5,``7)">
+<summary>
+ Used to display stock information using high, low, open and
+ close values.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Candlestick``5(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,System.Tuple`4{``1,``2,``3,``4}}})">
+<summary>
+ Used to display stock information using high, low, open and
+ close values.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Candlestick``4(System.Collections.Generic.IEnumerable{System.Tuple`4{``0,``1,``2,``3}})">
+<summary>
+ Used to display stock information using high, low, open and
+ close values.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Bubble``3(System.IObservable{System.Tuple`2{``0,System.Tuple`2{``1,``2}}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ A variation of the Point chart type, where the data
+ points are replaced by bubbles of different sizes.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Bubble``2(System.IObservable{System.Tuple`2{``0,``1}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ A variation of the Point chart type, where the data
+ points are replaced by bubbles of different sizes.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Bubble``5(System.Collections.Generic.IEnumerable{``0},``1,``3)">
+<summary>
+ A variation of the Point chart type, where the data
+ points are replaced by bubbles of different sizes.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Bubble``3(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,System.Tuple`2{``1,``2}}})">
+<summary>
+ A variation of the Point chart type, where the data
+ points are replaced by bubbles of different sizes.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Bubble``2(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,``1}})">
+<summary>
+ A variation of the Point chart type, where the data
+ points are replaced by bubbles of different sizes.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.BoxPlot``1(System.Collections.Generic.IEnumerable{``0[]})">
+<summary>
+ Consists of one or more box symbols that summarize the
+ distribution of the data withinÿone or moreÿdata sets.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.BoxPlot``2(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,``1[]}})">
+<summary>
+ Consists of one or more box symbols that summarize the
+ distribution of the data withinÿone or moreÿdata sets.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.BoxPlot``6(System.Collections.Generic.IEnumerable{System.Tuple`6{``0,``1,``2,``3,``4,``5}})">
+<summary>
+ Consists of one or more box symbols that summarize the
+ distribution of the data withinÿone or moreÿdata sets.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Bar``2(System.IObservable{System.Tuple`2{``0,``1}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Illustrates comparisons among individual items.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Bar``1(System.IObservable{``0},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Illustrates comparisons among individual items.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Bar``3(System.Collections.Generic.IEnumerable{``0},``1)">
+<summary>
+ Illustrates comparisons among individual items.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Bar``2(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,``1}})">
+<summary>
+ Illustrates comparisons among individual items.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Bar``1(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ Illustrates comparisons among individual items.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Area``2(System.IObservable{System.Tuple`2{``0,``1}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Emphasizes the degree of change over time and shows the
+ relationship of the parts to a whole.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Area``1(System.IObservable{``0},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Emphasizes the degree of change over time and shows the
+ relationship of the parts to a whole.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Area``3(System.Collections.Generic.IEnumerable{``0},``1)">
+<summary>
+ Emphasizes the degree of change over time and shows the
+ relationship of the parts to a whole.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Area``2(System.Collections.Generic.IEnumerable{System.Tuple`2{``0,``1}})">
+<summary>
+ Emphasizes the degree of change over time and shows the
+ relationship of the parts to a whole.
+</summary>
+</member>
+<member name="M:MSDN.FSharp.Charting.FSharpChart.Area``1(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ Emphasizes the degree of change over time and shows the
+ relationship of the parts to a whole.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartData.Internal">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartData">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartExtensions">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartFormUtilities">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartStyleExtensions">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartStyles.ShowOpenClose">
+<summary>
+ Specifies whether markers for open and close prices are displayed.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartStyles.RadarDrawingStyle">
+<summary>
+ Specifies the drawing style of the Radar chart.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartStyles.PyramidValueType">
+<summary>
+ Specifies whether the data point value represents a linear height
+ or the surface of the segment.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartStyles.PyramidOutsideLabelPlacement">
+<summary>
+ Specifies the placement of the data point labels in the
+ Pyramid chart when the labels are placed outside the pyramid.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartStyles.PyramidLabelStyle">
+<summary>
+ Specifies the style of data point labels in the Pyramid
+ chart.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartStyles.PyramidInsideLabelAlignment">
+<summary>
+ Specifies the placement of the data point labels in the
+ Pyramid chart when they are placed inside the pyramid.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartStyles.Pyramid3DDrawingStyle">
+<summary>
+ Specifies the 3D drawing style of the Pyramid chart type.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartStyles.PolarDrawingStyle">
+<summary>
+ Specifies the drawing style of the Polar chart type.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartStyles.PieLabelStyle">
+<summary>
+ Specifies the label style of the data points.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartStyles.PieDrawingStyle">
+<summary>
+ Specifies the drawing style of the data points.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartStyles.OpenCloseStyle">
+<summary>
+ Specifies the marker style for open and close values.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartStyles.LabelValueType">
+<summary>
+ Specifies the Y value to use as the data point
+ label.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartStyles.LabelStyle">
+<summary>
+ Specifies the label position of the data point.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartStyles.FunnelStyle">
+<summary>
+ Specifies the style of the Funnel chart type.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartStyles.FunnelOutsideLabelPlacement">
+<summary>
+ Placement of the data point label in the Funnel chart
+ when FunnelLabelStyle is set to Outside or OutsideInColumn.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartStyles.FunnelLabelStyle">
+<summary>
+ Specifies the data point label style of the Funnel chart
+ type.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartStyles.FunnelInsideLabelAlignment">
+<summary>
+ Specifies the data point label placement of the Funnel chart
+ type when the FunnelLabelStyle is set to Inside.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartStyles.Funnel3DDrawingStyle">
+<summary>
+ Specifies the 3D drawing style of the Funnel chart type.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartStyles.ErrorBarType">
+<summary>
+ Specifies how the upper and lower error values are calculated
+ for the center values of the ErrorBarSeries.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartStyles.ErrorBarStyle">
+<summary>
+ Specifies the visibility of the upper and lower error values.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartStyles.ErrorBarCenterMarkerStyle">
+<summary>
+ Specifies the appearance of the marker at the center value
+ of the error bar.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartStyles.EmptyPointValue">
+<summary>
+ Specifies the value to be used for empty points.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartStyles.DrawSideBySide">
+<summary>
+ Specifies whether series of the same chart type are drawn
+ next to each other instead of overlapping each other.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartStyles.DrawingStyle">
+<summary>
+ Specifies the drawing style of data points.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartStyles.CircularLabelStyle">
+<summary>
+ Specifies the text orientation of the axis labels in Radar
+ and Polar charts.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartStyles.BarLabelStyle">
+<summary>
+ Specifies the placement of the data point label.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartStyles.AreaDrawingStyle">
+<summary>
+ Specifies the plot area shape in Radar and Polar charts.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartStyles">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ThreeLineBreakChart.UsedYValue(System.Int32)">
+ <summary>
+   Specifies the index of the Y value to use to
+   plot the Kagi, Renko, or Three Line Break chart, with
+   the first Y value at index 0.
+ </summary>
+ <remarks>Any positive integer 0.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ThreeLineBreakChart.PriceUpColor(System.Drawing.Color)">
+<summary>
+ Specifies the data point color that indicates an increasing trend.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ThreeLineBreakChart.PixelPointGapDepth(System.Int32)">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ThreeLineBreakChart.PixelPointDepth(System.Int32)">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ThreeLineBreakChart.NumberOfLinesInBreak(System.Int32)">
+ <summary>
+   Specifies the number of lines to use in a Three
+   Line Break chart.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ThreeLineBreakChart.UsedYValue">
+ <summary>
+   Specifies the index of the Y value to use to
+   plot the Kagi, Renko, or Three Line Break chart, with
+   the first Y value at index 0.
+ </summary>
+ <remarks>Any positive integer 0.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ThreeLineBreakChart.PriceUpColor">
+<summary>
+ Specifies the data point color that indicates an increasing trend.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ThreeLineBreakChart.PixelPointGapDepth">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ThreeLineBreakChart.PixelPointDepth">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ThreeLineBreakChart.NumberOfLinesInBreak">
+ <summary>
+   Specifies the number of lines to use in a Three
+   Line Break chart.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ThreeLineBreakChart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.ThreeLineBreakChart">
+<summary>
+ Displays a series of vertical boxes, or lines, that reflect
+ changes in price values.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StockChart.ShowOpenClose(MSDN.FSharp.Charting.ChartStyles.ShowOpenClose)">
+<summary>
+ Specifies whether markers for open and close prices are displayed.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StockChart.PointWidth(System.Double)">
+ <summary>
+   Specifies the relative data point width.
+ </summary>
+ <remarks>Any double from 0 to 2.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StockChart.PixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StockChart.PixelPointGapDepth(System.Int32)">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StockChart.PixelPointDepth(System.Int32)">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StockChart.OpenCloseStyle(MSDN.FSharp.Charting.ChartStyles.OpenCloseStyle)">
+<summary>
+ Specifies the marker style for open and close values.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StockChart.MinPixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the minimum data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StockChart.MaxPixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the maximum width of the data point in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StockChart.LabelValueType(MSDN.FSharp.Charting.ChartStyles.LabelValueType)">
+<summary>
+ Specifies the Y value to use as the data point
+ label.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StockChart.ShowOpenClose">
+<summary>
+ Specifies whether markers for open and close prices are displayed.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StockChart.PointWidth">
+ <summary>
+   Specifies the relative data point width.
+ </summary>
+ <remarks>Any double from 0 to 2.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StockChart.PixelPointWidth">
+ <summary>
+   Specifies the data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StockChart.PixelPointGapDepth">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StockChart.PixelPointDepth">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StockChart.OpenCloseStyle">
+<summary>
+ Specifies the marker style for open and close values.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StockChart.MinPixelPointWidth">
+ <summary>
+   Specifies the minimum data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StockChart.MaxPixelPointWidth">
+ <summary>
+   Specifies the maximum width of the data point in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StockChart.LabelValueType">
+<summary>
+ Specifies the Y value to use as the data point
+ label.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StockChart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.StockChart">
+<summary>
+ Displays significant stock price points including the open, close, high,
+ and low price points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StepLineChart.ShowMarkerLines(System.Boolean)">
+<summary>
+ Specifies whether marker lines are displayed when rendered in 3D.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StepLineChart.PixelPointGapDepth(System.Int32)">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StepLineChart.PixelPointDepth(System.Int32)">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StepLineChart.LabelStyle(MSDN.FSharp.Charting.ChartStyles.LabelStyle)">
+<summary>
+ Specifies the label position of the data point.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StepLineChart.EmptyPointValue(MSDN.FSharp.Charting.ChartStyles.EmptyPointValue)">
+<summary>
+ Specifies the value to be used for empty points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StepLineChart.ShowMarkerLines">
+<summary>
+ Specifies whether marker lines are displayed when rendered in 3D.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StepLineChart.PixelPointGapDepth">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StepLineChart.PixelPointDepth">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StepLineChart.LabelStyle">
+<summary>
+ Specifies the label position of the data point.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StepLineChart.EmptyPointValue">
+<summary>
+ Specifies the value to be used for empty points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StepLineChart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.StepLineChart">
+<summary>
+ Similar to the Line chart type, but uses vertical and
+ horizontal lines to connect the data points in a series
+ forming a step-like progression.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumnChart.StackedGroupName(System.String)">
+<summary>
+ Specifies the name of the stacked group.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumnChart.PointWidth(System.Double)">
+ <summary>
+   Specifies the relative data point width.
+ </summary>
+ <remarks>Any double from 0 to 2.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumnChart.PixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumnChart.PixelPointGapDepth(System.Int32)">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumnChart.PixelPointDepth(System.Int32)">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumnChart.MinPixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the minimum data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumnChart.MaxPixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the maximum width of the data point in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumnChart.DrawingStyle(MSDN.FSharp.Charting.ChartStyles.DrawingStyle)">
+<summary>
+ Specifies the drawing style of data points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumnChart.StackedGroupName">
+<summary>
+ Specifies the name of the stacked group.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumnChart.PointWidth">
+ <summary>
+   Specifies the relative data point width.
+ </summary>
+ <remarks>Any double from 0 to 2.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumnChart.PixelPointWidth">
+ <summary>
+   Specifies the data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumnChart.PixelPointGapDepth">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumnChart.PixelPointDepth">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumnChart.MinPixelPointWidth">
+ <summary>
+   Specifies the minimum data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumnChart.MaxPixelPointWidth">
+ <summary>
+   Specifies the maximum width of the data point in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumnChart.DrawingStyle">
+<summary>
+ Specifies the drawing style of data points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumnChart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.StackedColumnChart">
+<summary>
+ Used to compare the contribution of each value to a
+ total across categories.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBarChart.StackedGroupName(System.String)">
+<summary>
+ Specifies the name of the stacked group.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBarChart.PointWidth(System.Double)">
+ <summary>
+   Specifies the relative data point width.
+ </summary>
+ <remarks>Any double from 0 to 2.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBarChart.PixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBarChart.PixelPointGapDepth(System.Int32)">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBarChart.PixelPointDepth(System.Int32)">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBarChart.MinPixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the minimum data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBarChart.MaxPixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the maximum width of the data point in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBarChart.DrawingStyle(MSDN.FSharp.Charting.ChartStyles.DrawingStyle)">
+<summary>
+ Specifies the drawing style of data points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBarChart.BarLabelStyle(MSDN.FSharp.Charting.ChartStyles.BarLabelStyle)">
+<summary>
+ Specifies the placement of the data point label.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBarChart.StackedGroupName">
+<summary>
+ Specifies the name of the stacked group.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBarChart.PointWidth">
+ <summary>
+   Specifies the relative data point width.
+ </summary>
+ <remarks>Any double from 0 to 2.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBarChart.PixelPointWidth">
+ <summary>
+   Specifies the data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBarChart.PixelPointGapDepth">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBarChart.PixelPointDepth">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBarChart.MinPixelPointWidth">
+ <summary>
+   Specifies the minimum data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBarChart.MaxPixelPointWidth">
+ <summary>
+   Specifies the maximum width of the data point in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBarChart.DrawingStyle">
+<summary>
+ Specifies the drawing style of data points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBarChart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBarChart.BarLabelStyle">
+<summary>
+ Specifies the placement of the data point label.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.StackedBarChart">
+<summary>
+ Displays series of the same chart type as stacked bars.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedAreaChart.PixelPointGapDepth(System.Int32)">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedAreaChart.PixelPointDepth(System.Int32)">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedAreaChart.PixelPointGapDepth">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedAreaChart.PixelPointDepth">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedAreaChart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.StackedAreaChart">
+<summary>
+ An Area chart that stacks two or more data series
+ on top of one another.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineRangeChart.ShowMarkerLines(System.Boolean)">
+<summary>
+ Specifies whether marker lines are displayed when rendered in 3D.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineRangeChart.PixelPointGapDepth(System.Int32)">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineRangeChart.PixelPointDepth(System.Int32)">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineRangeChart.LineTension(System.Double)">
+ <summary>
+   Specifies the line tension for the drawing of curves between
+   data points.
+ </summary>
+ <remarks>Any double from 0 to 2.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineRangeChart.LabelStyle(MSDN.FSharp.Charting.ChartStyles.LabelStyle)">
+<summary>
+ Specifies the label position of the data point.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineRangeChart.EmptyPointValue(MSDN.FSharp.Charting.ChartStyles.EmptyPointValue)">
+<summary>
+ Specifies the value to be used for empty points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineRangeChart.ShowMarkerLines">
+<summary>
+ Specifies whether marker lines are displayed when rendered in 3D.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineRangeChart.PixelPointGapDepth">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineRangeChart.PixelPointDepth">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineRangeChart.LineTension">
+ <summary>
+   Specifies the line tension for the drawing of curves between
+   data points.
+ </summary>
+ <remarks>Any double from 0 to 2.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineRangeChart.LabelStyle">
+<summary>
+ Specifies the label position of the data point.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineRangeChart.EmptyPointValue">
+<summary>
+ Specifies the value to be used for empty points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineRangeChart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.SplineRangeChart">
+<summary>
+ Displays a range of data by plotting two Y values per
+ data point, with each Y value drawn as a line
+ chart.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineAreaChart.ShowMarkerLines(System.Boolean)">
+<summary>
+ Specifies whether marker lines are displayed when rendered in 3D.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineAreaChart.PixelPointGapDepth(System.Int32)">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineAreaChart.PixelPointDepth(System.Int32)">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineAreaChart.LineTension(System.Double)">
+ <summary>
+   Specifies the line tension for the drawing of curves between
+   data points.
+ </summary>
+ <remarks>Any double from 0 to 2.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineAreaChart.LabelStyle(MSDN.FSharp.Charting.ChartStyles.LabelStyle)">
+<summary>
+ Specifies the label position of the data point.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineAreaChart.EmptyPointValue(MSDN.FSharp.Charting.ChartStyles.EmptyPointValue)">
+<summary>
+ Specifies the value to be used for empty points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineAreaChart.ShowMarkerLines">
+<summary>
+ Specifies whether marker lines are displayed when rendered in 3D.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineAreaChart.PixelPointGapDepth">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineAreaChart.PixelPointDepth">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineAreaChart.LineTension">
+ <summary>
+   Specifies the line tension for the drawing of curves between
+   data points.
+ </summary>
+ <remarks>Any double from 0 to 2.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineAreaChart.LabelStyle">
+<summary>
+ Specifies the label position of the data point.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineAreaChart.EmptyPointValue">
+<summary>
+ Specifies the value to be used for empty points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineAreaChart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.SplineAreaChart">
+<summary>
+ An Area chart that plots a fitted curve through each
+ data point in a series.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineChart.ShowMarkerLines(System.Boolean)">
+<summary>
+ Specifies whether marker lines are displayed when rendered in 3D.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineChart.PixelPointGapDepth(System.Int32)">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineChart.PixelPointDepth(System.Int32)">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineChart.LineTension(System.Double)">
+ <summary>
+   Specifies the line tension for the drawing of curves between
+   data points.
+ </summary>
+ <remarks>Any double from 0 to 2.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineChart.LabelStyle(MSDN.FSharp.Charting.ChartStyles.LabelStyle)">
+<summary>
+ Specifies the label position of the data point.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineChart.EmptyPointValue(MSDN.FSharp.Charting.ChartStyles.EmptyPointValue)">
+<summary>
+ Specifies the value to be used for empty points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineChart.ShowMarkerLines">
+<summary>
+ Specifies whether marker lines are displayed when rendered in 3D.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineChart.PixelPointGapDepth">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineChart.PixelPointDepth">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineChart.LineTension">
+ <summary>
+   Specifies the line tension for the drawing of curves between
+   data points.
+ </summary>
+ <remarks>Any double from 0 to 2.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineChart.LabelStyle">
+<summary>
+ Specifies the label position of the data point.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineChart.EmptyPointValue">
+<summary>
+ Specifies the value to be used for empty points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.SplineChart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.SplineChart">
+<summary>
+ A Line chart that plots a fitted curve through each
+ data point in a series.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RenkoChart.UsedYValue(System.Int32)">
+ <summary>
+   Specifies the index of the Y value to use to
+   plot the Kagi, Renko, or Three Line Break chart, with
+   the first Y value at index 0.
+ </summary>
+ <remarks>Any positive integer 0.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RenkoChart.PriceUpColor(System.Drawing.Color)">
+<summary>
+ Specifies the data point color that indicates an increasing trend.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RenkoChart.PixelPointGapDepth(System.Int32)">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RenkoChart.PixelPointDepth(System.Int32)">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RenkoChart.BoxSize(System.String)">
+<summary>
+ Specifies the box size in the Renko or Point and
+ Figure charts.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RenkoChart.UsedYValue">
+ <summary>
+   Specifies the index of the Y value to use to
+   plot the Kagi, Renko, or Three Line Break chart, with
+   the first Y value at index 0.
+ </summary>
+ <remarks>Any positive integer 0.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RenkoChart.PriceUpColor">
+<summary>
+ Specifies the data point color that indicates an increasing trend.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RenkoChart.PixelPointGapDepth">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RenkoChart.PixelPointDepth">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RenkoChart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RenkoChart.BoxSize">
+<summary>
+ Specifies the box size in the Renko or Point and
+ Figure charts.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.RenkoChart">
+<summary>
+ Displays a series of connecting vertical lines where the thickness
+ and direction of the lines are dependent on the action
+ of the price value.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeColumnChart.PointWidth(System.Double)">
+ <summary>
+   Specifies the relative data point width.
+ </summary>
+ <remarks>Any double from 0 to 2.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeColumnChart.PixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeColumnChart.PixelPointGapDepth(System.Int32)">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeColumnChart.PixelPointDepth(System.Int32)">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeColumnChart.MinPixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the minimum data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeColumnChart.MaxPixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the maximum width of the data point in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeColumnChart.EmptyPointValue(MSDN.FSharp.Charting.ChartStyles.EmptyPointValue)">
+<summary>
+ Specifies the value to be used for empty points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeColumnChart.DrawingStyle(MSDN.FSharp.Charting.ChartStyles.DrawingStyle)">
+<summary>
+ Specifies the drawing style of data points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeColumnChart.DrawSideBySide(MSDN.FSharp.Charting.ChartStyles.DrawSideBySide)">
+<summary>
+ Specifies whether series of the same chart type are drawn
+ next to each other instead of overlapping each other.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeColumnChart.PointWidth">
+ <summary>
+   Specifies the relative data point width.
+ </summary>
+ <remarks>Any double from 0 to 2.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeColumnChart.PixelPointWidth">
+ <summary>
+   Specifies the data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeColumnChart.PixelPointGapDepth">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeColumnChart.PixelPointDepth">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeColumnChart.MinPixelPointWidth">
+ <summary>
+   Specifies the minimum data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeColumnChart.MaxPixelPointWidth">
+ <summary>
+   Specifies the maximum width of the data point in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeColumnChart.EmptyPointValue">
+<summary>
+ Specifies the value to be used for empty points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeColumnChart.DrawingStyle">
+<summary>
+ Specifies the drawing style of data points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeColumnChart.DrawSideBySide">
+<summary>
+ Specifies whether series of the same chart type are drawn
+ next to each other instead of overlapping each other.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeColumnChart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.RangeColumnChart">
+<summary>
+ Displays a range of data by plotting two Y values
+ per data point.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeBarChart.PointWidth(System.Double)">
+ <summary>
+   Specifies the relative data point width.
+ </summary>
+ <remarks>Any double from 0 to 2.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeBarChart.PixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeBarChart.PixelPointGapDepth(System.Int32)">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeBarChart.PixelPointDepth(System.Int32)">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeBarChart.MinPixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the minimum data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeBarChart.MaxPixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the maximum width of the data point in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeBarChart.EmptyPointValue(MSDN.FSharp.Charting.ChartStyles.EmptyPointValue)">
+<summary>
+ Specifies the value to be used for empty points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeBarChart.DrawingStyle(MSDN.FSharp.Charting.ChartStyles.DrawingStyle)">
+<summary>
+ Specifies the drawing style of data points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeBarChart.DrawSideBySide(MSDN.FSharp.Charting.ChartStyles.DrawSideBySide)">
+<summary>
+ Specifies whether series of the same chart type are drawn
+ next to each other instead of overlapping each other.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeBarChart.BarLabelStyle(MSDN.FSharp.Charting.ChartStyles.BarLabelStyle)">
+<summary>
+ Specifies the placement of the data point label.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeBarChart.PointWidth">
+ <summary>
+   Specifies the relative data point width.
+ </summary>
+ <remarks>Any double from 0 to 2.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeBarChart.PixelPointWidth">
+ <summary>
+   Specifies the data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeBarChart.PixelPointGapDepth">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeBarChart.PixelPointDepth">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeBarChart.MinPixelPointWidth">
+ <summary>
+   Specifies the minimum data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeBarChart.MaxPixelPointWidth">
+ <summary>
+   Specifies the maximum width of the data point in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeBarChart.EmptyPointValue">
+<summary>
+ Specifies the value to be used for empty points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeBarChart.DrawingStyle">
+<summary>
+ Specifies the drawing style of data points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeBarChart.DrawSideBySide">
+<summary>
+ Specifies whether series of the same chart type are drawn
+ next to each other instead of overlapping each other.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeBarChart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeBarChart.BarLabelStyle">
+<summary>
+ Specifies the placement of the data point label.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.RangeBarChart">
+<summary>
+ Displays separate events that have beginning and end values.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeChart.ShowMarkerLines(System.Boolean)">
+<summary>
+ Specifies whether marker lines are displayed when rendered in 3D.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeChart.PixelPointGapDepth(System.Int32)">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeChart.PixelPointDepth(System.Int32)">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeChart.LabelStyle(MSDN.FSharp.Charting.ChartStyles.LabelStyle)">
+<summary>
+ Specifies the label position of the data point.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeChart.EmptyPointValue(MSDN.FSharp.Charting.ChartStyles.EmptyPointValue)">
+<summary>
+ Specifies the value to be used for empty points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeChart.ShowMarkerLines">
+<summary>
+ Specifies whether marker lines are displayed when rendered in 3D.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeChart.PixelPointGapDepth">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeChart.PixelPointDepth">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeChart.LabelStyle">
+<summary>
+ Specifies the label position of the data point.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeChart.EmptyPointValue">
+<summary>
+ Specifies the value to be used for empty points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RangeChart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.RangeChart">
+<summary>
+ Displays a range of data by plotting two Y values per data
+ point, with each Y value being drawn as a line
+ chart.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RadarChart.RadarDrawingStyle(MSDN.FSharp.Charting.ChartStyles.RadarDrawingStyle)">
+<summary>
+ Specifies the drawing style of the Radar chart.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RadarChart.LabelStyle(MSDN.FSharp.Charting.ChartStyles.LabelStyle)">
+<summary>
+ Specifies the label position of the data point.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RadarChart.EmptyPointValue(MSDN.FSharp.Charting.ChartStyles.EmptyPointValue)">
+<summary>
+ Specifies the value to be used for empty points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RadarChart.CircularLabelStyle(MSDN.FSharp.Charting.ChartStyles.CircularLabelStyle)">
+<summary>
+ Specifies the text orientation of the axis labels in Radar
+ and Polar charts.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RadarChart.AreaDrawingStyle(MSDN.FSharp.Charting.ChartStyles.AreaDrawingStyle)">
+<summary>
+ Specifies the plot area shape in Radar and Polar charts.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RadarChart.RadarDrawingStyle">
+<summary>
+ Specifies the drawing style of the Radar chart.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RadarChart.LabelStyle">
+<summary>
+ Specifies the label position of the data point.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RadarChart.EmptyPointValue">
+<summary>
+ Specifies the value to be used for empty points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RadarChart.CircularLabelStyle">
+<summary>
+ Specifies the text orientation of the axis labels in Radar
+ and Polar charts.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RadarChart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.RadarChart.AreaDrawingStyle">
+<summary>
+ Specifies the plot area shape in Radar and Polar charts.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.RadarChart">
+<summary>
+ A circular chart that is used primarily as a data
+ comparison tool.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PyramidChart.PyramidValueType(MSDN.FSharp.Charting.ChartStyles.PyramidValueType)">
+<summary>
+ Specifies whether the data point value represents a linear height
+ or the surface of the segment.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PyramidChart.PyramidPointGap(System.Int32)">
+ <summary>
+   Specifies the gap size between the data points, measured in
+   relative coordinates.
+ </summary>
+ <remarks>Any integer from 0 to 100.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PyramidChart.PyramidOutsideLabelPlacement(MSDN.FSharp.Charting.ChartStyles.PyramidOutsideLabelPlacement)">
+<summary>
+ Specifies the placement of the data point labels in the
+ Pyramid chart when the labels are placed outside the pyramid.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PyramidChart.PyramidMinPointHeight(System.Int32)">
+ <summary>
+   Specifies the minimum height of a data point measured in
+   relative coordinates.
+ </summary>
+ <remarks>Any integer from 0 to 100.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PyramidChart.PyramidLabelStyle(MSDN.FSharp.Charting.ChartStyles.PyramidLabelStyle)">
+<summary>
+ Specifies the style of data point labels in the Pyramid
+ chart.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PyramidChart.PyramidInsideLabelAlignment(MSDN.FSharp.Charting.ChartStyles.PyramidInsideLabelAlignment)">
+<summary>
+ Specifies the placement of the data point labels in the
+ Pyramid chart when they are placed inside the pyramid.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PyramidChart.Pyramid3DRotationAngle(System.Int32)">
+ <summary>
+   Specifies the 3D rotation angle of the Pyramid chart.
+ </summary>
+ <remarks>Any integer from -10 to 10.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PyramidChart.Pyramid3DDrawingStyle(MSDN.FSharp.Charting.ChartStyles.Pyramid3DDrawingStyle)">
+<summary>
+ Specifies the 3D drawing style of the Pyramid chart type.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PyramidChart.CalloutLineColor(System.Drawing.Color)">
+<summary>
+ Specifies the line color of the callout for the data
+ point labels of Funnel or Pyramid charts.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PyramidChart.PyramidValueType">
+<summary>
+ Specifies whether the data point value represents a linear height
+ or the surface of the segment.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PyramidChart.PyramidPointGap">
+ <summary>
+   Specifies the gap size between the data points, measured in
+   relative coordinates.
+ </summary>
+ <remarks>Any integer from 0 to 100.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PyramidChart.PyramidOutsideLabelPlacement">
+<summary>
+ Specifies the placement of the data point labels in the
+ Pyramid chart when the labels are placed outside the pyramid.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PyramidChart.PyramidMinPointHeight">
+ <summary>
+   Specifies the minimum height of a data point measured in
+   relative coordinates.
+ </summary>
+ <remarks>Any integer from 0 to 100.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PyramidChart.PyramidLabelStyle">
+<summary>
+ Specifies the style of data point labels in the Pyramid
+ chart.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PyramidChart.PyramidInsideLabelAlignment">
+<summary>
+ Specifies the placement of the data point labels in the
+ Pyramid chart when they are placed inside the pyramid.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PyramidChart.Pyramid3DRotationAngle">
+ <summary>
+   Specifies the 3D rotation angle of the Pyramid chart.
+ </summary>
+ <remarks>Any integer from -10 to 10.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PyramidChart.Pyramid3DDrawingStyle">
+<summary>
+ Specifies the 3D drawing style of the Pyramid chart type.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PyramidChart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PyramidChart.CalloutLineColor">
+<summary>
+ Specifies the line color of the callout for the data
+ point labels of Funnel or Pyramid charts.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.PyramidChart">
+<summary>
+ Displays data that, when combined, equals 100%.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PolarChart.PolarDrawingStyle(MSDN.FSharp.Charting.ChartStyles.PolarDrawingStyle)">
+<summary>
+ Specifies the drawing style of the Polar chart type.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PolarChart.LabelStyle(MSDN.FSharp.Charting.ChartStyles.LabelStyle)">
+<summary>
+ Specifies the label position of the data point.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PolarChart.EmptyPointValue(MSDN.FSharp.Charting.ChartStyles.EmptyPointValue)">
+<summary>
+ Specifies the value to be used for empty points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PolarChart.CircularLabelStyle(MSDN.FSharp.Charting.ChartStyles.CircularLabelStyle)">
+<summary>
+ Specifies the text orientation of the axis labels in Radar
+ and Polar charts.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PolarChart.AreaDrawingStyle(MSDN.FSharp.Charting.ChartStyles.AreaDrawingStyle)">
+<summary>
+ Specifies the plot area shape in Radar and Polar charts.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PolarChart.PolarDrawingStyle">
+<summary>
+ Specifies the drawing style of the Polar chart type.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PolarChart.LabelStyle">
+<summary>
+ Specifies the label position of the data point.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PolarChart.EmptyPointValue">
+<summary>
+ Specifies the value to be used for empty points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PolarChart.CircularLabelStyle">
+<summary>
+ Specifies the text orientation of the axis labels in Radar
+ and Polar charts.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PolarChart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PolarChart.AreaDrawingStyle">
+<summary>
+ Specifies the plot area shape in Radar and Polar charts.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.PolarChart">
+<summary>
+ A circular graph on which data points are displayed using
+ the angle, and the distance from the center point.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PointAndFigureChart.UsedYValueLow(System.Int32)">
+ <summary>
+   Specifies the index of the Y value to use for
+   the low price in the Point and Figure chart, with
+   the first Y value at index 0.
+ </summary>
+ <remarks>Any positive integer 0.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PointAndFigureChart.UsedYValueHigh(System.Int32)">
+ <summary>
+   Specifies the index of the Y value to use for
+   the high price in the Point and Figure chart, with
+   the first Y value at index 0.
+ </summary>
+ <remarks>Any positive integer 0.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PointAndFigureChart.ReversalAmount(System.String)">
+<summary>
+ Specifies the reversal amount for the chart.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PointAndFigureChart.ProportionalSymbols(System.Boolean)">
+<summary>
+ Specifies whether the Point and Figure chart should draw the
+ X and O values proportionally.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PointAndFigureChart.PriceUpColor(System.Drawing.Color)">
+<summary>
+ Specifies the data point color that indicates an increasing trend.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PointAndFigureChart.PixelPointGapDepth(System.Int32)">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PointAndFigureChart.PixelPointDepth(System.Int32)">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PointAndFigureChart.BoxSize(System.String)">
+<summary>
+ Specifies the box size in the Renko or Point and
+ Figure charts.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PointAndFigureChart.UsedYValueLow">
+ <summary>
+   Specifies the index of the Y value to use for
+   the low price in the Point and Figure chart, with
+   the first Y value at index 0.
+ </summary>
+ <remarks>Any positive integer 0.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PointAndFigureChart.UsedYValueHigh">
+ <summary>
+   Specifies the index of the Y value to use for
+   the high price in the Point and Figure chart, with
+   the first Y value at index 0.
+ </summary>
+ <remarks>Any positive integer 0.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PointAndFigureChart.ReversalAmount">
+<summary>
+ Specifies the reversal amount for the chart.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PointAndFigureChart.ProportionalSymbols">
+<summary>
+ Specifies whether the Point and Figure chart should draw the
+ X and O values proportionally.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PointAndFigureChart.PriceUpColor">
+<summary>
+ Specifies the data point color that indicates an increasing trend.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PointAndFigureChart.PixelPointGapDepth">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PointAndFigureChart.PixelPointDepth">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PointAndFigureChart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PointAndFigureChart.BoxSize">
+<summary>
+ Specifies the box size in the Renko or Point and
+ Figure charts.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.PointAndFigureChart">
+<summary>
+ Disregards the passage of time and only displays changes in
+ prices.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PointChart.PixelPointGapDepth(System.Int32)">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PointChart.PixelPointDepth(System.Int32)">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PointChart.LabelStyle(MSDN.FSharp.Charting.ChartStyles.LabelStyle)">
+<summary>
+ Specifies the label position of the data point.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PointChart.EmptyPointValue(MSDN.FSharp.Charting.ChartStyles.EmptyPointValue)">
+<summary>
+ Specifies the value to be used for empty points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PointChart.PixelPointGapDepth">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PointChart.PixelPointDepth">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PointChart.LabelStyle">
+<summary>
+ Specifies the label position of the data point.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PointChart.EmptyPointValue">
+<summary>
+ Specifies the value to be used for empty points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PointChart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.PointChart">
+<summary>
+ Uses points to represent data points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.PieStartAngle(System.Int32)">
+ <summary>
+   Specifies the angle of the data point in the Pie
+   or Doughnut chart.
+ </summary>
+ <remarks>Any integer from 0 to 360.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.PieLineColor(System.Drawing.Color)">
+<summary>
+ Specifies the color of the radial and horizontal segments of
+ the callout lines.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.PieLabelStyle(MSDN.FSharp.Charting.ChartStyles.PieLabelStyle)">
+<summary>
+ Specifies the label style of the data points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.PieDrawingStyle(MSDN.FSharp.Charting.ChartStyles.PieDrawingStyle)">
+<summary>
+ Specifies the drawing style of the data points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.MinimumRelativePieSize(System.Int32)">
+ <summary>
+   Specifies the minimum pie or doughnut size.
+ </summary>
+ <remarks>Any integer from 10 to 70.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.LabelsRadialLineSize(System.Int32)">
+ <summary>
+   Specifies the size of the radial segment of the callout
+   line.
+ </summary>
+ <remarks>Any integer from 0 to 100.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.LabelsHorizontalLineSize(System.Int32)">
+ <summary>
+   Specifies the size of the horizontal segment of the callout
+   line.
+ </summary>
+ <remarks>Any integer from 0 to 100.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.LabelLineSize3D(System.Int32)">
+ <summary>
+   Specifies the 3D label line size as a percentage of
+   the default size.
+ </summary>
+ <remarks>Any integer from 30 to 200.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.Exploded(System.Boolean)">
+<summary>
+ Specifies whether the Pie or Doughnut data point is exploded.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.CollectedToolTip(System.String)">
+<summary>
+ Specifies the tooltip text of the collected pie slice.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.CollectedThresholdUsePercent(System.Boolean)">
+<summary>
+ Specifies whether to use the collected threshold value as a
+ percentage.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.CollectedThreshold(System.Double)">
+ <summary>
+   Specifies the threshold value for collecting small pie slices.
+ </summary>
+ <remarks>Any double between 0 and 100 if CollectedThresholdUsePercent is true; otherwise, any double &gt; 0.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.CollectedSliceExploded(System.Boolean)">
+<summary>
+ Specifies whether the collected pie slice will be shown as
+ exploded.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.CollectedLegendText(System.String)">
+<summary>
+ Specifies the legend text for the collected pie slice.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.CollectedLabel(System.String)">
+<summary>
+ Specifies the label of the collected pie slice.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.CollectedColor(System.Drawing.Color)">
+<summary>
+ Specifies the color of the collected pie or doughnut slice.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.PieStartAngle">
+ <summary>
+   Specifies the angle of the data point in the Pie
+   or Doughnut chart.
+ </summary>
+ <remarks>Any integer from 0 to 360.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.PieLineColor">
+<summary>
+ Specifies the color of the radial and horizontal segments of
+ the callout lines.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.PieLabelStyle">
+<summary>
+ Specifies the label style of the data points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.PieDrawingStyle">
+<summary>
+ Specifies the drawing style of the data points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.MinimumRelativePieSize">
+ <summary>
+   Specifies the minimum pie or doughnut size.
+ </summary>
+ <remarks>Any integer from 10 to 70.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.LabelsRadialLineSize">
+ <summary>
+   Specifies the size of the radial segment of the callout
+   line.
+ </summary>
+ <remarks>Any integer from 0 to 100.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.LabelsHorizontalLineSize">
+ <summary>
+   Specifies the size of the horizontal segment of the callout
+   line.
+ </summary>
+ <remarks>Any integer from 0 to 100.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.LabelLineSize3D">
+ <summary>
+   Specifies the 3D label line size as a percentage of
+   the default size.
+ </summary>
+ <remarks>Any integer from 30 to 200.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.Exploded">
+<summary>
+ Specifies whether the Pie or Doughnut data point is exploded.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.CollectedToolTip">
+<summary>
+ Specifies the tooltip text of the collected pie slice.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.CollectedThresholdUsePercent">
+<summary>
+ Specifies whether to use the collected threshold value as a
+ percentage.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.CollectedThreshold">
+ <summary>
+   Specifies the threshold value for collecting small pie slices.
+ </summary>
+ <remarks>Any double between 0 and 100 if CollectedThresholdUsePercent is true; otherwise, any double &gt; 0.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.CollectedSliceExploded">
+<summary>
+ Specifies whether the collected pie slice will be shown as
+ exploded.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.CollectedLegendText">
+<summary>
+ Specifies the legend text for the collected pie slice.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.CollectedLabel">
+<summary>
+ Specifies the label of the collected pie slice.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.CollectedColor">
+<summary>
+ Specifies the color of the collected pie or doughnut slice.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.PieChart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.PieChart">
+<summary>
+ Shows how proportions of data, shown as pie-shaped pieces, contribute to
+ the data as a whole.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.LineChart.ShowMarkerLines(System.Boolean)">
+<summary>
+ Specifies whether marker lines are displayed when rendered in 3D.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.LineChart.PixelPointGapDepth(System.Int32)">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.LineChart.PixelPointDepth(System.Int32)">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.LineChart.LabelStyle(MSDN.FSharp.Charting.ChartStyles.LabelStyle)">
+<summary>
+ Specifies the label position of the data point.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.LineChart.EmptyPointValue(MSDN.FSharp.Charting.ChartStyles.EmptyPointValue)">
+<summary>
+ Specifies the value to be used for empty points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.LineChart.ShowMarkerLines">
+<summary>
+ Specifies whether marker lines are displayed when rendered in 3D.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.LineChart.PixelPointGapDepth">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.LineChart.PixelPointDepth">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.LineChart.LabelStyle">
+<summary>
+ Specifies the label position of the data point.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.LineChart.EmptyPointValue">
+<summary>
+ Specifies the value to be used for empty points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.LineChart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.LineChart">
+<summary>
+ Illustrates trends in data with the passing of time.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.KagiChart.UsedYValue(System.Int32)">
+ <summary>
+   Specifies the index of the Y value to use to
+   plot the Kagi, Renko, or Three Line Break chart, with
+   the first Y value at index 0.
+ </summary>
+ <remarks>Any positive integer 0.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.KagiChart.ReversalAmount(System.String)">
+<summary>
+ Specifies the reversal amount for the chart.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.KagiChart.PriceUpColor(System.Drawing.Color)">
+<summary>
+ Specifies the data point color that indicates an increasing trend.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.KagiChart.PixelPointGapDepth(System.Int32)">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.KagiChart.PixelPointDepth(System.Int32)">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.KagiChart.UsedYValue">
+ <summary>
+   Specifies the index of the Y value to use to
+   plot the Kagi, Renko, or Three Line Break chart, with
+   the first Y value at index 0.
+ </summary>
+ <remarks>Any positive integer 0.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.KagiChart.ReversalAmount">
+<summary>
+ Specifies the reversal amount for the chart.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.KagiChart.PriceUpColor">
+<summary>
+ Specifies the data point color that indicates an increasing trend.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.KagiChart.PixelPointGapDepth">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.KagiChart.PixelPointDepth">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.KagiChart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.KagiChart">
+<summary>
+ Displays a series of connecting vertical lines where the thickness
+ and direction of the lines are dependent on the action
+ of the price value.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.FunnelChart.FunnelStyle(MSDN.FSharp.Charting.ChartStyles.FunnelStyle)">
+<summary>
+ Specifies the style of the Funnel chart type.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.FunnelChart.FunnelPointGap(System.Int32)">
+ <summary>
+   Specifies the gap size between the points of a Funnel
+   chart, measured in relative coordinates.
+ </summary>
+ <remarks>Any integer from 0 to 100.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.FunnelChart.FunnelOutsideLabelPlacement(MSDN.FSharp.Charting.ChartStyles.FunnelOutsideLabelPlacement)">
+<summary>
+ Placement of the data point label in the Funnel chart
+ when FunnelLabelStyle is set to Outside or OutsideInColumn.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.FunnelChart.FunnelNeckWidth(System.Int32)">
+ <summary>
+   Specifies the neck width of the Funnel chart type.
+ </summary>
+ <remarks>Any integer from 0 to 100.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.FunnelChart.FunnelNeckHeight(System.Int32)">
+ <summary>
+   Specifies the neck height of the Funnel chart type.
+ </summary>
+ <remarks>Any integer from 0 to 100.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.FunnelChart.FunnelMinPointHeight(System.Int32)">
+ <summary>
+   Specifies the minimum height of a data point in the
+   Funnel chart, measured in relative coordinates.
+ </summary>
+ <remarks>Any integer from 0 to 100.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.FunnelChart.FunnelLabelStyle(MSDN.FSharp.Charting.ChartStyles.FunnelLabelStyle)">
+<summary>
+ Specifies the data point label style of the Funnel chart
+ type.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.FunnelChart.FunnelInsideLabelAlignment(MSDN.FSharp.Charting.ChartStyles.FunnelInsideLabelAlignment)">
+<summary>
+ Specifies the data point label placement of the Funnel chart
+ type when the FunnelLabelStyle is set to Inside.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.FunnelChart.Funnel3DRotationAngle(System.Int32)">
+ <summary>
+   Specifies the 3D rotation angle of the Funnel chart type.
+ </summary>
+ <remarks>Any integer from -10 to 10.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.FunnelChart.Funnel3DDrawingStyle(MSDN.FSharp.Charting.ChartStyles.Funnel3DDrawingStyle)">
+<summary>
+ Specifies the 3D drawing style of the Funnel chart type.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.FunnelChart.CalloutLineColor(System.Drawing.Color)">
+<summary>
+ Specifies the line color of the callout for the data
+ point labels of Funnel or Pyramid charts.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.FunnelChart.FunnelStyle">
+<summary>
+ Specifies the style of the Funnel chart type.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.FunnelChart.FunnelPointGap">
+ <summary>
+   Specifies the gap size between the points of a Funnel
+   chart, measured in relative coordinates.
+ </summary>
+ <remarks>Any integer from 0 to 100.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.FunnelChart.FunnelOutsideLabelPlacement">
+<summary>
+ Placement of the data point label in the Funnel chart
+ when FunnelLabelStyle is set to Outside or OutsideInColumn.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.FunnelChart.FunnelNeckWidth">
+ <summary>
+   Specifies the neck width of the Funnel chart type.
+ </summary>
+ <remarks>Any integer from 0 to 100.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.FunnelChart.FunnelNeckHeight">
+ <summary>
+   Specifies the neck height of the Funnel chart type.
+ </summary>
+ <remarks>Any integer from 0 to 100.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.FunnelChart.FunnelMinPointHeight">
+ <summary>
+   Specifies the minimum height of a data point in the
+   Funnel chart, measured in relative coordinates.
+ </summary>
+ <remarks>Any integer from 0 to 100.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.FunnelChart.FunnelLabelStyle">
+<summary>
+ Specifies the data point label style of the Funnel chart
+ type.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.FunnelChart.FunnelInsideLabelAlignment">
+<summary>
+ Specifies the data point label placement of the Funnel chart
+ type when the FunnelLabelStyle is set to Inside.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.FunnelChart.Funnel3DRotationAngle">
+ <summary>
+   Specifies the 3D rotation angle of the Funnel chart type.
+ </summary>
+ <remarks>Any integer from -10 to 10.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.FunnelChart.Funnel3DDrawingStyle">
+<summary>
+ Specifies the 3D drawing style of the Funnel chart type.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.FunnelChart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.FunnelChart.CalloutLineColor">
+<summary>
+ Specifies the line color of the callout for the data
+ point labels of Funnel or Pyramid charts.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.FunnelChart">
+<summary>
+ Displays in a funnel shape data that equals 100% when
+ totaled.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.FastPointChart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.FastPointChart">
+<summary>
+ A variation of the Point chart type that significantly reduces
+ the drawing time of a series that contains a very
+ large number of data points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.FastLineChart.PixelPointGapDepth(System.Int32)">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.FastLineChart.PixelPointDepth(System.Int32)">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.FastLineChart.PixelPointGapDepth">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.FastLineChart.PixelPointDepth">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.FastLineChart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.FastLineChart">
+<summary>
+ A variation of the Line chart that significantly reduces the
+ drawing time of a series that contains a very large
+ number of data points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ErrorBarChart.PointWidth(System.Double)">
+ <summary>
+   Specifies the relative data point width.
+ </summary>
+ <remarks>Any double from 0 to 2.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ErrorBarChart.PixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ErrorBarChart.PixelPointGapDepth(System.Int32)">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ErrorBarChart.PixelPointDepth(System.Int32)">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ErrorBarChart.MinPixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the minimum data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ErrorBarChart.MaxPixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the maximum width of the data point in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ErrorBarChart.ErrorBarType(MSDN.FSharp.Charting.ChartStyles.ErrorBarType)">
+<summary>
+ Specifies how the upper and lower error values are calculated
+ for the center values of the ErrorBarSeries.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ErrorBarChart.ErrorBarStyle(MSDN.FSharp.Charting.ChartStyles.ErrorBarStyle)">
+<summary>
+ Specifies the visibility of the upper and lower error values.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ErrorBarChart.ErrorBarSeries(System.String)">
+<summary>
+ Specifies the name of the series to be used as
+ the data source for the Error Bar chart calculations.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ErrorBarChart.ErrorBarCenterMarkerStyle(MSDN.FSharp.Charting.ChartStyles.ErrorBarCenterMarkerStyle)">
+<summary>
+ Specifies the appearance of the marker at the center value
+ of the error bar.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ErrorBarChart.DrawSideBySide(MSDN.FSharp.Charting.ChartStyles.DrawSideBySide)">
+<summary>
+ Specifies whether series of the same chart type are drawn
+ next to each other instead of overlapping each other.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ErrorBarChart.PointWidth">
+ <summary>
+   Specifies the relative data point width.
+ </summary>
+ <remarks>Any double from 0 to 2.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ErrorBarChart.PixelPointWidth">
+ <summary>
+   Specifies the data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ErrorBarChart.PixelPointGapDepth">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ErrorBarChart.PixelPointDepth">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ErrorBarChart.MinPixelPointWidth">
+ <summary>
+   Specifies the minimum data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ErrorBarChart.MaxPixelPointWidth">
+ <summary>
+   Specifies the maximum width of the data point in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ErrorBarChart.ErrorBarType">
+<summary>
+ Specifies how the upper and lower error values are calculated
+ for the center values of the ErrorBarSeries.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ErrorBarChart.ErrorBarStyle">
+<summary>
+ Specifies the visibility of the upper and lower error values.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ErrorBarChart.ErrorBarSeries">
+<summary>
+ Specifies the name of the series to be used as
+ the data source for the Error Bar chart calculations.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ErrorBarChart.ErrorBarCenterMarkerStyle">
+<summary>
+ Specifies the appearance of the marker at the center value
+ of the error bar.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ErrorBarChart.DrawSideBySide">
+<summary>
+ Specifies whether series of the same chart type are drawn
+ next to each other instead of overlapping each other.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ErrorBarChart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.ErrorBarChart">
+<summary>
+ Consists of lines with markers that are used to display
+ statistical information about the data displayed in a graph.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.PieStartAngle(System.Int32)">
+ <summary>
+   Specifies the angle of the data point in the Pie
+   or Doughnut chart.
+ </summary>
+ <remarks>Any integer from 0 to 360.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.PieLineColor(System.Drawing.Color)">
+<summary>
+ Specifies the color of the radial and horizontal segments of
+ the callout lines.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.PieLabelStyle(MSDN.FSharp.Charting.ChartStyles.PieLabelStyle)">
+<summary>
+ Specifies the label style of the data points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.PieDrawingStyle(MSDN.FSharp.Charting.ChartStyles.PieDrawingStyle)">
+<summary>
+ Specifies the drawing style of the data points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.MinimumRelativePieSize(System.Int32)">
+ <summary>
+   Specifies the minimum pie or doughnut size.
+ </summary>
+ <remarks>Any integer from 10 to 70.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.LabelsRadialLineSize(System.Int32)">
+ <summary>
+   Specifies the size of the radial segment of the callout
+   line.
+ </summary>
+ <remarks>Any integer from 0 to 100.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.LabelsHorizontalLineSize(System.Int32)">
+ <summary>
+   Specifies the size of the horizontal segment of the callout
+   line.
+ </summary>
+ <remarks>Any integer from 0 to 100.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.LabelLineSize3D(System.Int32)">
+ <summary>
+   Specifies the 3D label line size as a percentage of
+   the default size.
+ </summary>
+ <remarks>Any integer from 30 to 200.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.Exploded(System.Boolean)">
+<summary>
+ Specifies whether the Pie or Doughnut data point is exploded.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.DoughnutRadius(System.Int32)">
+ <summary>
+   Specifies the radius of the doughnut portion in the Doughnut
+   chart.
+ </summary>
+ <remarks>Any integer from 0 to 100.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.CollectedToolTip(System.String)">
+<summary>
+ Specifies the tooltip text of the collected pie slice.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.CollectedThresholdUsePercent(System.Boolean)">
+<summary>
+ Specifies whether to use the collected threshold value as a
+ percentage.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.CollectedThreshold(System.Double)">
+ <summary>
+   Specifies the threshold value for collecting small pie slices.
+ </summary>
+ <remarks>Any double between 0 and 100 if CollectedThresholdUsePercent is true; otherwise, any double &gt; 0.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.CollectedSliceExploded(System.Boolean)">
+<summary>
+ Specifies whether the collected pie slice will be shown as
+ exploded.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.CollectedLegendText(System.String)">
+<summary>
+ Specifies the legend text for the collected pie slice.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.CollectedLabel(System.String)">
+<summary>
+ Specifies the label of the collected pie slice.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.CollectedColor(System.Drawing.Color)">
+<summary>
+ Specifies the color of the collected pie or doughnut slice.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.PieStartAngle">
+ <summary>
+   Specifies the angle of the data point in the Pie
+   or Doughnut chart.
+ </summary>
+ <remarks>Any integer from 0 to 360.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.PieLineColor">
+<summary>
+ Specifies the color of the radial and horizontal segments of
+ the callout lines.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.PieLabelStyle">
+<summary>
+ Specifies the label style of the data points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.PieDrawingStyle">
+<summary>
+ Specifies the drawing style of the data points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.MinimumRelativePieSize">
+ <summary>
+   Specifies the minimum pie or doughnut size.
+ </summary>
+ <remarks>Any integer from 10 to 70.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.LabelsRadialLineSize">
+ <summary>
+   Specifies the size of the radial segment of the callout
+   line.
+ </summary>
+ <remarks>Any integer from 0 to 100.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.LabelsHorizontalLineSize">
+ <summary>
+   Specifies the size of the horizontal segment of the callout
+   line.
+ </summary>
+ <remarks>Any integer from 0 to 100.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.LabelLineSize3D">
+ <summary>
+   Specifies the 3D label line size as a percentage of
+   the default size.
+ </summary>
+ <remarks>Any integer from 30 to 200.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.Exploded">
+<summary>
+ Specifies whether the Pie or Doughnut data point is exploded.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.DoughnutRadius">
+ <summary>
+   Specifies the radius of the doughnut portion in the Doughnut
+   chart.
+ </summary>
+ <remarks>Any integer from 0 to 100.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.CollectedToolTip">
+<summary>
+ Specifies the tooltip text of the collected pie slice.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.CollectedThresholdUsePercent">
+<summary>
+ Specifies whether to use the collected threshold value as a
+ percentage.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.CollectedThreshold">
+ <summary>
+   Specifies the threshold value for collecting small pie slices.
+ </summary>
+ <remarks>Any double between 0 and 100 if CollectedThresholdUsePercent is true; otherwise, any double &gt; 0.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.CollectedSliceExploded">
+<summary>
+ Specifies whether the collected pie slice will be shown as
+ exploded.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.CollectedLegendText">
+<summary>
+ Specifies the legend text for the collected pie slice.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.CollectedLabel">
+<summary>
+ Specifies the label of the collected pie slice.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.CollectedColor">
+<summary>
+ Specifies the color of the collected pie or doughnut slice.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.DoughnutChart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.DoughnutChart">
+<summary>
+ Similar to the Pie chart type, except that it has
+ a hole in the center.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ColumnChart.PointWidth(System.Double)">
+ <summary>
+   Specifies the relative data point width.
+ </summary>
+ <remarks>Any double from 0 to 2.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ColumnChart.PixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ColumnChart.PixelPointGapDepth(System.Int32)">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ColumnChart.PixelPointDepth(System.Int32)">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ColumnChart.MinPixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the minimum data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ColumnChart.MaxPixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the maximum width of the data point in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ColumnChart.LabelStyle(MSDN.FSharp.Charting.ChartStyles.LabelStyle)">
+<summary>
+ Specifies the label position of the data point.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ColumnChart.EmptyPointValue(MSDN.FSharp.Charting.ChartStyles.EmptyPointValue)">
+<summary>
+ Specifies the value to be used for empty points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ColumnChart.DrawingStyle(MSDN.FSharp.Charting.ChartStyles.DrawingStyle)">
+<summary>
+ Specifies the drawing style of data points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ColumnChart.DrawSideBySide(MSDN.FSharp.Charting.ChartStyles.DrawSideBySide)">
+<summary>
+ Specifies whether series of the same chart type are drawn
+ next to each other instead of overlapping each other.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ColumnChart.PointWidth">
+ <summary>
+   Specifies the relative data point width.
+ </summary>
+ <remarks>Any double from 0 to 2.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ColumnChart.PixelPointWidth">
+ <summary>
+   Specifies the data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ColumnChart.PixelPointGapDepth">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ColumnChart.PixelPointDepth">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ColumnChart.MinPixelPointWidth">
+ <summary>
+   Specifies the minimum data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ColumnChart.MaxPixelPointWidth">
+ <summary>
+   Specifies the maximum width of the data point in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ColumnChart.LabelStyle">
+<summary>
+ Specifies the label position of the data point.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ColumnChart.EmptyPointValue">
+<summary>
+ Specifies the value to be used for empty points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ColumnChart.DrawingStyle">
+<summary>
+ Specifies the drawing style of data points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ColumnChart.DrawSideBySide">
+<summary>
+ Specifies whether series of the same chart type are drawn
+ next to each other instead of overlapping each other.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.ColumnChart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.ColumnChart">
+<summary>
+ Uses a sequence of columns to compare values across categories.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.CandlestickChart.PriceUpColor(System.Drawing.Color)">
+<summary>
+ Specifies the data point color that indicates an increasing trend.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.CandlestickChart.PriceDownColor(System.Drawing.Color)">
+<summary>
+ Specifies the data point color to use to indicate a
+ decreasing trend.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.CandlestickChart.PointWidth(System.Double)">
+ <summary>
+   Specifies the relative data point width.
+ </summary>
+ <remarks>Any double from 0 to 2.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.CandlestickChart.PixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.CandlestickChart.PixelPointGapDepth(System.Int32)">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.CandlestickChart.PixelPointDepth(System.Int32)">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.CandlestickChart.MinPixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the minimum data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.CandlestickChart.MaxPixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the maximum width of the data point in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.CandlestickChart.LabelValueType(MSDN.FSharp.Charting.ChartStyles.LabelValueType)">
+<summary>
+ Specifies the Y value to use as the data point
+ label.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.CandlestickChart.PriceUpColor">
+<summary>
+ Specifies the data point color that indicates an increasing trend.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.CandlestickChart.PriceDownColor">
+<summary>
+ Specifies the data point color to use to indicate a
+ decreasing trend.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.CandlestickChart.PointWidth">
+ <summary>
+   Specifies the relative data point width.
+ </summary>
+ <remarks>Any double from 0 to 2.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.CandlestickChart.PixelPointWidth">
+ <summary>
+   Specifies the data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.CandlestickChart.PixelPointGapDepth">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.CandlestickChart.PixelPointDepth">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.CandlestickChart.MinPixelPointWidth">
+ <summary>
+   Specifies the minimum data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.CandlestickChart.MaxPixelPointWidth">
+ <summary>
+   Specifies the maximum width of the data point in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.CandlestickChart.LabelValueType">
+<summary>
+ Specifies the Y value to use as the data point
+ label.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.CandlestickChart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.CandlestickChart">
+<summary>
+ Used to display stock information using high, low, open and
+ close values.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BubbleChart.PixelPointGapDepth(System.Int32)">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BubbleChart.PixelPointDepth(System.Int32)">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BubbleChart.LabelStyle(MSDN.FSharp.Charting.ChartStyles.LabelStyle)">
+<summary>
+ Specifies the label position of the data point.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BubbleChart.EmptyPointValue(MSDN.FSharp.Charting.ChartStyles.EmptyPointValue)">
+<summary>
+ Specifies the value to be used for empty points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BubbleChart.BubbleUseSizeForLabel(System.Boolean)">
+<summary>
+ Specifies whether to use the bubble size as the data
+ point label.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BubbleChart.BubbleScaleMin(System.Double)">
+ <summary>
+   Specifies the minimum bubble size, which is a percentage of
+   the chart area that is set by BubbleMinSize.
+ </summary>
+ <remarks>Any double.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BubbleChart.BubbleScaleMax(System.Double)">
+ <summary>
+   Specifies the maximum bubble size, which is a percentage of
+   the chart area that is set by BubbleMaxSize.
+ </summary>
+ <remarks>Any double.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BubbleChart.BubbleMinSize(System.Int32)">
+ <summary>
+   Specifies the minimum size of the bubble radius as a
+   percentage of the chart area size.
+ </summary>
+ <remarks>Any integer from 0 to 100.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BubbleChart.BubbleMaxSize(System.Int32)">
+ <summary>
+   Specifies the maximum size of the bubble radius as a
+   percentage of the chart area size.
+ </summary>
+ <remarks>Any integer from 0 to 100.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BubbleChart.PixelPointGapDepth">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BubbleChart.PixelPointDepth">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BubbleChart.LabelStyle">
+<summary>
+ Specifies the label position of the data point.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BubbleChart.EmptyPointValue">
+<summary>
+ Specifies the value to be used for empty points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BubbleChart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BubbleChart.BubbleUseSizeForLabel">
+<summary>
+ Specifies whether to use the bubble size as the data
+ point label.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BubbleChart.BubbleScaleMin">
+ <summary>
+   Specifies the minimum bubble size, which is a percentage of
+   the chart area that is set by BubbleMinSize.
+ </summary>
+ <remarks>Any double.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BubbleChart.BubbleScaleMax">
+ <summary>
+   Specifies the maximum bubble size, which is a percentage of
+   the chart area that is set by BubbleMaxSize.
+ </summary>
+ <remarks>Any double.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BubbleChart.BubbleMinSize">
+ <summary>
+   Specifies the minimum size of the bubble radius as a
+   percentage of the chart area size.
+ </summary>
+ <remarks>Any integer from 0 to 100.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BubbleChart.BubbleMaxSize">
+ <summary>
+   Specifies the maximum size of the bubble radius as a
+   percentage of the chart area size.
+ </summary>
+ <remarks>Any integer from 0 to 100.</remarks>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.BubbleChart">
+<summary>
+ A variation of the Point chart type, where the data
+ points are replaced by bubbles of different sizes.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BoxPlotChart.PointWidth(System.Double)">
+ <summary>
+   Specifies the relative data point width.
+ </summary>
+ <remarks>Any double from 0 to 2.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BoxPlotChart.PixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BoxPlotChart.PixelPointGapDepth(System.Int32)">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BoxPlotChart.PixelPointDepth(System.Int32)">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BoxPlotChart.MinPixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the minimum data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BoxPlotChart.MaxPixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the maximum width of the data point in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BoxPlotChart.DrawSideBySide(MSDN.FSharp.Charting.ChartStyles.DrawSideBySide)">
+<summary>
+ Specifies whether series of the same chart type are drawn
+ next to each other instead of overlapping each other.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BoxPlotChart.BoxPlotWhiskerPercentile(System.Int32)">
+ <summary>
+   Specifies the percentile value of the whiskers of the Box
+   Plot chart.
+ </summary>
+ <remarks>Any integer from 0 to 50.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BoxPlotChart.BoxPlotShowUnusualValues(System.Boolean)">
+<summary>
+ Specifies whether the unusual values value for the Box Plot
+ chart will be shown.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BoxPlotChart.BoxPlotShowMedian(System.Boolean)">
+<summary>
+ Specifies whether to display the median value for the Box
+ Plot chart.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BoxPlotChart.BoxPlotShowAverage(System.Boolean)">
+<summary>
+ Specifies whether to display the average value for the Box
+ Plot chart.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BoxPlotChart.BoxPlotSeries(System.String)">
+<summary>
+ Specifies the name of the series to be used as
+ the data source for the Box Plot chart.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BoxPlotChart.BoxPlotPercentile(System.Int32)">
+ <summary>
+   Specifies the percentile value of the box of the Box
+   Plot chart.
+ </summary>
+ <remarks>Any integer from 0 to 50.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BoxPlotChart.PointWidth">
+ <summary>
+   Specifies the relative data point width.
+ </summary>
+ <remarks>Any double from 0 to 2.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BoxPlotChart.PixelPointWidth">
+ <summary>
+   Specifies the data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BoxPlotChart.PixelPointGapDepth">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BoxPlotChart.PixelPointDepth">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BoxPlotChart.MinPixelPointWidth">
+ <summary>
+   Specifies the minimum data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BoxPlotChart.MaxPixelPointWidth">
+ <summary>
+   Specifies the maximum width of the data point in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BoxPlotChart.DrawSideBySide">
+<summary>
+ Specifies whether series of the same chart type are drawn
+ next to each other instead of overlapping each other.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BoxPlotChart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BoxPlotChart.BoxPlotWhiskerPercentile">
+ <summary>
+   Specifies the percentile value of the whiskers of the Box
+   Plot chart.
+ </summary>
+ <remarks>Any integer from 0 to 50.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BoxPlotChart.BoxPlotShowUnusualValues">
+<summary>
+ Specifies whether the unusual values value for the Box Plot
+ chart will be shown.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BoxPlotChart.BoxPlotShowMedian">
+<summary>
+ Specifies whether to display the median value for the Box
+ Plot chart.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BoxPlotChart.BoxPlotShowAverage">
+<summary>
+ Specifies whether to display the average value for the Box
+ Plot chart.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BoxPlotChart.BoxPlotSeries">
+<summary>
+ Specifies the name of the series to be used as
+ the data source for the Box Plot chart.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BoxPlotChart.BoxPlotPercentile">
+ <summary>
+   Specifies the percentile value of the box of the Box
+   Plot chart.
+ </summary>
+ <remarks>Any integer from 0 to 50.</remarks>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.BoxPlotChart">
+<summary>
+ Consists of one or more box symbols that summarize the
+ distribution of the data within one or more data sets.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BarChart.PointWidth(System.Double)">
+ <summary>
+   Specifies the relative data point width.
+ </summary>
+ <remarks>Any double from 0 to 2.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BarChart.PixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BarChart.PixelPointGapDepth(System.Int32)">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BarChart.PixelPointDepth(System.Int32)">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BarChart.MinPixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the minimum data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BarChart.MaxPixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the maximum width of the data point in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BarChart.EmptyPointValue(MSDN.FSharp.Charting.ChartStyles.EmptyPointValue)">
+<summary>
+ Specifies the value to be used for empty points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BarChart.DrawingStyle(MSDN.FSharp.Charting.ChartStyles.DrawingStyle)">
+<summary>
+ Specifies the drawing style of data points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BarChart.DrawSideBySide(MSDN.FSharp.Charting.ChartStyles.DrawSideBySide)">
+<summary>
+ Specifies whether series of the same chart type are drawn
+ next to each other instead of overlapping each other.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BarChart.BarLabelStyle(MSDN.FSharp.Charting.ChartStyles.BarLabelStyle)">
+<summary>
+ Specifies the placement of the data point label.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BarChart.PointWidth">
+ <summary>
+   Specifies the relative data point width.
+ </summary>
+ <remarks>Any double from 0 to 2.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BarChart.PixelPointWidth">
+ <summary>
+   Specifies the data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BarChart.PixelPointGapDepth">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BarChart.PixelPointDepth">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BarChart.MinPixelPointWidth">
+ <summary>
+   Specifies the minimum data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BarChart.MaxPixelPointWidth">
+ <summary>
+   Specifies the maximum width of the data point in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BarChart.EmptyPointValue">
+<summary>
+ Specifies the value to be used for empty points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BarChart.DrawingStyle">
+<summary>
+ Specifies the drawing style of data points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BarChart.DrawSideBySide">
+<summary>
+ Specifies whether series of the same chart type are drawn
+ next to each other instead of overlapping each other.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BarChart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.BarChart.BarLabelStyle">
+<summary>
+ Specifies the placement of the data point label.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.BarChart">
+<summary>
+ Illustrates comparisons among individual items.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.AreaChart.ShowMarkerLines(System.Boolean)">
+<summary>
+ Specifies whether marker lines are displayed when rendered in 3D.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.AreaChart.PixelPointGapDepth(System.Int32)">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.AreaChart.PixelPointDepth(System.Int32)">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.AreaChart.LabelStyle(MSDN.FSharp.Charting.ChartStyles.LabelStyle)">
+<summary>
+ Specifies the label position of the data point.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.AreaChart.EmptyPointValue(MSDN.FSharp.Charting.ChartStyles.EmptyPointValue)">
+<summary>
+ Specifies the value to be used for empty points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.AreaChart.ShowMarkerLines">
+<summary>
+ Specifies whether marker lines are displayed when rendered in 3D.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.AreaChart.PixelPointGapDepth">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.AreaChart.PixelPointDepth">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.AreaChart.LabelStyle">
+<summary>
+ Specifies the label position of the data point.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.AreaChart.EmptyPointValue">
+<summary>
+ Specifies the value to be used for empty points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.AreaChart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.AreaChart">
+<summary>
+ Emphasizes the degree of change over time and shows the
+ relationship of the parts to a whole.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumn100Chart.StackedGroupName(System.String)">
+<summary>
+ Specifies the name of the stacked group.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumn100Chart.PointWidth(System.Double)">
+ <summary>
+   Specifies the relative data point width.
+ </summary>
+ <remarks>Any double from 0 to 2.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumn100Chart.PixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumn100Chart.PixelPointGapDepth(System.Int32)">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumn100Chart.PixelPointDepth(System.Int32)">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumn100Chart.MinPixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the minimum data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumn100Chart.MaxPixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the maximum width of the data point in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumn100Chart.DrawingStyle(MSDN.FSharp.Charting.ChartStyles.DrawingStyle)">
+<summary>
+ Specifies the drawing style of data points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumn100Chart.StackedGroupName">
+<summary>
+ Specifies the name of the stacked group.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumn100Chart.PointWidth">
+ <summary>
+   Specifies the relative data point width.
+ </summary>
+ <remarks>Any double from 0 to 2.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumn100Chart.PixelPointWidth">
+ <summary>
+   Specifies the data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumn100Chart.PixelPointGapDepth">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumn100Chart.PixelPointDepth">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumn100Chart.MinPixelPointWidth">
+ <summary>
+   Specifies the minimum data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumn100Chart.MaxPixelPointWidth">
+ <summary>
+   Specifies the maximum width of the data point in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumn100Chart.DrawingStyle">
+<summary>
+ Specifies the drawing style of data points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedColumn100Chart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.StackedColumn100Chart">
+<summary>
+ Displays multiple series of data as stacked columns. The cumulative
+ proportion of each stacked element is always 100% of the
+ Y axis.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBar100Chart.StackedGroupName(System.String)">
+<summary>
+ Specifies the name of the stacked group.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBar100Chart.PointWidth(System.Double)">
+ <summary>
+   Specifies the relative data point width.
+ </summary>
+ <remarks>Any double from 0 to 2.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBar100Chart.PixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBar100Chart.PixelPointGapDepth(System.Int32)">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBar100Chart.PixelPointDepth(System.Int32)">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBar100Chart.MinPixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the minimum data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBar100Chart.MaxPixelPointWidth(System.Int32)">
+ <summary>
+   Specifies the maximum width of the data point in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBar100Chart.DrawingStyle(MSDN.FSharp.Charting.ChartStyles.DrawingStyle)">
+<summary>
+ Specifies the drawing style of data points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBar100Chart.BarLabelStyle(MSDN.FSharp.Charting.ChartStyles.BarLabelStyle)">
+<summary>
+ Specifies the placement of the data point label.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBar100Chart.StackedGroupName">
+<summary>
+ Specifies the name of the stacked group.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBar100Chart.PointWidth">
+ <summary>
+   Specifies the relative data point width.
+ </summary>
+ <remarks>Any double from 0 to 2.</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBar100Chart.PixelPointWidth">
+ <summary>
+   Specifies the data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBar100Chart.PixelPointGapDepth">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBar100Chart.PixelPointDepth">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBar100Chart.MinPixelPointWidth">
+ <summary>
+   Specifies the minimum data point width in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBar100Chart.MaxPixelPointWidth">
+ <summary>
+   Specifies the maximum width of the data point in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBar100Chart.DrawingStyle">
+<summary>
+ Specifies the drawing style of data points.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBar100Chart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedBar100Chart.BarLabelStyle">
+<summary>
+ Specifies the placement of the data point label.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.StackedBar100Chart">
+<summary>
+ Displays multiple series of data as stacked bars. The cumulative
+ proportion of each stacked element is always 100% of the Y axis.
+</summary>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedArea100Chart.PixelPointGapDepth(System.Int32)">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedArea100Chart.PixelPointDepth(System.Int32)">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedArea100Chart.PixelPointGapDepth">
+ <summary>
+   Specifies the 3D gap depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedArea100Chart.PixelPointDepth">
+ <summary>
+   Specifies the 3D series depth in pixels.
+ </summary>
+ <remarks>Any integer &gt; 0</remarks>
+</member>
+<member name="P:MSDN.FSharp.Charting.ChartTypes.StackedArea100Chart.ChartType">
+<summary>
+ Returns the type of the chart series
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes.StackedArea100Chart">
+<summary>
+ Displays multiple series of data as stacked areas. The cumulative proportion
+ of each stacked element is always 100% of the Y
+ axis.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ChartTypes">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MSDN.FSharp.Charting.ClipboardMetafileHelper">
+
+</member>
+</members>
+</doc>

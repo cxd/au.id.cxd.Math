@@ -1,0 +1,44 @@
+﻿@model au.id.cxd.Text.SpellingService.Models.DemoSpellingModel
+
+@{
+    ViewBag.Title = "DemoSpelling";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>DemoSpelling</h2>
+
+@using (Html.BeginForm("CheckSpelling", "DemoSpelling", FormMethod.Post)) {
+
+@Html.LabelFor(model => model.InputText)
+<br />
+@Html.TextAreaFor(model => model.InputText, 10, 50, null)
+<br />
+<input type="submit" value="Check Spelling" />
+}
+<% 
+if (Model.IsCorrected)
+{
+%>
+    <h1>Corrections</h1>
+    <p>
+    
+    @for (int i = 0; i < Model.Corrections.Count; i++)
+    {
+        for (int j = 0; j < Model.Corrections[i].NewSentence.Count; j++)
+        {
+            string word = Model.Corrections[i].NewSentence[j];
+            var correction = Model.Corrections[i].CorrectionFor(j);
+            if (correction == null)
+            {
+                @Html.Raw(word);
+            }
+            else
+            {
+                <span style='background:yellow;'>@Html.Raw(word)</span>
+            }
+            @Html.Raw("&nbsp;");
+        }
+        @Html.Raw(".&nbsp;");
+    }
+    <p>
+<% } %>

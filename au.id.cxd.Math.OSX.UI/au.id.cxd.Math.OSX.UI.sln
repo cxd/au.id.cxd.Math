@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "au.id.cxd.Math.OSX.UI", "au.id.cxd.Math.OSX.UI\au.id.cxd.Math.OSX.UI.csproj", "{83D7C704-496B-48CA-A5A3-48C8A7D6FC18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83D7C704-496B-48CA-A5A3-48C8A7D6FC18}.Debug|x86.ActiveCfg = Debug|x86
+		{83D7C704-496B-48CA-A5A3-48C8A7D6FC18}.Debug|x86.Build.0 = Debug|x86
+		{83D7C704-496B-48CA-A5A3-48C8A7D6FC18}.Release|x86.ActiveCfg = Release|x86
+		{83D7C704-496B-48CA-A5A3-48C8A7D6FC18}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = au.id.cxd.Math.OSX.UI\au.id.cxd.Math.OSX.UI.csproj
+	EndGlobalSection
+EndGlobal

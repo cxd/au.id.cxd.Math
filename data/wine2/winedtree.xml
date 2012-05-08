@@ -1,0 +1,650 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<head>
+  <attribute column="7" type="Continuous" informationGain="0.977428108628399">Flavanoids</attribute>
+  <rule entropy="-5.77049164378153E-06">
+    <operation>GreaterThanOrEqualTo</operation>
+    <datum>0.59</datum>
+    <head>
+      <attribute column="10" type="Continuous" informationGain="0.894184592445211">Color intensity</attribute>
+      <rule entropy="-5.1986411205239E-06">
+        <operation>GreaterThanOrEqualTo</operation>
+        <datum>2.92</datum>
+        <head>
+          <attribute column="7" type="Continuous" informationGain="0.978187886495594">Flavanoids</attribute>
+          <rule entropy="-6.78881369856651E-06">
+            <operation>GreaterThanOrEqualTo</operation>
+            <datum>2.685</datum>
+            <head>
+              <attribute column="13" type="Continuous" informationGain="0.446430341685065">Proline</attribute>
+              <rule entropy="-1.23653392366747E-05">
+                <operation>GreaterThanOrEqualTo</operation>
+                <datum>1302.5</datum>
+                <classification classColumn="0">1</classification>
+              </rule>
+              <rule entropy="-1.23653392366747E-05">
+                <operation>LessThan</operation>
+                <datum>1302.5</datum>
+                <head>
+                  <attribute column="13" type="Continuous" informationGain="0.481425096190455">Proline</attribute>
+                  <rule entropy="-1.54566740458434E-05">
+                    <operation>GreaterThanOrEqualTo</operation>
+                    <datum>1282.5</datum>
+                    <classification classColumn="0">1</classification>
+                  </rule>
+                  <rule entropy="-1.54566740458434E-05">
+                    <operation>LessThan</operation>
+                    <datum>1282.5</datum>
+                    <head>
+                      <attribute column="13" type="Continuous" informationGain="0.490556746452869">Proline</attribute>
+                      <rule entropy="-1.66456489724467E-05">
+                        <operation>GreaterThanOrEqualTo</operation>
+                        <datum>1170</datum>
+                        <classification classColumn="0">1</classification>
+                      </rule>
+                      <rule entropy="-1.66456489724467E-05">
+                        <operation>LessThan</operation>
+                        <datum>1170</datum>
+                        <head>
+                          <attribute column="13" type="Continuous" informationGain="0.50585265388262">Proline</attribute>
+                          <rule entropy="-2.16393436641807E-05">
+                            <operation>GreaterThanOrEqualTo</operation>
+                            <datum>1140</datum>
+                            <classification classColumn="0">1</classification>
+                          </rule>
+                          <rule entropy="-2.16393436641807E-05">
+                            <operation>LessThan</operation>
+                            <datum>1140</datum>
+                            <head>
+                              <attribute column="5" type="Continuous" informationGain="0.69610568494307">Magnesium</attribute>
+                              <rule entropy="-2.4043715182423E-05">
+                                <operation>GreaterThanOrEqualTo</operation>
+                                <datum>111</datum>
+                                <head>
+                                  <attribute column="11" type="Continuous" informationGain="0.316761252145582">Hue</attribute>
+                                  <rule entropy="-7.21311455472691E-05">
+                                    <operation>GreaterThanOrEqualTo</operation>
+                                    <datum>1.065</datum>
+                                    <head>
+                                      <attribute column="11" type="Continuous" informationGain="0.25172535066175">Hue</attribute>
+                                      <rule entropy="-9.61748607296922E-05">
+                                        <operation>GreaterThanOrEqualTo</operation>
+                                        <datum>1.11</datum>
+                                        <head>
+                                          <attribute column="13" type="Continuous" informationGain="-1.99956724197485">Proline</attribute>
+                                          <rule entropy="0.999711489841877">
+                                            <operation>GreaterThanOrEqualTo</operation>
+                                            <datum>1057.5</datum>
+                                            <classification classColumn="0">1</classification>
+                                          </rule>
+                                          <rule entropy="0.999711489841877">
+                                            <operation>LessThan</operation>
+                                            <datum>1057.5</datum>
+                                            <classification classColumn="0">2</classification>
+                                          </rule>
+                                        </head>
+                                      </rule>
+                                      <rule entropy="-9.61748607296922E-05">
+                                        <operation>LessThan</operation>
+                                        <datum>1.11</datum>
+                                        <classification classColumn="0">1</classification>
+                                      </rule>
+                                    </head>
+                                  </rule>
+                                  <rule entropy="-7.21311455472691E-05">
+                                    <operation>LessThan</operation>
+                                    <datum>1.065</datum>
+                                    <classification classColumn="0">1</classification>
+                                  </rule>
+                                </head>
+                              </rule>
+                              <rule entropy="-2.4043715182423E-05">
+                                <operation>LessThan</operation>
+                                <datum>111</datum>
+                                <head>
+                                  <attribute column="13" type="Continuous" informationGain="0.813226146543784">Proline</attribute>
+                                  <rule entropy="-2.4043715182423E-05">
+                                    <operation>GreaterThanOrEqualTo</operation>
+                                    <datum>1057.5</datum>
+                                    <classification classColumn="0">1</classification>
+                                  </rule>
+                                  <rule entropy="-2.4043715182423E-05">
+                                    <operation>LessThan</operation>
+                                    <datum>1057.5</datum>
+                                    <head>
+                                      <attribute column="13" type="Continuous" informationGain="0.812238271208107">Proline</attribute>
+                                      <rule entropy="-2.62295074717342E-05">
+                                        <operation>GreaterThanOrEqualTo</operation>
+                                        <datum>1047.5</datum>
+                                        <classification classColumn="0">1</classification>
+                                      </rule>
+                                      <rule entropy="-2.62295074717342E-05">
+                                        <operation>LessThan</operation>
+                                        <datum>1047.5</datum>
+                                        <head>
+                                          <attribute column="13" type="Continuous" informationGain="-0.1998268881355">Proline</attribute>
+                                          <rule entropy="-2.88524582189077E-05">
+                                            <operation>GreaterThanOrEqualTo</operation>
+                                            <datum>1017.5</datum>
+                                            <classification classColumn="0">1</classification>
+                                          </rule>
+                                          <rule entropy="-2.88524582189077E-05">
+                                            <operation>LessThan</operation>
+                                            <datum>1017.5</datum>
+                                            <head>
+                                              <attribute column="13" type="Continuous" informationGain="0.768885907482156">Proline</attribute>
+                                              <rule entropy="-3.20582869098974E-05">
+                                                <operation>GreaterThanOrEqualTo</operation>
+                                                <datum>987.5</datum>
+                                                <classification classColumn="0">1</classification>
+                                              </rule>
+                                              <rule entropy="-3.20582869098974E-05">
+                                                <operation>LessThan</operation>
+                                                <datum>987.5</datum>
+                                                <head>
+                                                  <attribute column="13" type="Continuous" informationGain="0.704470081238578">Proline</attribute>
+                                                  <rule entropy="-3.60655727736346E-05">
+                                                    <operation>GreaterThanOrEqualTo</operation>
+                                                    <datum>950</datum>
+                                                    <classification classColumn="0">1</classification>
+                                                  </rule>
+                                                  <rule entropy="-3.60655727736346E-05">
+                                                    <operation>LessThan</operation>
+                                                    <datum>950</datum>
+                                                    <head>
+                                                      <attribute column="13" type="Continuous" informationGain="0.577447517441847">Proline</attribute>
+                                                      <rule entropy="-4.12177974555824E-05">
+                                                        <operation>GreaterThanOrEqualTo</operation>
+                                                        <datum>900</datum>
+                                                        <classification classColumn="0">1</classification>
+                                                      </rule>
+                                                      <rule entropy="-4.12177974555824E-05">
+                                                        <operation>LessThan</operation>
+                                                        <datum>900</datum>
+                                                        <head>
+                                                          <attribute column="13" type="Continuous" informationGain="0.3167372084304">Proline</attribute>
+                                                          <rule entropy="-4.80874303648461E-05">
+                                                            <operation>GreaterThanOrEqualTo</operation>
+                                                            <datum>642.5</datum>
+                                                            <head>
+                                                              <attribute column="3" type="Continuous" informationGain="-0.999855752132971">Ash</attribute>
+                                                              <rule entropy="0.999711489841877">
+                                                                <operation>GreaterThanOrEqualTo</operation>
+                                                                <datum>1.05</datum>
+                                                                <head>
+                                                                  <attribute column="13" type="Continuous" informationGain="-1.99956724197485">Proline</attribute>
+                                                                  <rule entropy="0.999711489841877">
+                                                                    <operation>GreaterThanOrEqualTo</operation>
+                                                                    <datum>772.5</datum>
+                                                                    <classification classColumn="0">1</classification>
+                                                                  </rule>
+                                                                  <rule entropy="0.999711489841877">
+                                                                    <operation>LessThan</operation>
+                                                                    <datum>772.5</datum>
+                                                                    <classification classColumn="0">2</classification>
+                                                                  </rule>
+                                                                </head>
+                                                              </rule>
+                                                              <rule entropy="0.999711489841877">
+                                                                <operation>LessThan</operation>
+                                                                <datum>1.05</datum>
+                                                                <classification classColumn="0">2</classification>
+                                                              </rule>
+                                                            </head>
+                                                          </rule>
+                                                          <rule entropy="-4.80874303648461E-05">
+                                                            <operation>LessThan</operation>
+                                                            <datum>642.5</datum>
+                                                            <classification classColumn="0">2</classification>
+                                                          </rule>
+                                                        </head>
+                                                      </rule>
+                                                    </head>
+                                                  </rule>
+                                                </head>
+                                              </rule>
+                                            </head>
+                                          </rule>
+                                        </head>
+                                      </rule>
+                                    </head>
+                                  </rule>
+                                </head>
+                              </rule>
+                            </head>
+                          </rule>
+                        </head>
+                      </rule>
+                    </head>
+                  </rule>
+                </head>
+              </rule>
+            </head>
+          </rule>
+          <rule entropy="-6.78881369856651E-06">
+            <operation>LessThan</operation>
+            <datum>2.685</datum>
+            <head>
+              <attribute column="7" type="Continuous" informationGain="1.08325047249276">Flavanoids</attribute>
+              <rule entropy="-8.6557374656723E-06">
+                <operation>GreaterThanOrEqualTo</operation>
+                <datum>2.085</datum>
+                <head>
+                  <attribute column="1" type="Continuous" informationGain="0.75635097995352">Alcohol</attribute>
+                  <rule entropy="-1.69720342464163E-05">
+                    <operation>GreaterThanOrEqualTo</operation>
+                    <datum>14.3</datum>
+                    <classification classColumn="0">1</classification>
+                  </rule>
+                  <rule entropy="-1.69720342464163E-05">
+                    <operation>LessThan</operation>
+                    <datum>14.3</datum>
+                    <head>
+                      <attribute column="1" type="Continuous" informationGain="0.771056282661455">Alcohol</attribute>
+                      <rule entropy="-1.80327863868173E-05">
+                        <operation>GreaterThanOrEqualTo</operation>
+                        <datum>14.165</datum>
+                        <classification classColumn="0">1</classification>
+                      </rule>
+                      <rule entropy="-1.80327863868173E-05">
+                        <operation>LessThan</operation>
+                        <datum>14.165</datum>
+                        <head>
+                          <attribute column="1" type="Continuous" informationGain="0.784981751799334">Alcohol</attribute>
+                          <rule entropy="-1.92349721459384E-05">
+                            <operation>GreaterThanOrEqualTo</operation>
+                            <datum>14.09</datum>
+                            <classification classColumn="0">1</classification>
+                          </rule>
+                          <rule entropy="-1.92349721459384E-05">
+                            <operation>LessThan</operation>
+                            <datum>14.09</datum>
+                            <head>
+                              <attribute column="1" type="Continuous" informationGain="0.797449439639406">Alcohol</attribute>
+                              <rule entropy="-2.06088987277912E-05">
+                                <operation>GreaterThanOrEqualTo</operation>
+                                <datum>14.04</datum>
+                                <classification classColumn="0">1</classification>
+                              </rule>
+                              <rule entropy="-2.06088987277912E-05">
+                                <operation>LessThan</operation>
+                                <datum>14.04</datum>
+                                <head>
+                                  <attribute column="1" type="Continuous" informationGain="0.807412658902689">Alcohol</attribute>
+                                  <rule entropy="-2.2194198629929E-05">
+                                    <operation>GreaterThanOrEqualTo</operation>
+                                    <datum>13.765</datum>
+                                    <classification classColumn="0">1</classification>
+                                  </rule>
+                                  <rule entropy="-2.2194198629929E-05">
+                                    <operation>LessThan</operation>
+                                    <datum>13.765</datum>
+                                    <head>
+                                      <attribute column="1" type="Continuous" informationGain="0.813226146543784">Alcohol</attribute>
+                                      <rule entropy="-2.4043715182423E-05">
+                                        <operation>GreaterThanOrEqualTo</operation>
+                                        <datum>13.46</datum>
+                                        <classification classColumn="0">1</classification>
+                                      </rule>
+                                      <rule entropy="-2.4043715182423E-05">
+                                        <operation>LessThan</operation>
+                                        <datum>13.46</datum>
+                                        <head>
+                                          <attribute column="1" type="Continuous" informationGain="0.812238271208107">Alcohol</attribute>
+                                          <rule entropy="-2.62295074717342E-05">
+                                            <operation>GreaterThanOrEqualTo</operation>
+                                            <datum>13.355</datum>
+                                            <classification classColumn="0">1</classification>
+                                          </rule>
+                                          <rule entropy="-2.62295074717342E-05">
+                                            <operation>LessThan</operation>
+                                            <datum>13.355</datum>
+                                            <head>
+                                              <attribute column="1" type="Continuous" informationGain="-0.1998268881355">Alcohol</attribute>
+                                              <rule entropy="-2.88524582189077E-05">
+                                                <operation>GreaterThanOrEqualTo</operation>
+                                                <datum>13.29</datum>
+                                                <classification classColumn="0">1</classification>
+                                              </rule>
+                                              <rule entropy="-2.88524582189077E-05">
+                                                <operation>LessThan</operation>
+                                                <datum>13.29</datum>
+                                                <head>
+                                                  <attribute column="1" type="Continuous" informationGain="0.768885907482156">Alcohol</attribute>
+                                                  <rule entropy="-3.20582869098974E-05">
+                                                    <operation>GreaterThanOrEqualTo</operation>
+                                                    <datum>13.26</datum>
+                                                    <classification classColumn="0">1</classification>
+                                                  </rule>
+                                                  <rule entropy="-3.20582869098974E-05">
+                                                    <operation>LessThan</operation>
+                                                    <datum>13.26</datum>
+                                                    <head>
+                                                      <attribute column="1" type="Continuous" informationGain="0.704470081238578">Alcohol</attribute>
+                                                      <rule entropy="-3.60655727736346E-05">
+                                                        <operation>GreaterThanOrEqualTo</operation>
+                                                        <datum>13.155</datum>
+                                                        <classification classColumn="0">1</classification>
+                                                      </rule>
+                                                      <rule entropy="-3.60655727736346E-05">
+                                                        <operation>LessThan</operation>
+                                                        <datum>13.155</datum>
+                                                        <head>
+                                                          <attribute column="13" type="Continuous" informationGain="0.577447517441847">Proline</attribute>
+                                                          <rule entropy="-4.12177974555824E-05">
+                                                            <operation>GreaterThanOrEqualTo</operation>
+                                                            <datum>1017.5</datum>
+                                                            <classification classColumn="0">1</classification>
+                                                          </rule>
+                                                          <rule entropy="-4.12177974555824E-05">
+                                                            <operation>LessThan</operation>
+                                                            <datum>1017.5</datum>
+                                                            <head>
+                                                              <attribute column="13" type="Continuous" informationGain="0.3167372084304">Proline</attribute>
+                                                              <rule entropy="-4.80874303648461E-05">
+                                                                <operation>GreaterThanOrEqualTo</operation>
+                                                                <datum>782</datum>
+                                                                <head>
+                                                                  <attribute column="13" type="Continuous" informationGain="-1.99956724197485">Proline</attribute>
+                                                                  <rule entropy="0.999711489841877">
+                                                                    <operation>GreaterThanOrEqualTo</operation>
+                                                                    <datum>950.5</datum>
+                                                                    <classification classColumn="0">1</classification>
+                                                                  </rule>
+                                                                  <rule entropy="0.999711489841877">
+                                                                    <operation>LessThan</operation>
+                                                                    <datum>950.5</datum>
+                                                                    <classification classColumn="0">2</classification>
+                                                                  </rule>
+                                                                </head>
+                                                              </rule>
+                                                              <rule entropy="-4.80874303648461E-05">
+                                                                <operation>LessThan</operation>
+                                                                <datum>782</datum>
+                                                                <classification classColumn="0">2</classification>
+                                                              </rule>
+                                                            </head>
+                                                          </rule>
+                                                        </head>
+                                                      </rule>
+                                                    </head>
+                                                  </rule>
+                                                </head>
+                                              </rule>
+                                            </head>
+                                          </rule>
+                                        </head>
+                                      </rule>
+                                    </head>
+                                  </rule>
+                                </head>
+                              </rule>
+                            </head>
+                          </rule>
+                        </head>
+                      </rule>
+                    </head>
+                  </rule>
+                </head>
+              </rule>
+              <rule entropy="-8.6557374656723E-06">
+                <operation>LessThan</operation>
+                <datum>2.085</datum>
+                <head>
+                  <attribute column="11" type="Continuous" informationGain="0.785507211381173">Hue</attribute>
+                  <rule entropy="-1.74863383144895E-05">
+                    <operation>GreaterThanOrEqualTo</operation>
+                    <datum>0.565</datum>
+                    <head>
+                      <attribute column="11" type="Continuous" informationGain="0.787166638891689">Hue</attribute>
+                      <rule entropy="-1.44262291094538E-05">
+                        <operation>GreaterThanOrEqualTo</operation>
+                        <datum>1.24</datum>
+                        <classification classColumn="0">2</classification>
+                      </rule>
+                      <rule entropy="-1.44262291094538E-05">
+                        <operation>LessThan</operation>
+                        <datum>1.24</datum>
+                        <head>
+                          <attribute column="11" type="Continuous" informationGain="0.75235869210711">Hue</attribute>
+                          <rule entropy="-1.54566740458434E-05">
+                            <operation>GreaterThanOrEqualTo</operation>
+                            <datum>1.165</datum>
+                            <classification classColumn="0">2</classification>
+                          </rule>
+                          <rule entropy="-1.54566740458434E-05">
+                            <operation>LessThan</operation>
+                            <datum>1.165</datum>
+                            <head>
+                              <attribute column="11" type="Continuous" informationGain="0.699850203772253">Hue</attribute>
+                              <rule entropy="-1.66456489724467E-05">
+                                <operation>GreaterThanOrEqualTo</operation>
+                                <datum>0.61</datum>
+                                <head>
+                                  <attribute column="7" type="Continuous" informationGain="0.890003793713199">Flavanoids</attribute>
+                                  <rule entropy="-2.06088987277912E-05">
+                                    <operation>GreaterThanOrEqualTo</operation>
+                                    <datum>0.605</datum>
+                                    <head>
+                                      <attribute column="7" type="Continuous" informationGain="0.892752924467749">Flavanoids</attribute>
+                                      <rule entropy="-1.51855043257409E-05">
+                                        <operation>GreaterThanOrEqualTo</operation>
+                                        <datum>2.02</datum>
+                                        <classification classColumn="0">2</classification>
+                                      </rule>
+                                      <rule entropy="-1.51855043257409E-05">
+                                        <operation>LessThan</operation>
+                                        <datum>2.02</datum>
+                                        <head>
+                                          <attribute column="7" type="Continuous" informationGain="0.879980991052486">Flavanoids</attribute>
+                                          <rule entropy="-1.60291434549487E-05">
+                                            <operation>GreaterThanOrEqualTo</operation>
+                                            <datum>1.965</datum>
+                                            <classification classColumn="0">2</classification>
+                                          </rule>
+                                          <rule entropy="-1.60291434549487E-05">
+                                            <operation>LessThan</operation>
+                                            <datum>1.965</datum>
+                                            <head>
+                                              <attribute column="7" type="Continuous" informationGain="0.859787744393073">Flavanoids</attribute>
+                                              <rule entropy="-1.69720342464163E-05">
+                                                <operation>GreaterThanOrEqualTo</operation>
+                                                <datum>1.885</datum>
+                                                <classification classColumn="0">2</classification>
+                                              </rule>
+                                              <rule entropy="-1.69720342464163E-05">
+                                                <operation>LessThan</operation>
+                                                <datum>1.885</datum>
+                                                <head>
+                                                  <attribute column="7" type="Continuous" informationGain="0.829452050255199">Flavanoids</attribute>
+                                                  <rule entropy="-1.80327863868173E-05">
+                                                    <operation>GreaterThanOrEqualTo</operation>
+                                                    <datum>1.805</datum>
+                                                    <classification classColumn="0">2</classification>
+                                                  </rule>
+                                                  <rule entropy="-1.80327863868173E-05">
+                                                    <operation>LessThan</operation>
+                                                    <datum>1.805</datum>
+                                                    <head>
+                                                      <attribute column="7" type="Continuous" informationGain="0.784981751799334">Flavanoids</attribute>
+                                                      <rule entropy="-1.92349721459384E-05">
+                                                        <operation>GreaterThanOrEqualTo</operation>
+                                                        <datum>1.61</datum>
+                                                        <classification classColumn="0">2</classification>
+                                                      </rule>
+                                                      <rule entropy="-1.92349721459384E-05">
+                                                        <operation>LessThan</operation>
+                                                        <datum>1.61</datum>
+                                                        <head>
+                                                          <attribute column="11" type="Continuous" informationGain="0.720284053460843">Hue</attribute>
+                                                          <rule entropy="-2.06088987277912E-05">
+                                                            <operation>GreaterThanOrEqualTo</operation>
+                                                            <datum>1.035</datum>
+                                                            <classification classColumn="0">2</classification>
+                                                          </rule>
+                                                          <rule entropy="-2.06088987277912E-05">
+                                                            <operation>LessThan</operation>
+                                                            <datum>1.035</datum>
+                                                            <head>
+                                                              <attribute column="11" type="Continuous" informationGain="0.625525901625556">Hue</attribute>
+                                                              <rule entropy="-2.2194198629929E-05">
+                                                                <operation>GreaterThanOrEqualTo</operation>
+                                                                <datum>1</datum>
+                                                                <classification classColumn="0">2</classification>
+                                                              </rule>
+                                                              <rule entropy="-2.2194198629929E-05">
+                                                                <operation>LessThan</operation>
+                                                                <datum>1</datum>
+                                                                <head>
+                                                                  <attribute column="11" type="Continuous" informationGain="0.483379833785895">Hue</attribute>
+                                                                  <rule entropy="-2.4043715182423E-05">
+                                                                    <operation>GreaterThanOrEqualTo</operation>
+                                                                    <datum>0.97</datum>
+                                                                    <classification classColumn="0">2</classification>
+                                                                  </rule>
+                                                                  <rule entropy="-2.4043715182423E-05">
+                                                                    <operation>LessThan</operation>
+                                                                    <datum>0.97</datum>
+                                                                    <head>
+                                                                      <attribute column="12" type="Continuous" informationGain="0.257705104786585">OD280/OD315 of diluted wines</attribute>
+                                                                      <rule entropy="-3.93442612076013E-05">
+                                                                        <operation>GreaterThanOrEqualTo</operation>
+                                                                        <datum>1.57</datum>
+                                                                        <head>
+                                                                          <attribute column="12" type="Continuous" informationGain="0.3167372084304">OD280/OD315 of diluted wines</attribute>
+                                                                          <rule entropy="-4.80874303648461E-05">
+                                                                            <operation>GreaterThanOrEqualTo</operation>
+                                                                            <datum>1.985</datum>
+                                                                            <head>
+                                                                              <attribute column="13" type="Continuous" informationGain="-1.99956724197485">Proline</attribute>
+                                                                              <rule entropy="0.999711489841877">
+                                                                                <operation>GreaterThanOrEqualTo</operation>
+                                                                                <datum>522.5</datum>
+                                                                                <classification classColumn="0">3</classification>
+                                                                              </rule>
+                                                                              <rule entropy="0.999711489841877">
+                                                                                <operation>LessThan</operation>
+                                                                                <datum>522.5</datum>
+                                                                                <classification classColumn="0">2</classification>
+                                                                              </rule>
+                                                                            </head>
+                                                                          </rule>
+                                                                          <rule entropy="-4.80874303648461E-05">
+                                                                            <operation>LessThan</operation>
+                                                                            <datum>1.985</datum>
+                                                                            <classification classColumn="0">3</classification>
+                                                                          </rule>
+                                                                        </head>
+                                                                      </rule>
+                                                                      <rule entropy="-3.93442612076013E-05">
+                                                                        <operation>LessThan</operation>
+                                                                        <datum>1.57</datum>
+                                                                        <classification classColumn="0">3</classification>
+                                                                      </rule>
+                                                                    </head>
+                                                                  </rule>
+                                                                </head>
+                                                              </rule>
+                                                            </head>
+                                                          </rule>
+                                                        </head>
+                                                      </rule>
+                                                    </head>
+                                                  </rule>
+                                                </head>
+                                              </rule>
+                                            </head>
+                                          </rule>
+                                        </head>
+                                      </rule>
+                                    </head>
+                                  </rule>
+                                  <rule entropy="-2.06088987277912E-05">
+                                    <operation>LessThan</operation>
+                                    <datum>0.605</datum>
+                                    <classification classColumn="0">3</classification>
+                                  </rule>
+                                </head>
+                              </rule>
+                              <rule entropy="-1.66456489724467E-05">
+                                <operation>LessThan</operation>
+                                <datum>0.61</datum>
+                                <classification classColumn="0">3</classification>
+                              </rule>
+                            </head>
+                          </rule>
+                        </head>
+                      </rule>
+                    </head>
+                  </rule>
+                  <rule entropy="-1.74863383144895E-05">
+                    <operation>LessThan</operation>
+                    <datum>0.565</datum>
+                    <classification classColumn="0">3</classification>
+                  </rule>
+                </head>
+              </rule>
+            </head>
+          </rule>
+        </head>
+      </rule>
+      <rule entropy="-5.1986411205239E-06">
+        <operation>LessThan</operation>
+        <datum>2.92</datum>
+        <classification classColumn="0">2</classification>
+      </rule>
+    </head>
+  </rule>
+  <rule entropy="-5.77049164378153E-06">
+    <operation>LessThan</operation>
+    <datum>0.59</datum>
+    <head>
+      <attribute column="11" type="Continuous" informationGain="0.228406189307551">Hue</attribute>
+      <rule entropy="-3.09133480916868E-05">
+        <operation>GreaterThanOrEqualTo</operation>
+        <datum>0.76</datum>
+        <head>
+          <attribute column="11" type="Continuous" informationGain="0.3167372084304">Hue</attribute>
+          <rule entropy="-4.80874303648461E-05">
+            <operation>GreaterThanOrEqualTo</operation>
+            <datum>0.925</datum>
+            <head>
+              <attribute column="12" type="Continuous" informationGain="-0.999855752132971">OD280/OD315 of diluted wines</attribute>
+              <rule entropy="0.999711489841877">
+                <operation>GreaterThanOrEqualTo</operation>
+                <datum>0.91</datum>
+                <head>
+                  <attribute column="13" type="Continuous" informationGain="-1.99956724197485">Proline</attribute>
+                  <rule entropy="0.999711489841877">
+                    <operation>GreaterThanOrEqualTo</operation>
+                    <datum>600</datum>
+                    <classification classColumn="0">3</classification>
+                  </rule>
+                  <rule entropy="0.999711489841877">
+                    <operation>LessThan</operation>
+                    <datum>600</datum>
+                    <classification classColumn="0">2</classification>
+                  </rule>
+                </head>
+              </rule>
+              <rule entropy="0.999711489841877">
+                <operation>LessThan</operation>
+                <datum>0.91</datum>
+                <classification classColumn="0">3</classification>
+              </rule>
+            </head>
+          </rule>
+          <rule entropy="-4.80874303648461E-05">
+            <operation>LessThan</operation>
+            <datum>0.925</datum>
+            <classification classColumn="0">3</classification>
+          </rule>
+        </head>
+      </rule>
+      <rule entropy="-3.09133480916868E-05">
+        <operation>LessThan</operation>
+        <datum>0.76</datum>
+        <classification classColumn="0">3</classification>
+      </rule>
+    </head>
+  </rule>
+</head>

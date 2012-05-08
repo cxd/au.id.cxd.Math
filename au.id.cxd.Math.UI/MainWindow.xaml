@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<cxd:MainWindow xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Data UI" Height="800" Width="600"
+        xmlns:cxd="clr-namespace:au.id.cxd.Math.UI;assembly=au.id.cxd.Math.UI">
+    <StackPanel>
+        <Menu AllowDrop="true" IsMainMenu="True">
+            <MenuItem Header="_File">
+                <MenuItem Header="_New"></MenuItem>
+                <MenuItem Header="_Open"></MenuItem>
+                <MenuItem Header="_Close"></MenuItem>
+                <MenuItem Header="Save _As"></MenuItem>
+                <MenuItem Header="_Save"></MenuItem>
+                <Separator></Separator>
+                <MenuItem Header="Exit" Command="ApplicationCommands.Close" Click="OnExit"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <DockPanel>
+            <StackPanel DockPanel.Dock="Left">
+
+            </StackPanel>
+            <StackPanel DockPanel.Dock="Right">
+
+            </StackPanel>
+        </DockPanel>
+        <StackPanel></StackPanel>
+    </StackPanel>
+</cxd:MainWindow>

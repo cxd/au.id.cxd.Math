@@ -1,0 +1,18 @@
+﻿namespace au.id.cxd.Math.UI
+
+open System
+open System.IO
+open System.Windows
+open System.Windows.Controls
+open System.Windows.Markup
+
+module Program = 
+
+    [<STAThread>]
+    [<EntryPoint>]
+    let main(_) =
+        let w = Application.LoadComponent(new System.Uri("/au.id.cxd.Math.UI;component/Window.xaml", UriKind.Relative)) :?> Window
+        (new Application()).Run(w)
+    
+
+

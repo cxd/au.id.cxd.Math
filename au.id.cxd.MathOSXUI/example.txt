@@ -1,0 +1,25 @@
+Info - 7:14:25 PM - /Library/Frameworks/Mono.framework/Versions/2.10.8/bin/dmcs "/out:/Users/cd/Projects/Mono/mono-monomac-3a2c2f6/samples/ImageKitDemoStep1/bin/Debug/ImageKitDemo.exe"
+"/r:/Library/Frameworks/Mono.framework/Versions/2.10.8/lib/mono/4.0/System.dll"
+"/r:/Library/Frameworks/Mono.framework/Versions/2.10.8/lib/mono/4.0/System.Xml.dll"
+"/r:/Library/Frameworks/Mono.framework/Versions/2.10.8/lib/mono/4.0/System.Core.dll"
+"/r:/Library/Frameworks/Mono.framework/Versions/2.10.8/lib/mono/4.0/System.Xml.Linq.dll"
+"/r:/Library/Frameworks/Mono.framework/Versions/2.10.8/lib/mono/4.0/System.Drawing.dll"
+"/r:/Applications/MonoDevelop.app/Contents/MacOS/lib/monodevelop/AddIns/MonoDevelop.MonoMac/MonoMac.dll"
+/nologo
+/warn:4
+/debug:+
+/debug:full
+/optimize-
+/codepage:utf8
+"/define:DEBUG"
+
+/t:exe
+"/Users/cd/Projects/Mono/mono-monomac-3a2c2f6/samples/ImageKitDemoStep1/MainWindow.cs"
+"/Users/cd/Projects/Mono/mono-monomac-3a2c2f6/samples/ImageKitDemoStep1/MainWindowController.cs"
+"/Users/cd/Projects/Mono/mono-monomac-3a2c2f6/samples/ImageKitDemoStep1/MainWindow.xib.designer.cs"
+"/Users/cd/Projects/Mono/mono-monomac-3a2c2f6/samples/ImageKitDemoStep1/Main.cs"
+"/Users/cd/Projects/Mono/mono-monomac-3a2c2f6/samples/ImageKitDemoStep1/AppDelegate.cs"
+"/Users/cd/Projects/Mono/mono-monomac-3a2c2f6/samples/ImageKitDemoStep1/MainMenu.xib.designer.cs"
+"/Users/cd/Projects/Mono/mono-monomac-3a2c2f6/samples/ImageKitDemoStep1/BrowseItem.cs"
+"/Users/cd/Projects/Mono/mono-monomac-3a2c2f6/samples/ImageKitDemoStep1/BrowseData.cs"
+"/Users/cd/Projects/Mono/mono-monomac-3a2c2f6/samples/ImageKitDemoStep1/DragDelegate.cs"
