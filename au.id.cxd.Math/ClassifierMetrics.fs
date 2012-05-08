@@ -42,7 +42,7 @@ module ClassifierMetrics =
         let prior_j_col = Vector.create len 0.0
         let prior_j = Matrix.foldByRow (fun n datum -> n + datum) prior_j_col probMatrix
         // P^(i,j)
-        let p_hat i j = prior_i_row.[i] * prior_j_col.[j]
+        let p_hat i j = prior_i.[i] * prior_j.[j]
         // calculate the kappa statistic
         // K = ( sum of P(k,k) - sum of P^(k,k) ) / ( 1 - sum of P^(k,k) )  
         let ksum = Matrix.foldi (fun i j sum datum -> 
@@ -55,8 +55,8 @@ module ClassifierMetrics =
                                        else sum) 0.0 probMatrix
         let kappa = (colsum - ksum) / (1.0 - ksum)         
         // calculate f-score
-        let p_t i = prior_i_row.[i]
-        let p_s j = prior_j_col.[j]
+        let p_t i = prior_i.[i]
+        let p_s j = prior_j.[j]
         let p i j = Matrix.get probMatrix i j
         // sum of P_t(k) * ( 2*P(k,k) / (P_t(k) + P_s(k)) )
         let score k = 
