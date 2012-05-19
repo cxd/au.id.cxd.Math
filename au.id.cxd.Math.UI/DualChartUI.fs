@@ -26,6 +26,7 @@ open au.id.cxd.Math.UI.ScatterChartUI
 open au.id.cxd.Math.UI.RankOrderPlotUI
 open au.id.cxd.Math.UI.ScatterLoessCurveUI
 open au.id.cxd.Math.Regression
+open au.id.cxd.Math.UI.CdfComparisonUI
 
 module DualChartUI =
 
@@ -35,28 +36,28 @@ module DualChartUI =
     let drawChartUI (appState:UIState) (parent:UIElement) =
         clear parent
         let addin = add parent
-        
+        let append n = n addin |> appendUI |> ignore
         // generate the data.
         let data = convertFromRawData appState.TrainPercent appState.ClassColumn.Column appState.Attributes appState.Data
         
         match appState.SelectedDualChart with
         | Scatter -> 
-            (drawScatterChart appState data) addin 
-            |> appendUI
-            |> ignore
+            (drawScatterChart appState data)
+            |> append
         | ScatterAndRegression -> 
-            (drawScatterRegressionChart "Regression Curve" straightline appState data) addin
-            |> appendUI
-            |> ignore
+            (drawScatterRegressionChart "Regression Curve" straightline appState data) 
+            |> append
         | ScatterAndLoessCurve -> 
             ()
         | LoessCurve -> ()
         | SingleLogarithm -> ()
         | DoubleLogarithm -> ()
         | RankOrderPlot ->
-            (drawRankOrderPlot appState data) addin
-            |> appendUI
-            |> ignore 
+            (drawRankOrderPlot appState data)
+            |> append 
+        | CdfComparisonPlot ->
+            (drawCdfCompareChart appState data)
+            |> append
 
 
     /// <summary>
@@ -148,7 +149,8 @@ module DualChartUI =
                                                                             LoessCurve;
                                                                             SingleLogarithm;
                                                                             DoubleLogarithm;
-                                                                            RankOrderPlot]
+                                                                            RankOrderPlot;
+                                                                            CdfComparisonPlot]
                                                             
                                                             List.iter (fun plot ->
                                                                         let item = new ComboBoxItem(Content = plotName plot)

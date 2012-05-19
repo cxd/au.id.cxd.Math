@@ -224,6 +224,9 @@ module ChartUI =
         | Continuous
         | NumericOrdinal -> 
             let histcnts = histogramCount attr data
+
+            let (x', y') = cdfFromHistogramCount attr data
+
             // plot an x y curve of volume for each point in the histogram.
             let len = List.length histcnts
             // y - the count of values within each low and high pair of the range.
@@ -236,17 +239,6 @@ module ChartUI =
             // the high value of each pair in the range
             let x = List.map(fun (n, (low, high)) -> high) histcnts |> List.toArray
             
-            
-            
-            // the CDF curve percent of the population.
-            let y' = Array.mapi (fun i n -> Array.fold (fun (index, total) k -> if (index <= i) then
-                                                                                     (index + 1, total + k)
-                                                                                else (index, total)) (0, 0.0) y 
-                                            |> snd 
-                                            |> (fun r -> 100.0 * (r / total))) y
-            
-            let x' = Array.mapi (fun i n -> Convert.ToDouble(i)) y'
-
             // the gaussian distribution.
             let gauss = gaussiandist attr data
 
@@ -290,7 +282,7 @@ module ChartUI =
                     [ 
                         [area, [ series1, SeriesData.XY (x, y2) ];
                          area, [ seriesgauss, SeriesData.XY(gaussX |> List.toArray, gauss |> List.toArray)];
-                         area, [cdfseries, SeriesData.XY (x, y')] ]
+                         area, [cdfseries, SeriesData.XY (x' |> List.toArray, y' |> List.toArray)] ]
                     ]
                  |> title  ( text attr.AttributeLabel >> arialR 14 >> color steelBlue )
 

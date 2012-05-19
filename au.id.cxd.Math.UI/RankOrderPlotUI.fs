@@ -144,7 +144,7 @@ module RankOrderPlotUI =
                                                 //[bar 1.0 |> border darkBlue 1
                                                 [line |> color darkBlue |> marker (circle >> color (alpha 70 blue)) |> text (String.Format("Percentage of {0}", attrB.AttributeLabel))
                                                     , SeriesData.SY(serieslabels, seriesvals) 
-                                                 line |> color red |> text "CDF Percent"
+                                                 line |> color red |> text (String.Format("CDF ({0}-{1})", attrB.Column, attrB.AttributeLabel))
                                                     , SeriesData.SY(serieslabels, cdfseriesvals)])
                             let winChart = new Charting.Chart()
                             MSChart.displayIn winChart chart

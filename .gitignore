@@ -1,2 +1,4 @@
 telstra_analysis
 bin
+obj
+*.suo

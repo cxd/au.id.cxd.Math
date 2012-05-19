@@ -15,6 +15,7 @@ module DualChartTypes =
             | SingleLogarithm
             | DoubleLogarithm
             | RankOrderPlot
+            | CdfComparisonPlot
 
     /// <summary>
     /// The name of the plot for the
@@ -29,4 +30,5 @@ module DualChartTypes =
         | SingleLogarithm -> "Single Logarithm"
         | DoubleLogarithm -> "Double Logarithm"
         | RankOrderPlot -> "Rank Order Plot"
+        | CdfComparisonPlot -> "Compare CDF Curves of Two Numeric Ranges" 
 

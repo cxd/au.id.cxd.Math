@@ -49,6 +49,7 @@
     <Compile Include="RankOrderPlotUI.fs" />
     <Compile Include="ScatterChartUI.fs" />
     <Compile Include="ScatterLoessCurveUI.fs" />
+    <Compile Include="CdfComparisonUI.fs" />
     <Compile Include="DualChartUI.fs" />
     <Compile Include="MathUIAttributeGrid.fs" />
     <Compile Include="MathUI.fs" />
