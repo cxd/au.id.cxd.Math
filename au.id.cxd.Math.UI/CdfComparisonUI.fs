@@ -23,6 +23,33 @@ open au.id.cxd.Math.MaybeBuilder
 open au.id.cxd.Math.UI.DualChartTypes
 
 module CdfComparisonUI =
+    
+
+    type CdfSeries = string * Color * float array * float array
+
+    /// <summary>
+    /// create a cdf chart for a given series of cdf pairs
+    /// this allows charts to be created for a collection of series instead of only two.
+    /// </summary>
+    let createCdfChart (cdfpairs:CdfSeries list) =
+        let axis = labels ( arialR 8 >> format "F1" ) >> grid ( solid lightSteelBlue 1 )
+                
+        let area = 
+            areaF |> axisX ( axis >> linear 1.0 ) 
+                    |> axisY ( axis >> linear 1.0 ) 
+                    |> backColor aliceBlue
+                    |> legend ( top >> near >> transparent >> arialR 8 )
+
+        let charts =
+            List.map (fun (label, col, (x:float array), (y:float array)) ->
+                        line |> color col |> text label, SeriesData.XY(x, y)) cdfpairs
+
+        let chart = single area charts
+                     
+        let winChart = new Charting.Chart()
+
+        MSChart.displayIn winChart chart   
+        winChart
 
     /// <summary>
     /// given the two attributes
@@ -89,12 +116,12 @@ module CdfComparisonUI =
 
                                 let chartLabel (att:Attribute) = String.Format("CDF({0}-{1})", att.Column, att.AttributeLabel)
 
-                                let chart = single area
-                                             [line |> color red |> text (chartLabel attrA), SeriesData.XY(ax |> List.toArray, ay |> List.toArray);
-                                              line |> color blue |> text (chartLabel attrB), SeriesData.XY(bx |> List.toArray, by |> List.toArray)]
-                                let winChart = new Charting.Chart()
+                                let series =
+                                    [(chartLabel attrA, red, ax |> List.toArray, ay |> List.toArray);
+                                     (chartLabel attrB, blue, bx |> List.toArray, by |> List.toArray)]
 
-                                MSChart.displayIn winChart chart              
+                                let winChart = createCdfChart series
+                                
                                 host.Child <- winChart
                                 let hostui = childui host 
                                                      (fun parent child -> 

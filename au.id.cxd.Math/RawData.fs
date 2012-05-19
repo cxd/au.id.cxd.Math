@@ -27,6 +27,15 @@ module RawData =
         { RawData = data; Columns = cols; Rows = data.Length; }
 
     /// <summary>
+    /// Read a csv file and convert it to a RawDataSet
+    /// </summary>
+    let readAndFilterFromCsv filterFn delimiter file = 
+        let data = Seq.map(fun (line:string) -> delimitedTokens delimiter line) (readFile file) |> filterFn |> Seq.toList
+        let cols = if (data.Length > 0) then List.length (List.head data)
+                   else 0
+        { RawData = data; Columns = cols; Rows = data.Length; }
+
+    /// <summary>
     /// Convert the raw data to a data set.
     /// </summary>
     let convertToDataSet (rawDS:RawDataSet) = 
