@@ -7,8 +7,6 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "au.id.cxd.Math", "au.id.cxd
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "au.id.cxd.Math.TestDecisionTree", "au.id.cxd.Math.TestDecisionTree\au.id.cxd.Math.TestDecisionTree.fsproj", "{17CC2BF0-38E9-4D40-93B1-DAC3DB86C52D}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TestTelstraDTree", "TestTelstraDTree\TestTelstraDTree.fsproj", "{4AD295A8-B90C-4362-BCD2-F5FC73C29605}"
-EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "au.id.cxd.Math.UI", "au.id.cxd.Math.UI\au.id.cxd.Math.UI.fsproj", "{F7D0118B-094D-4B76-B28D-EE4BF356E1D4}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "au.id.Math.UIBuilder", "au.id.Math.UIBuilder\au.id.Math.UIBuilder.fsproj", "{51521ED3-E37C-46D7-989C-95D8D5B0E659}"
@@ -20,6 +18,8 @@ EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "au.id.cxd.Text", "au.id.cxd.Text\au.id.cxd.Text.fsproj", "{87C2DB25-60D5-4876-A9F5-3273A1FE26D7}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TrainBigramModel", "TrainBigramModel\TrainBigramModel.fsproj", "{5DF9CACC-D390-4B05-ADA9-B1AE89136213}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TestTelstraDTree", "TestDTree\TestTelstraDTree.fsproj", "{4AD295A8-B90C-4362-BCD2-F5FC73C29605}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,16 +61,6 @@ Global
 		{17CC2BF0-38E9-4D40-93B1-DAC3DB86C52D}.Release|Mixed Platforms.Build.0 = Release|x86
 		{17CC2BF0-38E9-4D40-93B1-DAC3DB86C52D}.Release|x86.ActiveCfg = Release|x86
 		{17CC2BF0-38E9-4D40-93B1-DAC3DB86C52D}.Release|x86.Build.0 = Release|x86
-		{4AD295A8-B90C-4362-BCD2-F5FC73C29605}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{4AD295A8-B90C-4362-BCD2-F5FC73C29605}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{4AD295A8-B90C-4362-BCD2-F5FC73C29605}.Debug|Mixed Platforms.Build.0 = Debug|x86
-		{4AD295A8-B90C-4362-BCD2-F5FC73C29605}.Debug|x86.ActiveCfg = Debug|x86
-		{4AD295A8-B90C-4362-BCD2-F5FC73C29605}.Debug|x86.Build.0 = Debug|x86
-		{4AD295A8-B90C-4362-BCD2-F5FC73C29605}.Release|Any CPU.ActiveCfg = Release|x86
-		{4AD295A8-B90C-4362-BCD2-F5FC73C29605}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{4AD295A8-B90C-4362-BCD2-F5FC73C29605}.Release|Mixed Platforms.Build.0 = Release|x86
-		{4AD295A8-B90C-4362-BCD2-F5FC73C29605}.Release|x86.ActiveCfg = Release|x86
-		{4AD295A8-B90C-4362-BCD2-F5FC73C29605}.Release|x86.Build.0 = Release|x86
 		{F7D0118B-094D-4B76-B28D-EE4BF356E1D4}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{F7D0118B-094D-4B76-B28D-EE4BF356E1D4}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
 		{F7D0118B-094D-4B76-B28D-EE4BF356E1D4}.Debug|Mixed Platforms.Build.0 = Debug|x86
@@ -131,6 +121,16 @@ Global
 		{5DF9CACC-D390-4B05-ADA9-B1AE89136213}.Release|Mixed Platforms.Build.0 = Release|x86
 		{5DF9CACC-D390-4B05-ADA9-B1AE89136213}.Release|x86.ActiveCfg = Release|x86
 		{5DF9CACC-D390-4B05-ADA9-B1AE89136213}.Release|x86.Build.0 = Release|x86
+		{4AD295A8-B90C-4362-BCD2-F5FC73C29605}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{4AD295A8-B90C-4362-BCD2-F5FC73C29605}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{4AD295A8-B90C-4362-BCD2-F5FC73C29605}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{4AD295A8-B90C-4362-BCD2-F5FC73C29605}.Debug|x86.ActiveCfg = Debug|x86
+		{4AD295A8-B90C-4362-BCD2-F5FC73C29605}.Debug|x86.Build.0 = Debug|x86
+		{4AD295A8-B90C-4362-BCD2-F5FC73C29605}.Release|Any CPU.ActiveCfg = Release|x86
+		{4AD295A8-B90C-4362-BCD2-F5FC73C29605}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{4AD295A8-B90C-4362-BCD2-F5FC73C29605}.Release|Mixed Platforms.Build.0 = Release|x86
+		{4AD295A8-B90C-4362-BCD2-F5FC73C29605}.Release|x86.ActiveCfg = Release|x86
+		{4AD295A8-B90C-4362-BCD2-F5FC73C29605}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
