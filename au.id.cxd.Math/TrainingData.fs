@@ -319,8 +319,9 @@ module TrainingData =
     /// <summary>
     /// Convert the raw data to training data.
     /// </summary>
-    let convertFromRawData trainPartitionPercent classColumnIndex (attributes:AttributeList) (rawData:RawDataSet) =
-        let seqdata = List.toSeq rawData.RawData
+    let convertFromRawData trainPartitionPercent classColumnIndex (attributes:AttributeList) (rawData:RawDataSet) skipFirst =
+        let seqdata = if skipFirst then Seq.skip 1 rawData.RawData
+                      else rawData.RawData
         let sampleCount = rawData.Rows
         let percent = Convert.ToInt32(trainPartitionPercent * Convert.ToDouble(sampleCount))
         let trainData = Seq.take percent seqdata
@@ -334,9 +335,12 @@ module TrainingData =
                                                     (colState, n + 1)) (colState, 0) tokens )
                       ) (Array.map (fun item -> List.empty) (List.toArray attributes)) dataSeq
         
+        let train = (colState trainData |> Array.toList)
+        let test = (colState testData |> Array.toList)
+
         { ClassColumn = classColumnIndex;
-          TrainData = (attributes, List.mapi2 defineColumn attributes (colState trainData |> Array.toList)); 
-          TestData = (attributes, List.mapi2 defineColumn attributes (colState testData |> Array.toList)); }
+          TrainData = (attributes, List.mapi2 defineColumn attributes train); 
+          TestData = (attributes, List.mapi2 defineColumn attributes test); }
 
     /// <summary>
     /// The text for the corresponding attribute type.

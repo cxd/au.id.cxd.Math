@@ -29,6 +29,7 @@
                                    IgnoreColumns:int List;
                                    ReviewPair: DataPair;
                                    DualChart: DualChartName;
+                                   HeaderInData: bool;
                                    }
 
         /// <summary>
@@ -37,7 +38,24 @@
         let saveApplicationState (fname:string) appState =
             let writer = File.OpenWrite(fname)
             let serializer = new BinaryFormatter()
-            serializer.Serialize(writer, appState)
+            let data = appState.Data.RawData |> Seq.toList
+            let appState' = { 
+                            Activities = appState.Activities; 
+                            Data = {
+                                    RawData = null;
+                                    Columns = appState.Data.Columns;
+                                    Rows = appState.Data.Rows;
+                                   }; 
+                            Attributes = appState.Attributes;
+                            ClassColumn = appState.ClassColumn;
+                            TrainPercent = appState.TrainPercent;
+                            IgnoreColumns = appState.IgnoreColumns;
+                            ReviewPair = appState.ReviewPair;
+                            DualChart = appState.DualChart;
+                            HeaderInData = appState.HeaderInData;
+                            } 
+            serializer.Serialize(writer, appState')
+            serializer.Serialize(writer, data)
             writer.Flush()
             writer.Close()
 
@@ -47,9 +65,27 @@
         let readApplicationState file =
               let reader = File.OpenRead(file)
               let serializer = new BinaryFormatter()
-              let data = serializer.Deserialize(reader)
+              let readData = serializer.Deserialize(reader)
+              let appState = readData :?> UIApplicationState
+              let data = serializer.Deserialize(reader) :?> (string list list) |> List.toSeq
+              let appState' = { 
+                            Activities = appState.Activities; 
+                            Data = {
+                                    RawData = data;
+                                    Columns = appState.Data.Columns;
+                                    Rows = appState.Data.Rows;
+                                   }; 
+                            Attributes = appState.Attributes;
+                            ClassColumn = appState.ClassColumn;
+                            TrainPercent = appState.TrainPercent;
+                            IgnoreColumns = appState.IgnoreColumns;
+                            ReviewPair = appState.ReviewPair;
+                            DualChart = appState.DualChart;
+                            HeaderInData = appState.HeaderInData;
+                            } 
               reader.Close()
-              data :?> UIApplicationState
+              appState'
+             
           
 
         /// ui state instance
@@ -69,16 +105,43 @@
                                      IgnoreColumns = List.empty;
                                      ReviewPair = None;
                                      DualChart = Scatter;
+                                     HeaderInData = false;
                                    }
 
-            
+            let mutable processedData = { ClassColumn = -1;
+                                          TrainData = (List.empty, List.empty); 
+                                          TestData = (List.empty, List.empty); };
 
             /// <summary>
             /// The file resource associated with the ui.
             /// </summary>
             let mutable fileResource = System.String.Empty
 
-            
+            /// <summary>
+            /// a flag to determine whether the raw data has column headers
+            /// </summary>
+            member b.DataWithColumnHeaders 
+                    with get() = appState.HeaderInData
+                    and set(item) = appState <- { 
+                                    Activities = appState.Activities; 
+                                    Data = appState.Data; 
+                                    Attributes = appState.Attributes;
+                                    ClassColumn = appState.ClassColumn;
+                                    TrainPercent = appState.TrainPercent;
+                                    IgnoreColumns = appState.IgnoreColumns;
+                                    ReviewPair = appState.ReviewPair;
+                                    DualChart = appState.DualChart;
+                                    HeaderInData = item;
+                                    } 
+
+            member b.ProcessedData 
+                   with get() = processedData
+                   and set(d) = processedData <- d
+
+            member b.HasProcessedData 
+                   with get() =
+                    processedData.ClassColumn >= 0
+
             /// <summary>
             /// Save the application state to file.
             /// </summary>
@@ -130,6 +193,7 @@
                                                     IgnoreColumns = appState.IgnoreColumns;
                                                     ReviewPair = p;
                                                     DualChart = appState.DualChart;
+                                                    HeaderInData = appState.HeaderInData;
                                                     }
 
             /// <summary>
@@ -159,6 +223,7 @@
                                                      IgnoreColumns = appState.IgnoreColumns;
                                                      ReviewPair = appState.ReviewPair;
                                                      DualChart = appState.DualChart;
+                                                     HeaderInData = appState.HeaderInData;
                                                     }
         
             /// <summary>
@@ -173,6 +238,7 @@
                                                        IgnoreColumns = appState.IgnoreColumns;
                                                        ReviewPair = appState.ReviewPair;
                                                        DualChart = appState.DualChart;
+                                                       HeaderInData = appState.HeaderInData;
                                                     }
             /// <summary>
             /// Modify the app state data record.
@@ -187,6 +253,7 @@
                                                     IgnoreColumns = appState.IgnoreColumns;
                                                     ReviewPair = appState.ReviewPair;
                                                     DualChart = appState.DualChart;
+                                                    HeaderInData = appState.HeaderInData;
                                                     }
             
             /// <summary>
@@ -202,6 +269,7 @@
                                                     IgnoreColumns = appState.IgnoreColumns;
                                                     ReviewPair = appState.ReviewPair;
                                                     DualChart = appState.DualChart;
+                                                    HeaderInData = appState.HeaderInData;
                                                     }
 
             /// <summary>
@@ -216,6 +284,7 @@
                                                     IgnoreColumns = List.empty;
                                                     ReviewPair = appState.ReviewPair;
                                                     DualChart = appState.DualChart;
+                                                    HeaderInData = appState.HeaderInData;
                                                     }
 
             /// <summary>
@@ -230,6 +299,7 @@
                                                     IgnoreColumns = c :: appState.IgnoreColumns;
                                                     ReviewPair = appState.ReviewPair;
                                                     DualChart = appState.DualChart;
+                                                    HeaderInData = appState.HeaderInData;
                                                     }
 
             /// <summary>
@@ -244,6 +314,7 @@
                                                     IgnoreColumns = List.filter (fun a -> a <> c) appState.IgnoreColumns;
                                                     ReviewPair = appState.ReviewPair;
                                                     DualChart = appState.DualChart;
+                                                    HeaderInData = appState.HeaderInData;
                                                     }
 
             /// <summary>
@@ -270,6 +341,7 @@
                                                     IgnoreColumns = appState.IgnoreColumns;
                                                     ReviewPair = appState.ReviewPair;
                                                     DualChart = appState.DualChart;
+                                                    HeaderInData = appState.HeaderInData;
                                                     }
             /// <summary>
             /// Modify the class column.
@@ -283,6 +355,7 @@
                                                     IgnoreColumns = appState.IgnoreColumns;
                                                     ReviewPair = appState.ReviewPair;
                                                     DualChart = appState.DualChart;
+                                                    HeaderInData = appState.HeaderInData;
                                                     }
 
             /// <summary>
@@ -298,6 +371,7 @@
                                                     IgnoreColumns = appState.IgnoreColumns;
                                                     ReviewPair = appState.ReviewPair;
                                                     DualChart = appState.DualChart;
+                                                    HeaderInData = appState.HeaderInData;
                                                     }
 
             /// <summary>
@@ -313,4 +387,5 @@
                                                     IgnoreColumns = appState.IgnoreColumns;
                                                     ReviewPair = appState.ReviewPair;
                                                     DualChart = c;
+                                                    HeaderInData = appState.HeaderInData;
                                                     }

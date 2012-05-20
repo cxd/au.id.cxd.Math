@@ -38,8 +38,11 @@ module DualChartUI =
         let addin = add parent
         let append n = n addin |> appendUI |> ignore
         // generate the data.
-        let data = convertFromRawData appState.TrainPercent appState.ClassColumn.Column appState.Attributes appState.Data
-        
+        let data = if (not appState.HasProcessedData) then
+                        appState.ProcessedData <- convertFromRawData appState.TrainPercent appState.ClassColumn.Column appState.Attributes appState.Data appState.DataWithColumnHeaders
+                        appState.ProcessedData
+                   else appState.ProcessedData
+
         match appState.SelectedDualChart with
         | Scatter -> 
             (drawScatterChart appState data)

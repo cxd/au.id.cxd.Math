@@ -332,7 +332,10 @@ module ChartUI =
         descriptionFragment |> List.iter (fun block -> doc.Blocks.Add(block :?> Block) )
 
         
-        let data = convertFromRawData appState.TrainPercent appState.ClassColumn.Column appState.Attributes appState.Data
+        let data = if (not appState.HasProcessedData) then
+                        appState.ProcessedData <- convertFromRawData appState.TrainPercent appState.ClassColumn.Column appState.Attributes appState.Data appState.DataWithColumnHeaders
+                        appState.ProcessedData
+                   else appState.ProcessedData
         
         // process each attribute.
         List.iter(fun (attr:Attribute) -> 

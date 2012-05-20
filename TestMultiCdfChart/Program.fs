@@ -12,7 +12,9 @@ open au.id.cxd.Math.UI.CdfComparisonUI
 
 /// load the file.
 let loadData fileName = 
-        let data = readAndFilterFromCsv (Seq.skip 1) [|','|] fileName
+        let filter = (fun s -> s |> Seq.skip 1 |> Seq.filter (fun (item:string list) -> item.Length = 6))
+        let data = readAndFilterFromCsv filter [|','|] fileName
+        Console.WriteLine("Loaded Raw Data {0}", fileName)
         /// SessionId, SessionDurationMs, FromNode, ToNode, TransitionDuration, ConcurrentSessions
         let attributes = 
             [{ AttributeLabel = "Sessionid"; AttributeType = String; Column = 0; };
@@ -21,7 +23,7 @@ let loadData fileName =
              { AttributeLabel = "To"; AttributeType = String; Column = 3; };
              { AttributeLabel = "TransitionDurationMs"; AttributeType = Continuous; Column = 4};
              { AttributeLabel = "ConcurrentSessions"; AttributeType = Continuous; Column = 5};]
-        (fileName, convertFromRawData 100.0 0 attributes data)
+        (fileName, convertFromRawData 1.0 0 attributes data false)
 
 let makeCdf column label colour data =
     let attributes = attributesInTable data.TrainData
@@ -38,10 +40,11 @@ let loadFiles fileList =
                 loadData fileName) fileList
 
 let makeChart (form:Form) =
-    let files = [|@"C:\Users\cd\Projects\FSharp\au.id.cxd.Math\donotrelease-data\app_output\example1_output.csv";
-                  @"C:\Users\cd\Projects\FSharp\au.id.cxd.Math\donotrelease-data\app_output\example2_output.csv";
-                  @"C:\Users\cd\Projects\FSharp\au.id.cxd.Math\donotrelease-data\app_output\example3_output.csv";
-                  @"C:\Users\cd\Projects\FSharp\au.id.cxd.Math\donotrelease-data\app_output\prod1_output.csv";|]
+    let files = [|
+                  @"C:\Users\cd\Projects\FSharp\au.id.cxd.Math\donotrelease-data\app_output\example1_inlier_aa.csv";
+                  @"C:\Users\cd\Projects\FSharp\au.id.cxd.Math\donotrelease-data\app_output\example3_inlier_aa.csv";
+                  @"C:\Users\cd\Projects\FSharp\au.id.cxd.Math\donotrelease-data\app_output\prod1_inlier_aa.csv";
+                  |]
     Console.WriteLine("Loading Files")
     let dataSet = loadFiles files
     Console.WriteLine("Creating CDF Series")
@@ -61,8 +64,8 @@ let makeChart (form:Form) =
 
 let frm = new Form(ClientSize=Size(600,400))
 
-
-frm.Controls.Add(makeChart frm)
-frm.Update()
-
+let chart = makeChart frm
+chart.Dock <- DockStyle.Fill
+frm.Controls.Add(chart)
 frm.Show()
+Application.Run(frm)
