@@ -50,10 +50,10 @@
       <HintPath>..\..\..\..\..\..\Program Files\FSharp-2.0.0.0\v4.0\bin\FSharp.Core.dll</HintPath>
     </Reference>
     <Reference Include="FSharp.PowerPack">
-      <HintPath>..\lib\FSharp.PowerPack\gac\FSharp.PowerPack.dll</HintPath>
+      <HintPath>..\lib\FSharp.PowerPack\dn4\FSharp.PowerPack.dll</HintPath>
     </Reference>
     <Reference Include="FSharp.PowerPack.Compatibility">
-      <HintPath>..\lib\FSharp.PowerPack\gac\FSharp.PowerPack.Compatibility.dll</HintPath>
+      <HintPath>..\lib\FSharp.PowerPack\dn4\FSharp.PowerPack.Compatibility.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="System" />
@@ -67,6 +67,7 @@
       <Project>{87c2db25-60d5-4876-a9f5-3273a1fe26d7}</Project>
       <Private>True</Private>
     </ProjectReference>
+    <Reference Include="System.Numerics" />
   </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
 	     Other similar extension points exist, see Microsoft.Common.targets.

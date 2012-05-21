@@ -39,10 +39,10 @@
       <HintPath>..\..\..\..\..\..\Program Files\FSharp-2.0.0.0\v4.0\bin\FSharp.Core.dll</HintPath>
     </Reference>
     <Reference Include="FSharp.PowerPack">
-      <HintPath>..\lib\FSharp.PowerPack\gac\FSharp.PowerPack.dll</HintPath>
+      <HintPath>..\lib\FSharp.PowerPack\dn4\FSharp.PowerPack.dll</HintPath>
     </Reference>
     <Reference Include="FSharp.PowerPack.Compatibility">
-      <HintPath>..\lib\FSharp.PowerPack\gac\FSharp.PowerPack.Compatibility.dll</HintPath>
+      <HintPath>..\lib\FSharp.PowerPack\dn4\FSharp.PowerPack.Compatibility.dll</HintPath>
     </Reference>
     <Reference Include="MathProvider">
       <HintPath>..\lib\MathProvider.dll</HintPath>

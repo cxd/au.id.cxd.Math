@@ -49,10 +49,10 @@
       <Private>True</Private>
     </ProjectReference>
     <Reference Include="FSharp.PowerPack">
-      <HintPath>..\lib\FSharp.PowerPack\gac\FSharp.PowerPack.dll</HintPath>
+      <HintPath>..\lib\FSharp.PowerPack\dn4\FSharp.PowerPack.dll</HintPath>
     </Reference>
     <Reference Include="FSharp.PowerPack.Compatibility">
-      <HintPath>..\lib\FSharp.PowerPack\gac\FSharp.PowerPack.Compatibility.dll</HintPath>
+      <HintPath>..\lib\FSharp.PowerPack\dn4\FSharp.PowerPack.Compatibility.dll</HintPath>
     </Reference>
     <Reference Include="MathProvider">
       <HintPath>..\lib\MathProvider.dll</HintPath>
@@ -65,6 +65,7 @@
       <Project>{81916d72-d3ec-4d14-b18d-4c5a40988542}</Project>
       <Private>True</Private>
     </ProjectReference>
+    <Reference Include="System.Numerics" />
   </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
 	     Other similar extension points exist, see Microsoft.Common.targets.
