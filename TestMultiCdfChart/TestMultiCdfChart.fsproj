@@ -56,6 +56,12 @@
     <Reference Include="FSChart">
       <HintPath>..\lib\FSChart.dll</HintPath>
     </Reference>
+    <Reference Include="FSharp.PowerPack">
+      <HintPath>..\lib\FSharp.PowerPack\dn4\FSharp.PowerPack.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharp.PowerPack.Compatibility">
+      <HintPath>..\lib\FSharp.PowerPack\dn4\FSharp.PowerPack.Compatibility.dll</HintPath>
+    </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="FSharp.Core" />
     <Reference Include="MSDN.FSharp.Charting">
