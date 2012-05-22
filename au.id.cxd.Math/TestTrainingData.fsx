@@ -3,6 +3,7 @@
 #r @"C:\Program Files\FSharpPowerPack-2.0.0.0\\bin\FSharp.PowerPack.dll"
 #r @"C:\Program Files\FSharpPowerPack-2.0.0.0\\bin\FSharp.PowerPack.Compatibility.dll"
 
+#load "TestIO.fs"
 #load "TrainingData.fs"
 
 

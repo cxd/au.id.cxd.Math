@@ -52,6 +52,10 @@
     <Compile Include="TextIO.fs" />
     <Compile Include="RawData.fs" />
     <Compile Include="TrainingData.fs" />
+    <Compile Include="DataDescription.fs" />
+    <Compile Include="DataHistogram.fs" />
+    <Compile Include="DataProbabilities.fs" />
+    <Compile Include="DataDistance.fs" />
     <Compile Include="DataSummary.fs" />
     <Compile Include="MathProject.fs" />
     <Compile Include="Regression.fs" />

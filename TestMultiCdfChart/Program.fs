@@ -4,8 +4,13 @@ open System.IO
 open System.Windows.Forms
 open FSChart
 open FSChart.Builder
+
 open au.id.cxd.Math.RawData
 open au.id.cxd.Math.TrainingData
+open au.id.cxd.Math.DataDescription
+open au.id.cxd.Math.DataHistogram
+open au.id.cxd.Math.DataDistance
+
 open au.id.cxd.Math.UI.ChartUI
 open au.id.cxd.Math.UI.CdfComparisonUI
 

@@ -18,6 +18,12 @@ open System
 open System.IO
 open System.Runtime.Serialization.Formatters.Binary
 open au.id.cxd.Math.TrainingData
+open au.id.cxd.Math.DataDescription
+open au.id.cxd.Math.DataHistogram
+open au.id.cxd.Math.DataProbabilities
+
+
+
 
 module CartAlgorithm = 
 
