@@ -6,9 +6,15 @@ open System.Windows.Controls
 open System.Windows.Forms.Integration
 open System.IO.Packaging
 open Microsoft.Win32
+
 open au.id.cxd.Math.TextIO
 open au.id.cxd.Math.RawData
 open au.id.cxd.Math.TrainingData
+open au.id.cxd.Math.DataDescription
+open au.id.cxd.Math.DataHistogram
+open au.id.cxd.Math.DataDistance
+
+
 open au.id.cxd.Math.UIBuilder.MathUIBuilder
 open MathUIProject
 open StateM
