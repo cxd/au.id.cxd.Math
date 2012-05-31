@@ -322,7 +322,8 @@ module TrainingData =
     let convertFromRawData trainPartitionPercent classColumnIndex (attributes:AttributeList) (rawData:RawDataSet) skipFirst =
         let seqdata = if skipFirst then Seq.skip 1 rawData.RawData
                       else rawData.RawData
-        let sampleCount = rawData.Rows
+        let sampleCount = if skipFirst then rawData.Rows - 1
+                          else rawData.Rows
         let percent = Convert.ToInt32(trainPartitionPercent * Convert.ToDouble(sampleCount))
         let trainData = Seq.take percent seqdata
         let testData = Seq.skip percent seqdata
