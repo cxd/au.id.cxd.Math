@@ -10,6 +10,7 @@ module DualChartTypes =
     type DualChartName =
             | Scatter
             | ScatterAndRegression
+            | ScatterAndNonLinear
             | ScatterAndLoessCurve
             | LoessCurve
             | SingleLogarithm
@@ -25,6 +26,7 @@ module DualChartTypes =
         match plot with
         | Scatter -> "Scatter Plot"
         | ScatterAndRegression -> "Scatter and Linear Separator"
+        | ScatterAndNonLinear -> "Scatter and Non-Linear Separater"
         | ScatterAndLoessCurve -> "Scatter Loess Curve"
         | LoessCurve -> "Loess Curve"
         | SingleLogarithm -> "Single Logarithm"

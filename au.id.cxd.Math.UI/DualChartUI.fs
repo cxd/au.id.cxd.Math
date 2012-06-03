@@ -48,10 +48,14 @@ module DualChartUI =
             (drawScatterChart appState data)
             |> append
         | ScatterAndRegression -> 
-            (drawScatterRegressionChart "Regression Curve" straightline appState data) 
+            (drawScatterRegressionChart "Regression Curve" identity (straightline identity) appState data) 
+            |> append
+        | ScatterAndNonLinear ->
+            (drawScatterRegressionChart "NonLinear Regression Curve" (fun x -> x*x) (straightline (fun x -> x*x)) appState data) 
             |> append
         | ScatterAndLoessCurve -> 
-            ()
+            (drawScatterRegressionChart "Scatter and Loess Curve" identity (loess 0.25 5.0) appState data)
+            |> append
         | LoessCurve -> ()
         | SingleLogarithm -> ()
         | DoubleLogarithm -> ()
@@ -148,6 +152,7 @@ module DualChartUI =
 
                                                             let plots = [Scatter;
                                                                             ScatterAndRegression;
+                                                                            ScatterAndNonLinear;
                                                                             ScatterAndLoessCurve;
                                                                             LoessCurve;
                                                                             SingleLogarithm;

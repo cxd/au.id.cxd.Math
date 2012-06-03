@@ -29,7 +29,7 @@ module ScatterLoessCurveUI =
     /// <summary>
     /// Draw the scatter chart for the current application pair of review attributes.
     /// </summary>
-    let drawScatterRegressionChart curveName curveFn (appState:UIState) (data:LearningData) =
+    let drawScatterRegressionChart curveName xtransformFn curveFn (appState:UIState) (data:LearningData) =
         childui (new Grid()) 
                 (fun parent (child:UIElement) ->
 
@@ -56,7 +56,8 @@ module ScatterLoessCurveUI =
                                     | String -> stringAttributeToNumericKey attrA data.TrainData |> snd
                                     | Bool -> List.empty
                                     | NumericOrdinal
-                                    | Continuous -> columnFloatValues attrA data.TrainData
+                                    | Continuous -> columnFloatValues attrA data.TrainData 
+                                    |> List.map xtransformFn
                         
                         // determine the attribute type for columnB and normalise.
                         let dataB = match attrB.AttributeType with
@@ -66,6 +67,9 @@ module ScatterLoessCurveUI =
                                     | Continuous -> columnFloatValues attrB data.TrainData
 
                         let (x,y) = curveFn attrA attrB data.TrainData
+
+                        let pairs = List.zip dataA dataB |> List.sortBy (fun (x, y) -> x)
+                        let (dataA', dataB') = List.unzip pairs 
 
                         // generate the chart.
                         let host = new WindowsFormsHost()
@@ -80,7 +84,7 @@ module ScatterLoessCurveUI =
                                       |> title  ( text (String.Format("Scatter Plot of {0} and {1}", attrA.AttributeLabel, attrB.AttributeLabel)) >> arialR 14 >> color steelBlue )
                         let chart = single area 
                                      [scatter 
-                                      |> marker (circle >> color (alpha 70 blue) ), SeriesData.XY (dataA |> List.toArray, dataB |> List.toArray);
+                                      |> marker (circle >> color (alpha 70 blue) ), SeriesData.XY (dataA' |> List.toArray, dataB' |> List.toArray);
                                       line |> color red |> text curveName, SeriesData.XY(x |> List.toArray, y |> List.toArray)]
 
                         let winChart = new Charting.Chart()

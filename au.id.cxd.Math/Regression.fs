@@ -9,25 +9,34 @@ open DataSummary
 module Regression =
 
     /// <summary>
+    /// an identity function
+    /// </summary>
+    let identity x = x
+
+    /// <summary>
     /// Straight line regression.
     /// yi = a + Bx
     /// B = (sum(xy) - 1/N (sum x)(sum y)) / (sum(x^2) - 1/N(sum x)^2)
     /// a = 1/N (sum(y) - B(sum(x)))
+    ///
+    /// a transform function is provided to allow non-linear regression to be performed
+    /// where the domain of X is transformed. The default function is (fun x -> x)
     /// </summary>
-    let straightline (attrX:Attribute) (attrY:Attribute) (data:DataTable) =
+    let straightline (transformFn:float -> float) (attrX:Attribute) (attrY:Attribute) (data:DataTable) =
         let X = columnFloatValues attrX data
+        let X' = X |> List.map transformFn
         let Y = columnFloatValues attrY data
-        let S = List.zip X Y
+        let S = List.zip X' Y |> List.sortBy (fun (x,y) -> x)
         let N = Convert.ToDouble(List.length X)
-        let sumX = List.fold (+) 0.0 X
+        let sumX = List.fold (+) 0.0 X'
         let sumY = List.fold (+) 0.0 Y
         let sumXY = List.fold (+) 0.0 (List.map (fun (x,y) -> x*y) S)
         let sumXBysumY = sumX * sumY
-        let sumXsq = List.fold (+) 0.0 (List.map (fun x -> x**2.0) X)      
+        let sumXsq = List.fold (+) 0.0 (List.map (fun x -> x**2.0) X')      
         let B = (sumXY - (1.0/N)*sumXBysumY)/(sumXsq - (1.0/N)*sumX**2.0)
         let a = 1.0/N * (sumY - B*sumX)
         let estimate x = a + B*x
-        (X, List.map estimate X)
+        List.map (fun (x, y) -> (x, estimate x)) S |> List.unzip
 
     /// <summary>
     /// Perform loess logistic regression on the data attribute
@@ -43,7 +52,7 @@ module Regression =
     let loess alpha windowSize (attrX:Attribute) (attrY:Attribute) (data:DataTable) =
         let vals = columnFloatValues attrX data
         let yvals = columnFloatValues attrY data
-        let pairs = List.zip vals yvals
+        let pairs = List.zip vals yvals |> List.sortBy (fun (x,y) -> x)
         let h = windowSize/2.0
         let z xN xO = (xN - xO) / h
         let W zvec = 
