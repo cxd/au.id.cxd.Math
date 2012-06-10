@@ -11,7 +11,7 @@ all:
 	make -f ui.makefile;
 	@cd au.id.cxd.Math.OSX.UI;\
 	make -f mono.makefile;
-	cp -f lib/FSharp.PowerPack/osx/FSharp.PowerPack.dll build\
+	cp -f lib/FSharp.PowerPack/osx/FSharp.PowerPack.dll build;\
 	cp -f lib/FSharp.PowerPack/osx/FSharp.PowerPack.Compatibility.dll build
 ui:	
 	@cd au.id.cxd.MathOSXUI;\
