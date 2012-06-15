@@ -2,8 +2,11 @@
 source = TextIO.fs \
 RawData.fs \
 TrainingData.fs \
-MathProject.fs\
+DataDescription.fs \
+DataHistogram.fs \
+DataProbabilities.fs \
 DataSummary.fs \
+MathProject.fs\
 Regression.fs \
 CartAlgorithm.fs \
 DTreeLearn3.fs \
@@ -12,6 +15,7 @@ Graph.fs \
 Matrix.fs \
 MatrixDeterminant.fs \
 MatrixGaussElimination.fs \
+ClassifierMetrics.fs \
 Neuron.fs \
 MLPTrainer.fs \
 Scratch.fs \
