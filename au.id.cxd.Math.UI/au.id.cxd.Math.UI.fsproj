@@ -44,6 +44,7 @@
     <Compile Include="MainWindow.fs" />
     <Content Include="Example_loadXaml.txt" />
     <Resource Include="Application.xaml" />
+    <Compile Include="StringValueChartKey.fs" />
     <Compile Include="SingleValueBarChart.fs" />
     <Compile Include="ChartUI.fs" />
     <Compile Include="RankOrderPlotUI.fs" />

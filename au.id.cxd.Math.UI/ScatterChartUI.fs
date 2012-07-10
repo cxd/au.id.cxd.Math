@@ -21,6 +21,7 @@ open FSChart.Builder
 open ChartUI
 open au.id.cxd.Math.MaybeBuilder
 open au.id.cxd.Math.UI.DualChartTypes
+open au.id.cxd.Math.UI.StringValueChartKey
 
 module ScatterChartUI = 
 
@@ -35,6 +36,7 @@ module ScatterChartUI =
                 let addgrid = add gridBox
 
                 gridBox.ColumnDefinitions.Add(new ColumnDefinition())
+                gridBox.RowDefinitions.Add(new RowDefinition())
                 gridBox.RowDefinitions.Add(new RowDefinition())
                 gridBox.RowDefinitions.Add(new RowDefinition())
 
@@ -87,7 +89,7 @@ module ScatterChartUI =
                                                     Grid.SetColumn(child, 0)
                                                     Grid.SetRow(child, 1)
                                                     parent)
-
+                        
                         label addgrid 
                         |> 
                         (appendUI
@@ -95,6 +97,16 @@ module ScatterChartUI =
                         >> appendUI)
                         |> ignore
 
+                        match attrA.AttributeType with
+                        | String -> 
+                            let keygrid = gridKeyForStringValues appState attrA data (fun grid ->
+                                                                                          Grid.SetColumn(grid, 0)
+                                                                                          Grid.SetRow(grid, 2))
+                            keygrid addgrid |> appendUI |> ignore
+                            ()
+                        | _ -> ()
+                        |> ignore
+                        
                         return (attrA, attrB)}
 
                 parent)
