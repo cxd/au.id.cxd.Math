@@ -17,6 +17,11 @@ namespace au.id.cxd.Math
             let r = Array.length vals
             let c = Array.length vals.[0]
             Matrix.init r c (fun i j -> vals.[i].[j])
+        
+        /// convert a matrix 
+        static member InitFrom (mat:matrix) =
+            let (rows, cols) = mat.Dimensions
+            Matrix.init rows cols (fun i j -> Convert.ToDouble(mat.[i,j]))
 
         /// <summary>
         /// Create a submatrix from start row to num rows and start col to numcols
@@ -164,10 +169,10 @@ namespace au.id.cxd.Math
         
         
         static member Max (A:Matrix<float>) =
-            Seq.max (Matrix.to_vector A)
+            Seq.max (Matrix.toVector A)
         
         static member Min (A:Matrix<float>) =
-            Seq.min (Matrix.to_vector A)
+            Seq.min (Matrix.toVector A)
         
         static member ApplyToColumn (A:Matrix<float>) col fn =
             let colVector = Vector.map fn (A.Column col)

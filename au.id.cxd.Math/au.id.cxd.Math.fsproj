@@ -75,6 +75,7 @@
     <Compile Include="ClassifierMetrics.fs" />
     <Compile Include="Neuron.fs" />
     <Compile Include="MLPTrainer.fs" />
+    <Compile Include="Simplex.fs" />
     <Compile Include="Scratch.fs" />
     <Compile Include="DecisionTreeGraphMLSerializer.fs" />
     <Compile Include="MaybeBuilder.fs" />
@@ -84,6 +85,7 @@
     <None Include="TestTrainingData.fsx" />
     <None Include="ContinuationExample.fsx" />
     <None Include="TestDistance.fsx" />
+    <None Include="TestSimplex.fsx" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\FSharp\1.0\Microsoft.FSharp.Targets" Condition="!Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" Condition=" Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
