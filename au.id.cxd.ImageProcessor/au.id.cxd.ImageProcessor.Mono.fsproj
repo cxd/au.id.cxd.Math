@@ -5,39 +5,36 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{87c2db25-60d5-4876-a9f5-3273a1fe26d7}</ProjectGuid>
+    <ProjectGuid>{8d67cbcf-e50a-470e-87c1-cf8962ea1374}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>au.id.cxd.Text</RootNamespace>
-    <AssemblyName>au.id.cxd.Text</AssemblyName>
-    <Name>au.id.cxd.Text</Name>
+    <RootNamespace>au.id.cxd.ImageProcessor</RootNamespace>
+    <AssemblyName>au.id.cxd.ImageProcessor</AssemblyName>
+    <Name>au.id.cxd.ImageProcessor</Name>
     <UsePartialTypes>False</UsePartialTypes>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>False</Optimize>
-    <Tailcalls>False</Tailcalls>
-    <OutputPath>bin\Debug\</OutputPath>
+    <Tailcalls>True</Tailcalls>
+    <OutputPath>bin\mono\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
-    <DocumentationFile>bin\Debug\au.id.cxd.Text.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\au.id.cxd.ImageProcessor.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>True</Optimize>
     <Tailcalls>True</Tailcalls>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>bin\mono\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
-    <DocumentationFile>bin\Release\au.id.cxd.Text.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\au.id.cxd.ImageProcessor.XML</DocumentationFile>
     <OtherFlags>
     </OtherFlags>
     <DebugSymbols>False</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FSharp.Core">
-      <HintPath>..\..\..\..\..\..\Program Files\FSharp-2.0.0.0\v4.0\bin\FSharp.Core.dll</HintPath>
-    </Reference>
     <Reference Include="FSharp.PowerPack">
       <HintPath>..\lib\FSharp.PowerPack\dn4\FSharp.PowerPack.dll</HintPath>
     </Reference>
@@ -48,38 +45,26 @@
       <HintPath>..\lib\MathProvider.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib" />
-    <Reference Include="PorterStemmerAlgorithm">
-      <HintPath>..\lib\PorterStemmerAlgorithm.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Numerics" />
-    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="FSharp.Core">
+      <HintPath>..\..\..\..\..\..\..\..\Library\Frameworks\Mono.framework\Versions\Current\lib\mono\4.0\FSharp.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Script.fsx" />
-    <Compile Include="WordTokeniser.fs" />
-    <Compile Include="Edit1Counts.fs" />
-    <Compile Include="LevensteinDistance.fs" />
-    <Compile Include="DamerauLevensteinDistance.fs" />
-    <Compile Include="Tokens.fs" />
-    <Compile Include="LanguageModelUnigramLaplace.fs" />
-    <Compile Include="LanguageModelBigramLaplace.fs" />
-    <Compile Include="LanguageModelStupidBackoff.fs" />
-    <Compile Include="ModelSpellCheck.fs" />
-    <Compile Include="BigramLaplaceModelSpellCheck.fs" />
-    <Compile Include="NaiveBayesTextClassifier.fs" />
-    <None Include="count1edit.bin">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Test.fsx" />
-    <None Include="TestEdit.fsx" />
-    <None Include="TestTrainModel.fsx" />
-    <None Include="TestSpelling.fsx" />
-    <None Include="bigrammodel_test2.bin" />
+    <Compile Include="ImageProcessor.fs" />
+    <Compile Include="ResizeImage.fs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\FSharp\1.0\Microsoft.FSharp.Targets" Condition="!Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" Condition=" Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(ProjectDir)..\lib\lapack.dll" $(TargetDir)
+copy "$(ProjectDir)..\lib\blas.dll" $(TargetDir)
+</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
 	     Other similar extension points exist, see Microsoft.Common.targets.
 	<Target Name="BeforeBuild">
@@ -87,4 +72,10 @@
 	<Target Name="AfterBuild">
 	</Target>
 	-->
+  <ItemGroup>
+    <ProjectReference Include="..\au.id.cxd.Math\au.id.cxd.Math.Mono.fsproj">
+      <Project>{81916d72-d3ec-4d14-b18d-4c5a40988542}</Project>
+      <Name>au.id.cxd.Math.Mono</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

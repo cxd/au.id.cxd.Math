@@ -9,15 +9,14 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>TrainBigramModel</RootNamespace>
     <AssemblyName>TrainBigramModel</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <Name>TrainBigramModel</Name>
-    <TargetFrameworkProfile />
+    <UsePartialTypes>False</UsePartialTypes>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
-    <DebugSymbols>true</DebugSymbols>
+    <DebugSymbols>True</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <Tailcalls>false</Tailcalls>
+    <Optimize>False</Optimize>
+    <Tailcalls>False</Tailcalls>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
@@ -26,13 +25,14 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <Tailcalls>true</Tailcalls>
+    <Optimize>True</Optimize>
+    <Tailcalls>True</Tailcalls>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>x86</PlatformTarget>
     <DocumentationFile>bin\Release\TrainBigramModel.XML</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath32)\FSharp\1.0\Microsoft.FSharp.Targets" Condition="!Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" Condition=" Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
@@ -57,16 +57,6 @@
     </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="System" />
-    <ProjectReference Include="..\au.id.cxd.Math\au.id.cxd.Math.fsproj">
-      <Name>au.id.cxd.Math</Name>
-      <Project>{81916d72-d3ec-4d14-b18d-4c5a40988542}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\au.id.cxd.Text\au.id.cxd.Text.fsproj">
-      <Name>au.id.cxd.Text</Name>
-      <Project>{87c2db25-60d5-4876-a9f5-3273a1fe26d7}</Project>
-      <Private>True</Private>
-    </ProjectReference>
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

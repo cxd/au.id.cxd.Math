@@ -9,15 +9,14 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>TestMultiCdfChart</RootNamespace>
     <AssemblyName>TestMultiCdfChart</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <Name>TestMultiCdfChart</Name>
-    <TargetFrameworkProfile />
+    <UsePartialTypes>False</UsePartialTypes>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
-    <DebugSymbols>true</DebugSymbols>
+    <DebugSymbols>True</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <Tailcalls>false</Tailcalls>
+    <Optimize>False</Optimize>
+    <Tailcalls>False</Tailcalls>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
@@ -26,13 +25,14 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <Tailcalls>true</Tailcalls>
+    <Optimize>True</Optimize>
+    <Tailcalls>True</Tailcalls>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>x86</PlatformTarget>
     <DocumentationFile>bin\Release\TestMultiCdfChart.XML</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath32)\FSharp\1.0\Microsoft.FSharp.Targets" Condition="!Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" Condition=" Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
@@ -43,16 +43,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\au.id.cxd.Math.UI\au.id.cxd.Math.UI.fsproj">
-      <Name>au.id.cxd.Math.UI</Name>
-      <Project>{f7d0118b-094d-4b76-b28d-ee4bf356e1d4}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\au.id.Math.UIBuilder\au.id.Math.UIBuilder.fsproj">
-      <Name>au.id.Math.UIBuilder</Name>
-      <Project>{51521ed3-e37c-46d7-989c-95d8d5b0e659}</Project>
-      <Private>True</Private>
-    </ProjectReference>
     <Reference Include="FSChart">
       <HintPath>..\lib\FSChart.dll</HintPath>
     </Reference>
@@ -68,11 +58,6 @@
       <HintPath>..\lib\MSDN.FSharp.Charting.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <ProjectReference Include="..\au.id.cxd.Math\au.id.cxd.Math.fsproj">
-      <Name>au.id.cxd.Math</Name>
-      <Project>{81916d72-d3ec-4d14-b18d-4c5a40988542}</Project>
-      <Private>True</Private>
-    </ProjectReference>
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />

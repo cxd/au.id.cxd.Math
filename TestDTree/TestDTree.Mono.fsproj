@@ -5,34 +5,38 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{741d89e5-93b6-43b6-aeea-54f0f0b76b65}</ProjectGuid>
+    <ProjectGuid>{4ad295a8-b90c-4362-bcd2-f5fc73c29605}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TestMatrixOps</RootNamespace>
-    <AssemblyName>TestMatrixOps</AssemblyName>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
-    <Name>TestMatrixOps</Name>
+    <RootNamespace>TestTelstraDTree</RootNamespace>
+    <AssemblyName>TestTelstraDTree</AssemblyName>
+    <Name>TestTelstraDTree</Name>
     <UsePartialTypes>False</UsePartialTypes>
+    <BuildOrder>
+      <BuildOrder>
+        <String>Program.fs</String>
+      </BuildOrder>
+    </BuildOrder>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>True</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>False</Optimize>
     <Tailcalls>False</Tailcalls>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>bin\mono\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>x86</PlatformTarget>
-    <DocumentationFile>bin\Debug\TestMatrixOps.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\TestTelstraDTree.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>True</Optimize>
     <Tailcalls>True</Tailcalls>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>bin\mono\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>x86</PlatformTarget>
-    <DocumentationFile>bin\Release\TestMatrixOps.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\TestTelstraDTree.XML</DocumentationFile>
     <DebugSymbols>False</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
@@ -42,14 +46,24 @@
     <Reference Include="FSharp.PowerPack.Compatibility">
       <HintPath>..\lib\FSharp.PowerPack\dn4\FSharp.PowerPack.Compatibility.dll</HintPath>
     </Reference>
-    <Reference Include="FSharp.PowerPack.Linq">
-      <HintPath>..\lib\FSharp.PowerPack\dn4\FSharp.PowerPack.Linq.dll</HintPath>
+    <Reference Include="mscorlib">
+      <HintPath>..\..\..\..\..\..\..\..\Library\Frameworks\Mono.framework\Versions\Current\lib\mono\4.0\mscorlib.dll</HintPath>
     </Reference>
-    <Reference Include="mscorlib" />
-    <Reference Include="FSharp.Core" />
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Numerics" />
+    <Reference Include="org.graphdrawing.graphml">
+      <HintPath>..\lib\org.graphdrawing.graphml.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\..\Library\Frameworks\Mono.framework\Versions\Current\lib\mono\4.0\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>..\..\..\..\..\..\..\..\Library\Frameworks\Mono.framework\Versions\Current\lib\mono\4.0\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>..\..\..\..\..\..\..\..\Library\Frameworks\Mono.framework\Versions\Current\lib\mono\4.0\System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharp.Core">
+      <HintPath>..\..\..\..\..\..\..\..\Library\Frameworks\Mono.framework\Versions\Current\lib\mono\4.0\FSharp.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.fs" />
@@ -63,4 +77,10 @@
 	<Target Name="AfterBuild">
 	</Target>
 	-->
+  <ItemGroup>
+    <ProjectReference Include="..\au.id.cxd.Math\au.id.cxd.Math.Mono.fsproj">
+      <Project>{81916d72-d3ec-4d14-b18d-4c5a40988542}</Project>
+      <Name>au.id.cxd.Math.Mono</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

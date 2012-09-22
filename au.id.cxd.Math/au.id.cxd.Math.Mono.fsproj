@@ -5,78 +5,87 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{87c2db25-60d5-4876-a9f5-3273a1fe26d7}</ProjectGuid>
+    <ProjectGuid>{81916d72-d3ec-4d14-b18d-4c5a40988542}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>au.id.cxd.Text</RootNamespace>
-    <AssemblyName>au.id.cxd.Text</AssemblyName>
-    <Name>au.id.cxd.Text</Name>
+    <RootNamespace>au.id.cxd.Math</RootNamespace>
+    <AssemblyName>au.id.cxd.Math</AssemblyName>
+    <Name>au.id.cxd.Math</Name>
     <UsePartialTypes>False</UsePartialTypes>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>False</Optimize>
-    <Tailcalls>False</Tailcalls>
-    <OutputPath>bin\Debug\</OutputPath>
+    <Optimize>True</Optimize>
+    <Tailcalls>True</Tailcalls>
+    <OutputPath>bin\mono\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
-    <DocumentationFile>bin\Debug\au.id.cxd.Text.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\au.id.cxd.Math.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>True</Optimize>
     <Tailcalls>True</Tailcalls>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>bin\mono\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
-    <DocumentationFile>bin\Release\au.id.cxd.Text.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\au.id.cxd.Math.XML</DocumentationFile>
     <OtherFlags>
     </OtherFlags>
     <DebugSymbols>False</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FSharp.Core">
-      <HintPath>..\..\..\..\..\..\Program Files\FSharp-2.0.0.0\v4.0\bin\FSharp.Core.dll</HintPath>
-    </Reference>
     <Reference Include="FSharp.PowerPack">
       <HintPath>..\lib\FSharp.PowerPack\dn4\FSharp.PowerPack.dll</HintPath>
     </Reference>
     <Reference Include="FSharp.PowerPack.Compatibility">
       <HintPath>..\lib\FSharp.PowerPack\dn4\FSharp.PowerPack.Compatibility.dll</HintPath>
     </Reference>
-    <Reference Include="MathProvider">
-      <HintPath>..\lib\MathProvider.dll</HintPath>
-    </Reference>
     <Reference Include="mscorlib" />
-    <Reference Include="PorterStemmerAlgorithm">
-      <HintPath>..\lib\PorterStemmerAlgorithm.dll</HintPath>
+    <Reference Include="org.graphdrawing.graphml">
+      <HintPath>..\lib\org.graphdrawing.graphml.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Numerics" />
-    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="FSharp.Core">
+      <HintPath>..\..\..\..\..\..\..\..\Library\Frameworks\Mono.framework\Versions\Current\lib\mono\4.0\FSharp.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TextIO.fs" />
+    <Compile Include="RawData.fs" />
+    <Compile Include="TrainingData.fs" />
+    <Compile Include="DataDescription.fs" />
+    <Compile Include="DataHistogram.fs" />
+    <Compile Include="DataProbabilities.fs" />
+    <Compile Include="DataDistance.fs" />
+    <Compile Include="DataSummary.fs" />
+    <Compile Include="MathProject.fs" />
+    <Compile Include="Regression.fs" />
+    <Compile Include="CartAlgorithm.fs" />
+    <Compile Include="DTreeLearn3.fs" />
+    <Compile Include="DecisionTreeXmlSerializer.fs" />
+    <Compile Include="Graph.fs" />
+    <Compile Include="Matrix.fs" />
+    <Compile Include="MatrixDeterminant.fs" />
+    <Compile Include="MatrixGaussElimination.fs" />
+    <Compile Include="ClassifierMetrics.fs" />
+    <Compile Include="Neuron.fs" />
+    <Compile Include="MLPTrainer.fs" />
+    <Compile Include="Simplex.fs" />
+    <Compile Include="Scratch.fs" />
+    <Compile Include="DecisionTreeGraphMLSerializer.fs" />
+    <Compile Include="MaybeBuilder.fs" />
+    <None Include="TestMatrixOps.fsx" />
     <None Include="Script.fsx" />
-    <Compile Include="WordTokeniser.fs" />
-    <Compile Include="Edit1Counts.fs" />
-    <Compile Include="LevensteinDistance.fs" />
-    <Compile Include="DamerauLevensteinDistance.fs" />
-    <Compile Include="Tokens.fs" />
-    <Compile Include="LanguageModelUnigramLaplace.fs" />
-    <Compile Include="LanguageModelBigramLaplace.fs" />
-    <Compile Include="LanguageModelStupidBackoff.fs" />
-    <Compile Include="ModelSpellCheck.fs" />
-    <Compile Include="BigramLaplaceModelSpellCheck.fs" />
-    <Compile Include="NaiveBayesTextClassifier.fs" />
-    <None Include="count1edit.bin">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Test.fsx" />
-    <None Include="TestEdit.fsx" />
-    <None Include="TestTrainModel.fsx" />
-    <None Include="TestSpelling.fsx" />
-    <None Include="bigrammodel_test2.bin" />
+    <None Include="TestTrain.fsx" />
+    <None Include="TestTrainingData.fsx" />
+    <None Include="ContinuationExample.fsx" />
+    <None Include="TestDistance.fsx" />
+    <None Include="TestSimplex.fsx" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\FSharp\1.0\Microsoft.FSharp.Targets" Condition="!Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" Condition=" Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
