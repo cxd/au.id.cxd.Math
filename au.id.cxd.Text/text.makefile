@@ -8,7 +8,8 @@ LanguageModelUnigramLaplace.fs\
 LanguageModelBigramLaplace.fs\
 LanguageModelStupidBackoff.fs\
 ModelSpellCheck.fs\
-BigramLaplaceModelSpellCheck.fs
+BigramLaplaceModelSpellCheck.fs\
+NaiveBayesTextClassifier.fs
 
 	 
 # specify target file here.

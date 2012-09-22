@@ -12,32 +12,32 @@
     <AssemblyName>au.id.cxd.Math.OSX.UI</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
-    <DebugSymbols>true</DebugSymbols>
+    <DebugSymbols>True</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>False</Optimize>
     <OutputPath>bin\Debug</OutputPath>
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <PlatformTarget>x86</PlatformTarget>
-    <ConsolePause>false</ConsolePause>
-    <EnableCodeSigning>false</EnableCodeSigning>
-    <CreatePackage>false</CreatePackage>
-    <EnablePackageSigning>false</EnablePackageSigning>
-    <IncludeMonoRuntime>false</IncludeMonoRuntime>
+    <ConsolePause>False</ConsolePause>
+    <EnableCodeSigning>False</EnableCodeSigning>
+    <CreatePackage>False</CreatePackage>
+    <EnablePackageSigning>False</EnablePackageSigning>
+    <IncludeMonoRuntime>False</IncludeMonoRuntime>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <DebugType>none</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>False</Optimize>
     <OutputPath>bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <PlatformTarget>x86</PlatformTarget>
-    <ConsolePause>false</ConsolePause>
-    <EnableCodeSigning>false</EnableCodeSigning>
-    <CreatePackage>false</CreatePackage>
-    <EnablePackageSigning>false</EnablePackageSigning>
-    <IncludeMonoRuntime>false</IncludeMonoRuntime>
+    <ConsolePause>False</ConsolePause>
+    <EnableCodeSigning>False</EnableCodeSigning>
+    <CreatePackage>False</CreatePackage>
+    <EnablePackageSigning>False</EnablePackageSigning>
+    <IncludeMonoRuntime>False</IncludeMonoRuntime>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,9 +47,6 @@
     <Reference Include="System.Drawing" />
     <Reference Include="MonoMac">
       <HintPath>..\..\build\ui\MonoMac.dll</HintPath>
-    </Reference>
-    <Reference Include="au.id.cxd.MathOSXUI">
-      <HintPath>..\..\build\ui\au.id.cxd.MathOSXUI.dll</HintPath>
     </Reference>
     <Reference Include="FSharp.PowerPack.Compatibility">
       <HintPath>..\..\build\ui\FSharp.PowerPack.Compatibility.dll</HintPath>
@@ -63,8 +60,8 @@
     <Reference Include="org.graphdrawing.graphml">
       <HintPath>..\..\build\ui\org.graphdrawing.graphml.dll</HintPath>
     </Reference>
-    <Reference Include="au.id.cxd.Math">
-      <HintPath>..\..\build\au.id.cxd.Math.dll</HintPath>
+    <Reference Include="FSharp.Core">
+      <HintPath>..\..\..\..\..\..\..\..\..\Library\Frameworks\Mono.framework\Versions\Current\lib\mono\4.0\FSharp.Core.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -88,4 +85,14 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Mono\MonoMac\v0.0\Mono.MonoMac.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\..\au.id.cxd.Math\au.id.cxd.Math.Mono.fsproj">
+      <Project>{81916d72-d3ec-4d14-b18d-4c5a40988542}</Project>
+      <Name>au.id.cxd.Math.Mono</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\au.id.cxd.MathOSXUI\au.id.cxd.MathOSXUI.fsproj">
+      <Project>{CA7BF015-21D5-4EBB-B8EA-234BBA56AC85}</Project>
+      <Name>au.id.cxd.MathOSXUI</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

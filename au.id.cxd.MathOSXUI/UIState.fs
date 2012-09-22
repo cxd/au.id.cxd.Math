@@ -4,7 +4,6 @@ namespace au.id.cxd.MathOSXUI
 open System
 open System.IO
 open System.Runtime.Serialization.Formatters.Binary
-open System.Windows
 open au.id.cxd.Math.MathProject
 open au.id.cxd.Math.RawData
 open au.id.cxd.Math.TrainingData

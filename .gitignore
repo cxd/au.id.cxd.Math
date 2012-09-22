@@ -2,3 +2,5 @@ telstra_analysis
 bin
 obj
 *.suo
+/*.DS_Store
+/*.id.cxd.Math.Mono.userprefs
