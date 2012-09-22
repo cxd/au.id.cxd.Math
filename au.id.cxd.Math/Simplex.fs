@@ -39,6 +39,13 @@ open System
 /// </summary>
 module Simplex =
 
+    type SolutionState =
+         | Infeasible
+         | Optimal
+         | Unbounded
+         | Multiple
+         | Degenerate
+
     /// <summary>
     /// Maximize the objective function Cx
     /// With x decision variables
@@ -118,6 +125,48 @@ module Simplex =
             let min = Array.minBy ( fun (i, value) ->
                                         value) ratios
             fst min
+
+        /// A solution is unbounded if
+        /// there is a negative value in the indicator row
+        /// but all values in the corresponding columns are either
+        /// 0 or less than 0.
+        /// meaning no value can depart the basis
+        let isUnbounded (A:Matrix<float>) =
+            let (rows, cols) = A.Dimensions
+            // find the entering variable in the indicator row
+            let j = maxAbsIndex (A.Row (rows-1)).Transpose
+            // find the exiting variable via the b/candidate ratio
+            let c = (A.Column j).[0..(rows-2)]
+            not (Vector.forall(fun v -> v >= 0.0) c)
+
+        /// determine if the solution has multiple solutions.
+        /// firstly identify the basis variables
+        /// then determine whether the nonbasis variables have a 0
+        /// in the indicator row.
+        let hasMultiple (A:Matrix<float>) =
+            let (rows, cols) = A.Dimensions
+            let indicator = (A.Row (rows-1)).Transpose
+            let zeroes = Vector.toArray indicator 
+                         |> Array.mapi (fun i value -> (i, value))
+                         |> Array.filter (fun (i, v) -> v = 0.0)
+            // for each item that is 0 in the indicator row
+            // determine if it is a basic variable or a non-basic variable.
+            let (basis, nonbasis) =
+                Array.fold (fun (b,n) (i,v) ->
+                                let col = A.Column i
+                                // use absolute values to sum the column. 
+                                // if it is basic the sum will equal 1.0
+                                // otherwise for nonbasic > 1.0
+                                let sum = Vector.fold (fun cnt v -> cnt + Math.Abs(v)) 0.0 col
+                                if (sum > 1.0) then (b, (i,v)::n)
+                                else ((i,v)::b, n)
+                                ) ([], []) zeroes
+            printf "Basis variables"
+            printf "%A" basis
+            printf "NonBasic Variables"
+            printf "%A" nonbasis
+            // determine if the nonbasis set is empty
+            List.length nonbasis > 0
         
         // pivot the matrix for the pivot defined by i,j
         let pivot i j (A:Matrix<float>) =
@@ -159,34 +208,45 @@ module Simplex =
 
             let (rows, cols) = A.Dimensions
             if (isFeasible A && not (isOptimal A)) then
-                // find the entering variable in the indicator row
-                let j = maxAbsIndex (A.Row (rows-1)).Transpose
-                // find the exiting variable via the b/candidate ratio
-                let c' = (A.Column j).[0..(rows-2)]
-                let b' = (A.Column (cols-1)).[0..(rows-2)]
-                let i = findDepartingVariable c' b' (fun n -> n)
+                if (isUnbounded A) then
+                    (Unbounded, A)
+                else 
+                    // find the entering variable in the indicator row
+                    let j = maxAbsIndex (A.Row (rows-1)).Transpose
+                    // find the exiting variable via the b/candidate ratio
+                    let c' = (A.Column j).[0..(rows-2)]
+                    let b' = (A.Column (cols-1)).[0..(rows-2)]
+                    let i = findDepartingVariable c' b' (fun n -> n)
 
-                printf "Depart %O Enter %O\n" i j
-                // perform row operations and attempt to solve the resulting matrix.
-                solve (pivot i j A)
+                    printf "Depart %O Enter %O\n" i j
+                    // perform row operations and attempt to solve the resulting matrix.
+                    solve (pivot i j A)
             else if (isFeasible A && isOptimal A) then 
                 // the solution has been found at this stage.
-                (1, A)
+                // determine if the solution has multiple solutions.
+                if (hasMultiple A) then 
+                    (Multiple, A)
+                else
+                    (Optimal, A)
             else 
                 // need to process the tableau to search for convergence
                 // choose the exiting variable from the b column
-                let i = maxAbsIndex (A.Column (cols - 1))
+                let i = maxAbsIndex (A.Column (cols - 1)).[0..(rows-2)]
                 // then choose the entering variable from the 
                 // smallest negative ratio in the exiting row
-                let c' = (A.Row (rows-1)).Transpose
-                let b' = (A.Row i).Transpose
-                
+                let c' = (A.Row (rows-1)).Transpose.[0..(cols-2)]
+                let b' = (A.Row i).Transpose.[0..(cols-2)]
+
                 // firstly does it have a solution? Can it be solved?
                 // if not then return the current solution with error 
-                // (0,A)
                 if (not (Vector.exists (fun value -> value < 0.0) b') ) then
-                    (0, A) // not solvable.
+                    (Infeasible, A) // not solvable.
                 else 
+                    // we also need to check for degeneracy however
+                    // and if there is degeneracy we should still attempt further iterations
+                    // until we hit a threshold number of iterations.
+                    printf "test c' = %A" c'
+                    printf "test b' = %A" b'
                     // find the minimum ratio of the negative values.
                     let j = findDepartingVariable c' b' (fun n -> 
                                                             if (n >= 0.0) then
