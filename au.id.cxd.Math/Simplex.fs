@@ -120,8 +120,10 @@ module Simplex =
             let ratios = Vector.toArray b 
                         |> Array.mapi (fun i b' -> (i, Math.Abs(filterFn b' / c.[i])) )
             
+            (*
             printf "Ratios %A\n" ratios
-
+            *)
+            
             let min = Array.minBy ( fun (i, value) ->
                                         value) ratios
             fst min
@@ -161,35 +163,40 @@ module Simplex =
                                 if (sum > 1.0) then (b, (i,v)::n)
                                 else ((i,v)::b, n)
                                 ) ([], []) zeroes
+            (*
             printf "Basis variables"
             printf "%A" basis
             printf "NonBasic Variables"
             printf "%A" nonbasis
+            *)
             // determine if the nonbasis set is empty
             List.length nonbasis > 0
+            
+        
         
         // pivot the matrix for the pivot defined by i,j
         let pivot i j (A:Matrix<float>) =
             let (rows, cols) = A.Dimensions
             // firstly for row i col j divide the entire row by A[i,j]
             let p = A.[i,j]
-
+            (*
             printf "Pivot %O\n" p |> ignore
-
+            *)
             // first transform the pivot row
             // all other calculations are in relation to this row
             let A' = Matrix.mapi ( fun m n v ->
                                         if (m = i) then
                                             v / p
                                         else v) A
-                    
+            (*        
             printf "A' \n %A\n\n" A'
-            
+            *)
             // now pivot the other rows work out a multiplier for each of the rows and work out a value to add or subtract.
             let quantities = A'.[0..(rows-1), j..j]
 
+            (*
             printf "quantities \n %A\n\n" quantities
-            
+            *)
 
             Matrix.mapi( fun m n v ->
                              let quant = quantities.[m,0]
@@ -203,9 +210,11 @@ module Simplex =
 
         /// solve the LP problem
         let rec solve (A:Matrix<float>) =
+            (*
             printf "Solve\n" |> ignore
             printf "%A\n\n" A |> ignore
-
+            *)
+            
             let (rows, cols) = A.Dimensions
             if (isFeasible A && not (isOptimal A)) then
                 if (isUnbounded A) then
@@ -217,8 +226,9 @@ module Simplex =
                     let c' = (A.Column j).[0..(rows-2)]
                     let b' = (A.Column (cols-1)).[0..(rows-2)]
                     let i = findDepartingVariable c' b' (fun n -> n)
-
+                    (*
                     printf "Depart %O Enter %O\n" i j
+                    *)
                     // perform row operations and attempt to solve the resulting matrix.
                     solve (pivot i j A)
             else if (isFeasible A && isOptimal A) then 
@@ -245,8 +255,10 @@ module Simplex =
                     // we also need to check for degeneracy however
                     // and if there is degeneracy we should still attempt further iterations
                     // until we hit a threshold number of iterations.
+                    (*
                     printf "test c' = %A" c'
                     printf "test b' = %A" b'
+                    *)
                     // find the minimum ratio of the negative values.
                     let j = findDepartingVariable c' b' (fun n -> 
                                                             if (n >= 0.0) then
@@ -254,11 +266,70 @@ module Simplex =
                                                             else 
                                                                 n)
                     
+                    (*
                     printf "Depart2 %O Enter2 %O\n" i j
+                    *)
                     // then perform row operations and attempt to solve
                     solve (pivot i j A)
         // attempt to solve the LP
         solve A
 
+    /// select the resulting matrix inverse from the 
+    /// current solution.
+    /// the solution is in the format as output by the function "maximise"
+    /// that is the b and z-c columns exist in the matrix.
+    /// the inverse will be the matrix formed above the slack variables of the solution
+    let inverse xvars (A:Matrix<float>) =
+        let (rows, cols) = A.Dimensions
+        // ignore the columns below xvars
+        let offset = List.length xvars
+        // remove solution column and indicator row
+        // select the subset of the matrix
+        let I = (A.Columns(offset, (cols-offset-1))).Rows(0, (rows-1))
+        I
+    
+    /// extract the basic variables.
+    let extractBasis xvars (A:Matrix<float>) =
+        let (rows, cols) = A.Dimensions
+        let indicator = (A.Row (rows-1)).Transpose
+        let zeroes = Vector.toArray indicator 
+                     |> Array.mapi (fun i value -> (i, value))
+                     |> Array.filter (fun (i, v) -> v = 0.0)
+        // for each item that is 0 in the indicator row
+        // determine if it is a basic variable or a non-basic variable.
+        let (basis, nonbasis) =
+            Array.fold (fun (b,n) (i,v) ->
+                            let col = A.Column i
+                            // use absolute values to sum the column. 
+                            // if it is basic the sum will equal 1.0
+                            // otherwise for nonbasic > 1.0
+                            let sum = Vector.fold (fun cnt v -> cnt + Math.Abs(v)) 0.0 col
+                            if (sum > 1.0) then (b, (i,v)::n)
+                            else ((i,v)::b, n)
+                            ) ([], []) zeroes
+                            
+        
+        // now for each of the basis variables determine whether 
+        // the variable exists in the list of decision variables xvar
+        let varlen = (List.length xvars) - 1
+        let solution = A.Column (cols-1)
+        let valueOf i =
+            // value in solution
+            let col = A.Column(i)
+            let ind = Vector.foldi (fun i idx v -> 
+                                        if (v = 1.0) then i
+                                        else idx) 0 col
+            solution.[ind]
+            
+        let basisVars = List.map (fun (i,v) ->
+                                    if (i <= varlen) then
+                                        // label
+                                        let x = xvars.[i]
+                                        (x, i, valueOf i)
+                                    else 
+                                        let s = String.Format("s{0}", (i-varlen))
+                                        (s, i, valueOf i)  
+                                    ) basis
+        basisVars
+    
     ()
-
