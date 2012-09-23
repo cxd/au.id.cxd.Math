@@ -23,6 +23,8 @@ Project("{4925A630-B079-445d-BCD4-3A9C94FE9307}") = "TrainTextClassifier.Mono", 
 EndProject
 Project("{4925A630-B079-445d-BCD4-3A9C94FE9307}") = "au.id.cxd.MathOSXUI", "au.id.cxd.MathOSXUI\au.id.cxd.MathOSXUI.fsproj", "{CA7BF015-21D5-4EBB-B8EA-234BBA56AC85}"
 EndProject
+Project("{4925A630-B079-445d-BCD4-3A9C94FE9307}") = "TestSimplex.Mono", "TestSimplex.Mono\TestSimplex.Mono.fsproj", "{CDFB8E86-2744-4709-86BC-E7C3C13D71E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,18 @@ Global
 		{CA7BF015-21D5-4EBB-B8EA-234BBA56AC85}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{CA7BF015-21D5-4EBB-B8EA-234BBA56AC85}.Release|x86.ActiveCfg = Release|Any CPU
 		{CA7BF015-21D5-4EBB-B8EA-234BBA56AC85}.Release|x86.Build.0 = Release|Any CPU
+		{CDFB8E86-2744-4709-86BC-E7C3C13D71E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDFB8E86-2744-4709-86BC-E7C3C13D71E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDFB8E86-2744-4709-86BC-E7C3C13D71E1}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{CDFB8E86-2744-4709-86BC-E7C3C13D71E1}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{CDFB8E86-2744-4709-86BC-E7C3C13D71E1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CDFB8E86-2744-4709-86BC-E7C3C13D71E1}.Debug|x86.Build.0 = Debug|Any CPU
+		{CDFB8E86-2744-4709-86BC-E7C3C13D71E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDFB8E86-2744-4709-86BC-E7C3C13D71E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDFB8E86-2744-4709-86BC-E7C3C13D71E1}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{CDFB8E86-2744-4709-86BC-E7C3C13D71E1}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{CDFB8E86-2744-4709-86BC-E7C3C13D71E1}.Release|x86.ActiveCfg = Release|Any CPU
+		{CDFB8E86-2744-4709-86BC-E7C3C13D71E1}.Release|x86.Build.0 = Release|Any CPU
 		{fd866a54-3bf9-4529-b4ac-13032e7ddd0e}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{fd866a54-3bf9-4529-b4ac-13032e7ddd0e}.Debug|Any CPU.Build.0 = Debug|x86
 		{fd866a54-3bf9-4529-b4ac-13032e7ddd0e}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
@@ -167,7 +181,7 @@ Global
 		{fd866a54-3bf9-4529-b4ac-13032e7ddd0e}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = au.id.cxd.ImageProcessor\au.id.cxd.ImageProcessor.Mono.fsproj
+		StartupItem = TestSimplex.Mono\TestSimplex.Mono.fsproj
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
