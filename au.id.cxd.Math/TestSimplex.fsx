@@ -1,5 +1,5 @@
 ﻿
-#r "FSharp.PowerPack.dll"
+#r "FSharp.PowerPack/osx/FSharp.PowerPack.dll"
 #r "FSharp.PowerPack.Compatibility.dll"
 
 
