@@ -2,6 +2,15 @@ module Program
 
 open au.id.cxd.Math.Simplex
 
+let reportBasis (varname, idx, sol) =
+    printf "%s = %A\n" varname sol
+
+let report xvars flag (A:Matrix<float>) =
+    printf "Solution: \n%A\n%A\n" flag A
+    List.iter reportBasis (extractBasis xvars A)
+    let (rows, cols) = A.Dimensions
+    printf "Max z = %f" (A.[rows-1,cols-1])
+
 (*
 max z = 0.6x1 + 0.8x2
 s.t.
@@ -17,6 +26,8 @@ let b1 = vector [ 60.0; 40.0 ]
 
 let (flag1, A1) = maximise xvars1 c1 a1 b1
 let pass1 = flag1 = Optimal
+
+report xvars1 flag1 A1
 
 printf "\n\n==========================================\n\n"
 
@@ -36,6 +47,9 @@ let a2 = matrix [ [3.0;1.0];
 let b2 = vector [6.0; 8.0]
 let (flag2, A2) = maximise xvars2 c2 a2 b2
 let pass2 = flag2 = Optimal
+
+
+report xvars2 flag2 A2
 
 printf "\n\n==========================================\n\n"
 
@@ -59,6 +73,8 @@ let (flag3, A3) = maximise xvars3 c3 a3 b3
 // we expect flag3 to equal Infeasible
 let pass3 = flag3 = Infeasible
 
+report xvars3 flag3 A3
+
 printf "\n\n==========================================\n\n"
 
 (*
@@ -78,6 +94,8 @@ let b4 = vector [ 3.0; -2.0 ]
 let (flag4, A4) = maximise xvars4 c4 a4 b4
 // we expect flag3 to equal Infeasible
 let pass4 = flag4 = Unbounded
+
+report xvars4 flag4 A4
 
 printf "\n\n==========================================\n\n"
 
@@ -102,5 +120,32 @@ let (flag5, A5) = maximise xvars5 c5 a5 b5
 // we expect flag5 to equal Multiple
 let pass5 = flag5 = Multiple
 
+report xvars5 flag5 A5
+
+let I5 = inverse xvars5 A5
+printf "\ninverse\n%A\n" I5
+
 printf "\n\n==========================================\n\n"
 
+// example from winston
+(*
+max z = 500x1 + 6x2 + 10x3 + 8x4
+st
+400x1 + 3x2 + 2x3 + 2x4 <= 50.0
+200x1 + 2x2 + 2x3 + 4x4 <= 20
+150x1 + 4x3 + x4 <= 30
+500x1 + 4x3 + 5x4 <= 80
+x1,x2,x3,x4 >= 0
+*)
+let xvars6 = ["x1"; "x2"; "x3"; "x4"]
+let c6 = vector [500.0; 6.0; 10.0; 8.0]
+let a6 =  matrix [ [400.0; 3.0; 2.0; 2.0 ];
+                   [200.0; 2.0; 2.0; 4.0 ];
+                   [150.0; 0.0; 4.0; 1.0 ];
+                   [500.0; 0.0; 4.0; 5.0]]
+let b6 = vector [50.0; 20.0; 30.0; 80.0 ]
+let (flag6, A6) = maximise xvars6 c6 a6 b6
+// we expect flag5 to equal Multiple
+let pass6 = flag6 = Optimal
+
+report xvars6 flag6 A6
