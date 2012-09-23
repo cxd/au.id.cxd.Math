@@ -39,22 +39,49 @@ open System
 /// </summary>
 module Simplex =
 
+    // a description of the solution
     type SolutionState =
          | Infeasible
          | Optimal
          | Unbounded
          | Multiple
          | Degenerate
-
-    /// <summary>
-    /// Maximize the objective function Cx
+         
+    // describe the resource status within the solution.
+    type ResourceState =
+        | Scarce
+        | Abundant
+    
+    /// extract the non-basic variables.
+    /// and describe their status.
+    let filterBasis xvars (A:Matrix<float>) filterFn =
+        let (rows, cols) = A.Dimensions
+        let indicator = ( (A.Row (rows-1)).[0..(cols-2)] ).Transpose
+        let zeroes = Vector.toArray indicator 
+                     |> Array.mapi (fun i value -> (i, value))
+                     |> Array.filter filterFn
+        // for each item that is 0 in the indicator row
+        // determine if it is a basic variable or a non-basic variable.
+        let (basis, nonbasis) =
+            Array.fold (fun (b,n) (i,v) ->
+                            let col = A.Column i
+                            // use absolute values to sum the column. 
+                            // if it is basic the sum will equal 1.0
+                            // otherwise for nonbasic > 1.0
+                            let sum = Vector.fold (fun cnt v -> cnt + Math.Abs(v)) 0.0 col
+                            if (sum > 1.0) then (b, (i,v)::n)
+                            else if (v = 0.0 && sum = 1.0) then ((i,v)::b, n)
+                            else (b, (i,v)::n)
+                            ) ([], []) zeroes
+        (basis, nonbasis)
+        
+    /// Create the LP tableau.
     /// With x decision variables
     /// C objective function coefficients
     /// A constraint matrix of coefficients
     /// b solution vector.
     ///
-    /// </summary>
-    let maximise xvars (C:Vector<float>) (a:Matrix<float>) (b:Vector<float>) = 
+    let buildLP xvars (C:Vector<float>) (a:Matrix<float>) (b:Vector<float>) = 
         // concat A and S
         let rows = fst a.Dimensions
                 
@@ -94,6 +121,17 @@ module Simplex =
                                                         A''.[i,j]
                                                     else
                                                         ind.[0,j])
+        A
+    /// <summary>
+    /// Maximize the objective function Cx
+    /// With x decision variables
+    /// C objective function coefficients
+    /// A constraint matrix of coefficients
+    /// b solution vector.
+    ///
+    /// </summary>
+    let maximise xvars (C:Vector<float>) (a:Matrix<float>) (b:Vector<float>) = 
+        let A = buildLP xvars C a b
         // check that no values in the solution column are negative.
         let isFeasible (A:Matrix<float>) =
             let (rows, cols) = A.Dimensions
@@ -104,7 +142,8 @@ module Simplex =
         let isOptimal (A:Matrix<float>) =
             let (rows, cols) = A.Dimensions
             let zc = A.Row (rows - 1)
-            let zc' = zc.[0..cols - 1] |> RowVector.transpose
+            // ignore the z value.
+            let zc' = zc.[0..cols - 2] |> RowVector.transpose
             not (Vector.exists (fun value -> value < 0.0) zc')
 
         // find the index of the max absolute value
@@ -153,16 +192,7 @@ module Simplex =
                          |> Array.filter (fun (i, v) -> v = 0.0)
             // for each item that is 0 in the indicator row
             // determine if it is a basic variable or a non-basic variable.
-            let (basis, nonbasis) =
-                Array.fold (fun (b,n) (i,v) ->
-                                let col = A.Column i
-                                // use absolute values to sum the column. 
-                                // if it is basic the sum will equal 1.0
-                                // otherwise for nonbasic > 1.0
-                                let sum = Vector.fold (fun cnt v -> cnt + Math.Abs(v)) 0.0 col
-                                if (sum > 1.0) then (b, (i,v)::n)
-                                else ((i,v)::b, n)
-                                ) ([], []) zeroes
+            let (basis, nonbasis) = filterBasis xvars A (fun (i,v) -> v = 0.0)
             (*
             printf "Basis variables"
             printf "%A" basis
@@ -172,7 +202,6 @@ module Simplex =
             // determine if the nonbasis set is empty
             List.length nonbasis > 0
             
-        
         
         // pivot the matrix for the pivot defined by i,j
         let pivot i j (A:Matrix<float>) =
@@ -207,9 +236,15 @@ module Simplex =
                                 //printf "q = %O b = %O\n" quant b
                                 v - (quant * b)
                              ) A'
+                             
+        // an arbitrarily large number
+        // this is used to detect cycling around the same point.
+        // if cycling around the point occurs more than this number
+        // then we exit the search
+        let MAX_CYCLES = 5000;
 
         /// solve the LP problem
-        let rec solve (A:Matrix<float>) =
+        let rec solve (A:Matrix<float>) (depart, enter) cycle_cnt =
             (*
             printf "Solve\n" |> ignore
             printf "%A\n\n" A |> ignore
@@ -218,6 +253,7 @@ module Simplex =
             let (rows, cols) = A.Dimensions
             if (isFeasible A && not (isOptimal A)) then
                 if (isUnbounded A) then
+                    // if the problem is unbounded the solution will increase arbitrarily.
                     (Unbounded, A)
                 else 
                     // find the entering variable in the indicator row
@@ -226,11 +262,20 @@ module Simplex =
                     let c' = (A.Column j).[0..(rows-2)]
                     let b' = (A.Column (cols-1)).[0..(rows-2)]
                     let i = findDepartingVariable c' b' (fun n -> n)
+                    
                     (*
                     printf "Depart %O Enter %O\n" i j
                     *)
                     // perform row operations and attempt to solve the resulting matrix.
-                    solve (pivot i j A)
+                    // is the departing variable the same as the last entering variable
+                    if (j = enter && cycle_cnt < MAX_CYCLES) then
+                        solve (pivot i j A) (i,j) (cycle_cnt+1)
+                    else if (j = enter) then
+                        printf "Degenerate %A\n" A
+                        (Degenerate, A)
+                    else
+                        solve (pivot i j A) (i,j) cycle_cnt
+                    
             else if (isFeasible A && isOptimal A) then 
                 // the solution has been found at this stage.
                 // determine if the solution has multiple solutions.
@@ -265,14 +310,62 @@ module Simplex =
                                                                 Double.MaxValue
                                                             else 
                                                                 n)
-                    
                     (*
-                    printf "Depart2 %O Enter2 %O\n" i j
+                    printf "LastDepart %O LastEnter %O\n" depart enter
+                    printf "Depart2 %O Enter2 %O\n" j i
                     *)
-                    // then perform row operations and attempt to solve
-                    solve (pivot i j A)
+                    // perform row operations and attempt to solve the resulting matrix.
+                    // is the departing variable the same as the entering variable.
+                    if (i = enter && cycle_cnt < MAX_CYCLES) then
+                        solve (pivot i j A) (j,i) (cycle_cnt+1)
+                    else if (i = enter) then
+                        (Degenerate, A)
+                    else
+                        solve (pivot i j A) (j,i) cycle_cnt
         // attempt to solve the LP
-        solve A
+        solve A (0,0) 0
+        
+    /// xvars - the set of variables.
+    /// C objective function coefficients
+    /// A constraint matrix of coefficients
+    /// b solution vector.
+    ///
+    /// the primal :
+    /// max z = transpose(C)x
+    /// st
+    /// Ax <= b
+    /// 
+    /// the dual:
+    /// min g = transpose(b)y
+    /// st
+    /// transpose(A)y >= C
+    ///
+    let makeDual xvars (C:Vector<float>) (a:Matrix<float>) (b:Vector<float>) =
+        let yvars = Vector.toArray b 
+                    |> Array.mapi (fun i v -> String.Format("y{0}",(i+1)))
+                    |> Array.toList
+        let a' = a.Transpose
+        // we have the minimisation problem.
+        // return the components that can be supplied to the maximise fn
+        (yvars, b, a', C)
+
+    /// convert the dual problem into a maximisation problem
+    /// return it
+    let makeDualAsMax xvars (C:Vector<float>) (a:Matrix<float>) (b:Vector<float>) =
+        let yvars = Vector.toArray b 
+                    |> Array.mapi (fun i v -> String.Format("y{0}",(i+1)))
+                    |> Array.toList
+        let a' = a.Transpose
+        // we have the minimisation problem.
+        // now we need to convert this to a maximisation problem.
+        // multiply by -1
+        let b' = -1.0 * b
+        // similar convert the coefficients of the a' by multiply by -1.0
+        let a'' = -1.0 * a'
+        // also for the C vector (solution vector of dual) mult by -1.0
+        let c' = -1.0 * C
+        // return the components that can be supplied to the maximise fn
+        (yvars, b', a'', c')
 
     /// select the resulting matrix inverse from the 
     /// current solution.
@@ -292,22 +385,9 @@ module Simplex =
     let extractBasis xvars (A:Matrix<float>) =
         let (rows, cols) = A.Dimensions
         let indicator = (A.Row (rows-1)).Transpose
-        let zeroes = Vector.toArray indicator 
-                     |> Array.mapi (fun i value -> (i, value))
-                     |> Array.filter (fun (i, v) -> v = 0.0)
         // for each item that is 0 in the indicator row
         // determine if it is a basic variable or a non-basic variable.
-        let (basis, nonbasis) =
-            Array.fold (fun (b,n) (i,v) ->
-                            let col = A.Column i
-                            // use absolute values to sum the column. 
-                            // if it is basic the sum will equal 1.0
-                            // otherwise for nonbasic > 1.0
-                            let sum = Vector.fold (fun cnt v -> cnt + Math.Abs(v)) 0.0 col
-                            if (sum > 1.0) then (b, (i,v)::n)
-                            else ((i,v)::b, n)
-                            ) ([], []) zeroes
-                            
+        let (basis, nonbasis) = filterBasis xvars A (fun (i,v) -> v = 0.0)
         
         // now for each of the basis variables determine whether 
         // the variable exists in the list of decision variables xvar
@@ -331,5 +411,33 @@ module Simplex =
                                         (s, i, valueOf i)  
                                     ) basis
         basisVars
+        
+        
+    /// extract the non-basic variables.
+    /// and describe their status.
+    let extractNonBasis xvars (A:Matrix<float>) =
+        let (rows, cols) = A.Dimensions
+        let indicator = (A.Row (rows-1)).Transpose
+        // for each item that is 0 in the indicator row
+        // determine if it is a basic variable or a non-basic variable.
+        let (basis, nonbasis) = filterBasis xvars A (fun (i,v) -> true)
+        // now for each of the basis variables determine whether 
+        // the variable exists in the list of decision variables xvar
+        let varlen = (List.length xvars) - 1
+        let solution = A.Column (cols-1)
+        
+        let status v = match v > 0.0 with
+                       | true -> Abundant
+                       | _ -> Scarce    
+        let nonbasisVars = List.map (fun (i,v) ->
+                                    if (i <= varlen) then
+                                        // label
+                                        let x = xvars.[i]
+                                        (x, i, v, status v)
+                                    else 
+                                        let s = String.Format("s{0}", (i-varlen))
+                                        (s, i, v, status v)  
+                                    ) nonbasis
+        nonbasisVars
     
     ()

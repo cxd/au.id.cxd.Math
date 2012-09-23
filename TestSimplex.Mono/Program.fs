@@ -4,10 +4,14 @@ open au.id.cxd.Math.Simplex
 
 let reportBasis (varname, idx, sol) =
     printf "%s = %A\n" varname sol
+    
+let reportNonBasis (varname, idx, sol, status) =
+    printf "%s = %A, %A\n" varname sol status
 
 let report xvars flag (A:Matrix<float>) =
     printf "Solution: \n%A\n%A\n" flag A
     List.iter reportBasis (extractBasis xvars A)
+    List.iter reportNonBasis (extractNonBasis xvars A)
     let (rows, cols) = A.Dimensions
     printf "Max z = %f" (A.[rows-1,cols-1])
 
@@ -136,6 +140,9 @@ st
 150x1 + 4x3 + x4 <= 30
 500x1 + 4x3 + 5x4 <= 80
 x1,x2,x3,x4 >= 0
+
+we need to convert this problem to the dual problem
+as it is an unbounded problem (ie the z value could maximise arbitrarily)
 *)
 let xvars6 = ["x1"; "x2"; "x3"; "x4"]
 let c6 = vector [500.0; 6.0; 10.0; 8.0]
@@ -149,3 +156,11 @@ let (flag6, A6) = maximise xvars6 c6 a6 b6
 let pass6 = flag6 = Optimal
 
 report xvars6 flag6 A6
+
+let (yvars7, c7, a7, b7) = makeDualAsMax xvars6 c6 a6 b6
+let lp = buildLP yvars7 c7 a7 b7
+printf "\ndual\n%A\n" lp
+let (flag7, A7) = maximise yvars7 c7 a7 b7
+report yvars7 flag7 A7
+// another example this one is taken from the IP problem.
+// however in this test it is for the relaxed IP only.
