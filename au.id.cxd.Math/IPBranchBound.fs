@@ -109,22 +109,22 @@ module IPBranchBound =
     /// </param>
     /// </summary>
     let maximiseIP ipvars xvars (C:Vector<float>) (a:Matrix<float>) (b:Vector<float>) =
-        let ipsolution = 
-         { Status = Start;
-           Solution = matrix [];
-           MaxZ = 0.0;
-           XVars = xvars;
-           IPVars = ipvars;
-           SplitVar = String.Empty;
-           Op = None;
-           Problem = (C,a,b)
-          }
+        
         /// recursive branch and bound search.
+        
+        /// other problem here is the requirement to test if the z value
+        /// is improving over the branches and prevent expanding branches when z value does not improve
+        /// for any solution where all ip values have already been found.
+        /// so still need to expand when all ip values are not yet found. 
+        ///
         let rec solveIP (sol:IPSolution) =
              let (C,a,b) = sol.Problem
              let (status, A) = maximise sol.XVars C a b
              let (rows,cols) = A.Dimensions
              let z = A.[rows-1,cols-1]
+             
+             printf "SolveIP %A\n" a
+             
              let splitChoices = 
                      identifyIntegerConstrainedVariable ipvars xvars A
              // if there are no choices this is solved at this level.
@@ -207,7 +207,17 @@ module IPBranchBound =
                
         // then traverse the solution to find the maxZ value 
         // from the leaf nodes for feasible solutions
-        
-        ()
+        let ipsolution = 
+         { Status = Start;
+           Solution = matrix [[]];
+           MaxZ = 0.0;
+           XVars = xvars;
+           IPVars = ipvars;
+           SplitVar = String.Empty;
+           Op = None;
+           Problem = (C,a,b)
+          }
+          
+        solveIP ipsolution
 
     ()

@@ -179,7 +179,7 @@ module Simplex =
             let j = maxAbsIndex (A.Row (rows-1)).Transpose
             // find the exiting variable via the b/candidate ratio
             let c = (A.Column j).[0..(rows-2)]
-            not (Vector.forall(fun v -> v >= 0.0) c)
+            (Vector.forall(fun v -> v <= 0.0) c)
 
         /// determine if the solution has multiple solutions.
         /// firstly identify the basis variables
@@ -264,14 +264,19 @@ module Simplex =
                     let b' = (A.Column (cols-1)).[0..(rows-2)]
                     let i = findDepartingVariable c' b' (fun n -> n)
                     
-                    (*
+                    (**)
                     printf "Depart %O Enter %O\n" i j
-                    *)
+                    
                     // perform row operations and attempt to solve the resulting matrix.
                     // is the departing variable the same as the last entering variable
                     if (j = enter && cycle_cnt < MAX_CYCLES) then
                         solve (pivot i j A) (i,j) (cycle_cnt+1)
                     else if (j = enter) then
+                        printf "Degenerate %A\n" A
+                        (Degenerate, A)
+                    else if (i = depart && cycle_cnt < MAX_CYCLES) then
+                        solve (pivot i j A) (i,j) (cycle_cnt+1)
+                    else if (i = depart) then
                         printf "Degenerate %A\n" A
                         (Degenerate, A)
                     else
@@ -311,15 +316,20 @@ module Simplex =
                                                                 Double.MaxValue
                                                             else 
                                                                 n)
-                    (*
+                    (**)
                     printf "LastDepart %O LastEnter %O\n" depart enter
                     printf "Depart2 %O Enter2 %O\n" j i
-                    *)
+                    
                     // perform row operations and attempt to solve the resulting matrix.
                     // is the departing variable the same as the entering variable.
                     if (i = enter && cycle_cnt < MAX_CYCLES) then
                         solve (pivot i j A) (j,i) (cycle_cnt+1)
                     else if (i = enter) then
+                        (Degenerate, A)
+                    else if (j = depart && cycle_cnt < MAX_CYCLES) then
+                        solve (pivot i j A) (j,i) (cycle_cnt+1)
+                    else if (j = depart) then
+                        printf "Degenerate %A\n" A
                         (Degenerate, A)
                     else
                         solve (pivot i j A) (j,i) cycle_cnt

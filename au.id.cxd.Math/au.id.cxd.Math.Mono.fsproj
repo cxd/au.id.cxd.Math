@@ -84,6 +84,9 @@
     <Reference Include="FSharp.Core">
       <HintPath>..\..\..\..\..\..\..\..\Library\Frameworks\Mono.framework\Versions\Current\lib\mono\4.0\FSharp.Core.dll</HintPath>
     </Reference>
+    <Reference Include="FSharp.PowerPack.Linq">
+      <HintPath>..\lib\FSharp.PowerPack\osx\FSharp.PowerPack.Linq.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="TextIO.fs" />
@@ -119,6 +122,7 @@
     <None Include="TestSimplex.fsx" />
     <Compile Include="IPBranchBound.fs" />
     <Compile Include="Stack.fs" />
+    <None Include="TestIPBranchBound.fsx" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\FSharp\1.0\Microsoft.FSharp.Targets" Condition="!Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" Condition=" Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
@@ -129,4 +133,13 @@
 	<Target Name="AfterBuild">
 	</Target>
 	-->
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <Policies>
+          <TextStylePolicy inheritsSet="VisualStudio" inheritsScope="text/plain" scope="text/x-fsharp" />
+        </Policies>
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
 </Project>

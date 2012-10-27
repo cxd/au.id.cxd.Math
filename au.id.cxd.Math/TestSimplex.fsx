@@ -1,6 +1,6 @@
 ﻿
-#r "bin/Debug/FSharp.PowerPack.dll"
-#r "bin/Debug/FSharp.PowerPack.Compatibility.dll"
+#r "bin/mono/Debug/FSharp.PowerPack.dll"
+#r "bin/mono/Debug/FSharp.PowerPack.Compatibility.dll"
 
 
 #load "Matrix.fs"
