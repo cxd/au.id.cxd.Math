@@ -1,6 +1,6 @@
 ﻿
-#r "FSharp.PowerPack/osx/FSharp.PowerPack.dll"
-#r "FSharp.PowerPack.Compatibility.dll"
+#r "bin/Debug/FSharp.PowerPack.dll"
+#r "bin/Debug/FSharp.PowerPack.Compatibility.dll"
 
 
 #load "Matrix.fs"
@@ -109,3 +109,25 @@ let (flag5, A5) = maximise xvars5 c5 a5 b5
 let pass5 = flag5 = Multiple
 
 printf "\n\n==========================================\n\n"
+
+(*
+Additional testing
+
+max z = 1.8x1 + 0.6x2
+st
+9x1 + 3x2 <= 90
+x1 <= 8
+x2 <= 12
+x1,x2 >= 0
+
+
+*)
+let xvars6 = ["x1";"x2"]
+let c6 = vector [1.8; 0.6]
+let a6 = matrix [ [ 9.0; 3.0 ];
+                  [1.0; 0.0];
+                  [0.0; 1.0] ]
+let b6 = vector [ 90.0; 8.0; 12.0 ]
+let (flag6, A6) = maximise xvars6 c6 a6 b6
+// we expect flag6 to equal optimal
+let pass6 = flag6 = Optimal

@@ -11,16 +11,47 @@
     <AssemblyName>au.id.cxd.Math</AssemblyName>
     <Name>au.id.cxd.Math</Name>
     <UsePartialTypes>False</UsePartialTypes>
+    <BuildOrder>
+      <BuildOrder>
+        <String>Stack.fs</String>
+        <String>Graph.fs</String>
+        <String>TextIO.fs</String>
+        <String>RawData.fs</String>
+        <String>TrainingData.fs</String>
+        <String>DataDescription.fs</String>
+        <String>DataHistogram.fs</String>
+        <String>DataProbabilities.fs</String>
+        <String>DataDistance.fs</String>
+        <String>DataSummary.fs</String>
+        <String>MathProject.fs</String>
+        <String>Regression.fs</String>
+        <String>CartAlgorithm.fs</String>
+        <String>DTreeLearn3.fs</String>
+        <String>DecisionTreeXmlSerializer.fs</String>
+        <String>Matrix.fs</String>
+        <String>MatrixDeterminant.fs</String>
+        <String>MatrixGaussElimination.fs</String>
+        <String>ClassifierMetrics.fs</String>
+        <String>Neuron.fs</String>
+        <String>MLPTrainer.fs</String>
+        <String>Simplex.fs</String>
+        <String>Scratch.fs</String>
+        <String>DecisionTreeGraphMLSerializer.fs</String>
+        <String>MaybeBuilder.fs</String>
+        <String>IPBranchBound.fs</String>
+      </BuildOrder>
+    </BuildOrder>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
-    <DebugType>full</DebugType>
+    <DebugType>pdbonly</DebugType>
     <Optimize>True</Optimize>
     <Tailcalls>True</Tailcalls>
     <OutputPath>bin\mono\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
-    <DocumentationFile>bin\Debug\au.id.cxd.Math.XML</DocumentationFile>
+    <DocumentationFile>au.id.cxd.Math.xml</DocumentationFile>
+    <OtherFlags />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -86,6 +117,8 @@
     <None Include="ContinuationExample.fsx" />
     <None Include="TestDistance.fsx" />
     <None Include="TestSimplex.fsx" />
+    <Compile Include="IPBranchBound.fs" />
+    <Compile Include="Stack.fs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\FSharp\1.0\Microsoft.FSharp.Targets" Condition="!Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" Condition=" Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />

@@ -46,6 +46,7 @@ module Simplex =
          | Unbounded
          | Multiple
          | Degenerate
+         | Start
          
     // describe the resource status within the solution.
     type ResourceState =
@@ -382,6 +383,7 @@ module Simplex =
         I
     
     /// extract the basic variables.
+    /// return list tuple of (varName:string * colIndex:int * varValue:float)
     let extractBasis xvars (A:Matrix<float>) =
         let (rows, cols) = A.Dimensions
         let indicator = (A.Row (rows-1)).Transpose

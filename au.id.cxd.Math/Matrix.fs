@@ -126,6 +126,18 @@ namespace au.id.cxd.Math
                                             A.[i]) A.Transpose
             B
         
+        /// Set all values of matrix B at row int
+        /// to all values defined in RowVector
+        /// return matrix B
+        static member AppendRow (A:RowVector<float>) (B:Matrix<float>) =
+            let (rows, cols) = B.Dimensions
+            let b' = Matrix.init (rows+1) cols 
+                              (fun i j ->
+                                   if (i < rows) then
+                                    B.[i,j]
+                                   else A.[j])
+            b'
+        
         /// Return a matrix of 1 row x N columns where each nth column 
         /// is the sum of the nth column from the matrix A
         static member SumColumns (A:Matrix<float>) =
