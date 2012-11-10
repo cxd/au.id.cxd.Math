@@ -23,7 +23,7 @@ let C = vector [3.0; 2.0]
 let A = matrix [[1.0; 1.0]]
 let b = vector [6.0]
 let sol = maximiseIP ipvars xvars C A b
-
+printf "sol %A\n" sol
 printf "\n\n==========================================\n\n"
 
 (*

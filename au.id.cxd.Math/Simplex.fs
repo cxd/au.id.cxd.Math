@@ -123,6 +123,13 @@ module Simplex =
                                                     else
                                                         ind.[0,j])
         A
+    /// extract the value of the objective function
+    /// from the matrix
+    let zValue (A:Matrix<float>) =
+        let (rows, cols) = A.Dimensions
+        A.[(rows-1),(cols-1)]
+    
+    
     /// <summary>
     /// Maximize the objective function Cx
     /// With x decision variables

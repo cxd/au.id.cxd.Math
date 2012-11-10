@@ -43,19 +43,19 @@ module IPBranchBound =
     type IPTree =
         | Branch of IPTree * IPSolution * IPTree
         | Terminal of IPSolution
-        
-    /// <summary>
-    /// Identify the integer constraint variables from the A matrix
-    /// choose the ip constrained variable that has a fractional component.
-    /// if none of the ip constrained variables contain a fractional component
-    /// then the solution is solved for this branch.
-    /// </summary>
-    let identifyIntegerConstrainedVariable (ipvars:string list) (xvars:string list) (A:Matrix<float>) = 
+    
+    // get all ip constrained variables that appear in the basis
+    let extractIpBasisVars (ipvars:string list) (xvars:string list) (A:Matrix<float>) =
+        extractBasis xvars A
+        |> List.filter (fun (varName, col, varVal) ->
+                                    List.contains varName ipvars)
+    
+    /// select the integer constrained variables that do not have a fractional component.
+    let integerConstrainFiltered (ipvars:string list) (xvars:string list) (A:Matrix<float>) (filterFn:( ((string * int * float) * (float * float * float)) -> bool) ) = 
         // select the ip constrained variables
         let ipBasisVars = 
-                extractBasis xvars A
-                |> List.filter (fun (varName, col, varVal) ->
-                                    List.contains varName ipvars)
+                extractIpBasisVars ipvars xvars A
+                
         // process the ip constrained values and select those items
         // that have fractional components
         let components =
@@ -65,10 +65,24 @@ module IPBranchBound =
                                  let fractional = varVal - floor
                                  let ciel = Math.Ceiling(varVal)
                                  ((varName, col, varVal), (floor, fractional, ciel)))
-                |> List.filter (fun ((varName, col, varVal), (floor, fractional, ciel)) ->
-                                    fractional > 0.0)
+                |> List.filter filterFn
         // return the selection.
         components
+        
+    /// <summary>
+    /// Identify the integer constraint variables from the A matrix
+    /// choose the ip constrained variable that has a fractional component.
+    /// if none of the ip constrained variables contain a fractional component
+    /// then the solution is solved for this branch.
+    /// </summary>
+    let identifyIntegerConstrainedVariable (ipvars:string list) (xvars:string list) (A:Matrix<float>) = 
+        integerConstrainFiltered ipvars xvars A (fun ((varName:string, col:int, varVal:float), (floor:float, fractional:float, ciel:float)) ->
+                                                        fractional > 0.0)
+        
+    /// select the integer constrained variables that do not have a fractional component.
+    let selectIntegerConstrained (ipvars:string list) (xvars:string list) (A:Matrix<float>) = 
+        integerConstrainFiltered ipvars xvars A (fun ((varName, col, varVal), (floor, fractional, ciel)) ->
+                                                     fractional = 0.0)
     
     /// <summary>
     /// insert the constraint and return the new a coefficient matrix and the new solution vector.
@@ -121,12 +135,47 @@ module IPBranchBound =
              let (C,a,b) = sol.Problem
              let (status, A) = maximise sol.XVars C a b
              let (rows,cols) = A.Dimensions
+             
+             let prevA = sol.Solution
+             let (prevRows, prevCols) = prevA.Dimensions
+             let prevZ =
+                if (prevRows > 0 && prevCols > 0) then
+                    zValue prevA
+                else 0.0
+             // now we need to determine whether all of the integer constrained
+             // variables are actually integers.
+             // select the ip constrained variables
+             let solvedIps =
+                 if (prevRows > 0 && prevCols > 0) then
+                    selectIntegerConstrained ipvars xvars prevA
+                    |> List.map (fun ((name, _, _), (_, _, _)) -> name)
+                 else List.empty
+             printf "Solved IPs:\n%A\n" solvedIps
+             
+             let prevBasis = 
+                    if (prevRows > 0 && prevCols > 0) then
+                        extractIpBasisVars ipvars xvars prevA 
+                        |> List.map (fun (name, _, _) -> name)
+                    else List.empty
+             
+             printf "Prev Basis:\n%A\n" prevBasis
+                             
+             let isSolved = (Set.difference (prevBasis |> Set.ofList) (solvedIps |> Set.ofList) 
+                            |> (fun s -> (Set.count s) = 0))
+             
+             printf "IsSolved\n%A\n" isSolved
+             printf "SolveIP \n%A\n" sol
+             
              let z = A.[rows-1,cols-1]
              
-             printf "SolveIP %A\n" a
+             printf "Current Z: %A\n" z
              
-             let splitChoices = 
+             let splitChoices  = 
                      identifyIntegerConstrainedVariable ipvars xvars A
+                        
+             printf "Choices \n%A\n" splitChoices
+             
+             printf "\n\n==========================================\n\n"
              // if there are no choices this is solved at this level.
              let mustStop =
                  match status with
@@ -145,12 +194,24 @@ module IPBranchBound =
                  Problem = (C,a,b)
                  }
              else if (List.length splitChoices = 0) then
+                 // there are no more variables available for splitting
                  Terminal {
                  Status = status;
                  Solution = A;
                  XVars = sol.XVars;
                  IPVars = ipvars;
                  MaxZ = z;
+                 SplitVar = sol.SplitVar;
+                 Op = Solution;
+                 Problem = (C,a,b)
+                 }
+             else if (isSolved && z <= prevZ) then
+                 Terminal {
+                 Status = status;
+                 Solution = prevA;
+                 XVars = sol.XVars;
+                 IPVars = ipvars;
+                 MaxZ = prevZ;
                  SplitVar = sol.SplitVar;
                  Op = Solution;
                  Problem = (C,a,b)
@@ -167,6 +228,7 @@ module IPBranchBound =
                          Op = Solution;
                          Problem = (C,a,b)
                          }
+                         
                  // choose an arbitrary splitting value
                  let ((varName, i, varVal), (floor, fraction, ciel)) = splitChoices.Head
                  // left solution
@@ -187,7 +249,7 @@ module IPBranchBound =
                       }
                  // right solution
                  let (rA, rB) =
-                     insertConstraint a b i -1.0 ciel
+                     insertConstraint a b i -1.0 (-1.0*ciel)
                  let solRight = 
                       { Status = status;
                         Solution = A;

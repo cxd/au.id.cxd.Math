@@ -1,6 +1,7 @@
 module Program
 
 open au.id.cxd.Math.Simplex
+open au.id.cxd.Math.IPBranchBound
 
 let reportBasis (varname, idx, sol) =
     printf "%s = %A\n" varname sol
@@ -143,7 +144,8 @@ x1,x2,x3,x4 >= 0
 
 we need to convert this problem to the dual problem
 as it is an unbounded problem (ie the z value could maximise arbitrarily)
-*)
+
+
 let xvars6 = ["x1"; "x2"; "x3"; "x4"]
 let c6 = vector [500.0; 6.0; 10.0; 8.0]
 let a6 =  matrix [ [400.0; 3.0; 2.0; 2.0 ];
@@ -164,3 +166,41 @@ let (flag7, A7) = maximise yvars7 c7 a7 b7
 report yvars7 flag7 A7
 // another example this one is taken from the IP problem.
 // however in this test it is for the relaxed IP only.
+
+*)
+
+(*
+max z = 3x1 + 2x2
+st
+x1 + x2 <= 6.0
+x1,x2 >= 0 and integer
+*)
+let ipvars8 = ["x1"; "x2"]
+let xvars8 = ["x1"; "x2"]
+let C8 = vector [3.0; 2.0]
+let A8 = matrix [[1.0; 1.0]]
+let b8 = vector [6.0]
+let sol8 = maximiseIP ipvars8 xvars8 C8 A8 b8
+
+printf "sol8 %A\n" sol8
+printf "\n\n==========================================\n\n"
+
+
+
+(*
+max z = 28x1 + 11x2
+st
+1.4x1 + 0.6x2 <= 2.5
+x1,x2 >= 0, x1 integer
+*)
+let ipvars9 = ["x1"]
+let xvars9 = ["x1";"x2"]
+let C9 = vector [28.0; 11.0]
+let A9 = matrix [[1.4; 0.6]]
+let b9 = vector [2.5]
+let sol9 = maximiseIP ipvars9 xvars9 C9 A9 b9
+printf "sol9 %A\n" sol9
+printf "\n\n==========================================\n\n"
+
+
+

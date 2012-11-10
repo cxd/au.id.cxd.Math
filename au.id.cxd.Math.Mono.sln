@@ -7,23 +7,27 @@ Project("{4925A630-B079-445d-BCD4-3A9C94FE9307}") = "au.id.cxd.Math.Mono", "au.i
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "au.id.cxd.Math.OSX.UI", "au.id.cxd.Math.OSX.UI\au.id.cxd.Math.OSX.UI\au.id.cxd.Math.OSX.UI.csproj", "{83D7C704-496B-48CA-A5A3-48C8A7D6FC18}"
 EndProject
-Project("{4925A630-B079-445d-BCD4-3A9C94FE9307}") = "au.id.cxd.Math.TestDecisionTree.Mono", "au.id.cxd.Math.TestDecisionTree\au.id.cxd.Math.TestDecisionTree.Mono.fsproj", "{17cc2bf0-38e9-4d40-93b1-dac3db86c52d}"
-EndProject
 Project("{4925A630-B079-445d-BCD4-3A9C94FE9307}") = "au.id.cxd.Text.Mono", "au.id.cxd.Text\au.id.cxd.Text.Mono.fsproj", "{87c2db25-60d5-4876-a9f5-3273a1fe26d7}"
+EndProject
+Project("{4925A630-B079-445d-BCD4-3A9C94FE9307}") = "au.id.cxd.MathOSXUI", "au.id.cxd.MathOSXUI\au.id.cxd.MathOSXUI.fsproj", "{CA7BF015-21D5-4EBB-B8EA-234BBA56AC85}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{91AEE884-0516-4AAA-B6A1-DD1BA516DB21}"
+EndProject
+Project("{4925A630-B079-445d-BCD4-3A9C94FE9307}") = "TestSimplex.Mono", "TestSimplex.Mono\TestSimplex.Mono.fsproj", "{CDFB8E86-2744-4709-86BC-E7C3C13D71E1}"
+EndProject
+Project("{4925A630-B079-445d-BCD4-3A9C94FE9307}") = "TestMatrixOps.Mono", "TestMatrixOps\TestMatrixOps.Mono.fsproj", "{741d89e5-93b6-43b6-aeea-54f0f0b76b65}"
 EndProject
 Project("{4925A630-B079-445d-BCD4-3A9C94FE9307}") = "TestDistance.Mono", "TestDistance\TestDistance.Mono.fsproj", "{a6c27fb2-187f-4e34-bcbb-2b3c16d513f5}"
 EndProject
 Project("{4925A630-B079-445d-BCD4-3A9C94FE9307}") = "TestDTree.Mono", "TestDTree\TestDTree.Mono.fsproj", "{4ad295a8-b90c-4362-bcd2-f5fc73c29605}"
 EndProject
-Project("{4925A630-B079-445d-BCD4-3A9C94FE9307}") = "TestMatrixOps.Mono", "TestMatrixOps\TestMatrixOps.Mono.fsproj", "{741d89e5-93b6-43b6-aeea-54f0f0b76b65}"
+Project("{4925A630-B079-445d-BCD4-3A9C94FE9307}") = "au.id.cxd.Math.TestDecisionTree.Mono", "au.id.cxd.Math.TestDecisionTree\au.id.cxd.Math.TestDecisionTree.Mono.fsproj", "{17cc2bf0-38e9-4d40-93b1-dac3db86c52d}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{7864E80C-DFB8-4350-99E0-F7D1E8471DC9}"
 EndProject
 Project("{4925A630-B079-445d-BCD4-3A9C94FE9307}") = "TrainBigramModel.Mono", "TrainBigramModel\TrainBigramModel.Mono.fsproj", "{5df9cacc-d390-4b05-ada9-b1ae89136213}"
 EndProject
 Project("{4925A630-B079-445d-BCD4-3A9C94FE9307}") = "TrainTextClassifier.Mono", "TrainTextClassifier\TrainTextClassifier.Mono.fsproj", "{fd866a54-3bf9-4529-b4ac-13032e7ddd0e}"
-EndProject
-Project("{4925A630-B079-445d-BCD4-3A9C94FE9307}") = "au.id.cxd.MathOSXUI", "au.id.cxd.MathOSXUI\au.id.cxd.MathOSXUI.fsproj", "{CA7BF015-21D5-4EBB-B8EA-234BBA56AC85}"
-EndProject
-Project("{4925A630-B079-445d-BCD4-3A9C94FE9307}") = "TestSimplex.Mono", "TestSimplex.Mono\TestSimplex.Mono.fsproj", "{CDFB8E86-2744-4709-86BC-E7C3C13D71E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -179,6 +183,15 @@ Global
 		{fd866a54-3bf9-4529-b4ac-13032e7ddd0e}.Release|Mixed Platforms.Build.0 = Release|x86
 		{fd866a54-3bf9-4529-b4ac-13032e7ddd0e}.Release|x86.ActiveCfg = Release|x86
 		{fd866a54-3bf9-4529-b4ac-13032e7ddd0e}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CDFB8E86-2744-4709-86BC-E7C3C13D71E1} = {91AEE884-0516-4AAA-B6A1-DD1BA516DB21}
+		{741d89e5-93b6-43b6-aeea-54f0f0b76b65} = {91AEE884-0516-4AAA-B6A1-DD1BA516DB21}
+		{a6c27fb2-187f-4e34-bcbb-2b3c16d513f5} = {91AEE884-0516-4AAA-B6A1-DD1BA516DB21}
+		{4ad295a8-b90c-4362-bcd2-f5fc73c29605} = {91AEE884-0516-4AAA-B6A1-DD1BA516DB21}
+		{17cc2bf0-38e9-4d40-93b1-dac3db86c52d} = {91AEE884-0516-4AAA-B6A1-DD1BA516DB21}
+		{5df9cacc-d390-4b05-ada9-b1ae89136213} = {7864E80C-DFB8-4350-99E0-F7D1E8471DC9}
+		{fd866a54-3bf9-4529-b4ac-13032e7ddd0e} = {7864E80C-DFB8-4350-99E0-F7D1E8471DC9}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = TestSimplex.Mono\TestSimplex.Mono.fsproj
