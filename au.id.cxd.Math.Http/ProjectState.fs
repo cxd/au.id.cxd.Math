@@ -31,7 +31,7 @@ module ProjectState =
     let readFromCache name =
         match Cache.read name with
         | null -> None
-        | item -> Some item
+        | item -> Some (item.Value :?> ProjectRecordState) 
     
     (* external *)
     let currentProject () = readFromCache cacheName
@@ -43,6 +43,14 @@ module ProjectState =
         project.Application.ProjectName <- name
         saveToFilesystem name project.Project
         storeInCache cacheName project
+        
+    let saveCurrentProject () =
+        let project = currentProject()
+        match project with
+        | None -> None
+        | Some item ->
+            saveToFilesystem item.Application.ProjectName item.Project
+            Some item
     
     (* internal *)
     let enumerateDirectories () = 

@@ -13,16 +13,16 @@ module SaveProject =
     /// save the current project that is in the state
     let processRequest(context:HttpContext) =
         let respond = AsyncHelper.writeJsonToContext context
-        let name = context.Request.["project"]
-        match name with
-        | null -> Json.makeError("Project name not provided") |> Json.toString |> respond
-        | _ -> 
-            let project = ProjectState.currentProject ()
-            match project with 
-            | None ->
-                Json.makeError("There is no current project loaded.") |> Json.toString |> respond
+        let project = ProjectState.currentProject ()
+        match project with 
+        | None ->
+            Json.makeError("There is no current project loaded.") |> Json.toString |> respond
+        | Some item ->
+            let project = ProjectState.saveCurrentProject ()
+            match project with
+            | None -> Json.makeError("Could not save the current project.") |> Json.toString |> respond
             | Some item ->
-                
+                let name = item.Application.ProjectName
                 Json.makeSuccess(String.Format("Created Project {0}", name)) |> Json.toString |> respond
                 
         
