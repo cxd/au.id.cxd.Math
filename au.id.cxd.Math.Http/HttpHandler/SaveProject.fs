@@ -20,7 +20,7 @@ module SaveProject =
             let project = ProjectState.currentProject ()
             match project with 
             | None ->
-                Json.makeError(String.Format("There is no current project loaded."))
+                Json.makeError("There is no current project loaded.") |> Json.toString |> respond
             | Some item ->
                 
                 Json.makeSuccess(String.Format("Created Project {0}", name)) |> Json.toString |> respond
