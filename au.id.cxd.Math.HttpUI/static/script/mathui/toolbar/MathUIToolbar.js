@@ -91,8 +91,8 @@ define([
        			return;	
        		}
        		this.setEnabled(select, true);
-       		for(var project in projects) {
-       			this.addSelectOption(select, project, project);
+       		for(var i in projects) {
+       			this.addSelectOption(select, projects[i], projects[i]);
        		}
        	}
         
