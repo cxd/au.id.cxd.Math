@@ -81,6 +81,7 @@ module ProjectState =
         let project = new ProjectRecordState()
         project.Project <- record
         storeInCache cacheName project 
+        project
 
     
     ()

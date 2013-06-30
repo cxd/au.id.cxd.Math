@@ -60,8 +60,7 @@ module Cache =
     /// a default caching policy
     let makeDefaultCachePolicy () =
         let policy = CacheItemPolicy ()
-        policy.AbsoluteExpiration <- DateTimeOffset.Now.AddMinutes(30.0)
-        policy.SlidingExpiration <- ObjectCache.NoSlidingExpiration
+        policy.SlidingExpiration <- TimeSpan(0,30, 0)
         policy 
         
     /// store an item in cache with the defined policy

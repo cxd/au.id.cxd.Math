@@ -82,6 +82,7 @@
     <Compile Include="HttpHandler\ListProjects.fs" />
     <Compile Include="HttpHandler\CreateProject.fs" />
     <Compile Include="HttpHandler\SaveProject.fs" />
+    <Compile Include="HttpHandler\LoadProject.fs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" />
   <ItemGroup>

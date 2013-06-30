@@ -29,8 +29,9 @@ module Project =
             
         member m.Project 
             with get() = project
-            and set(p) = project <- p
-        
+            and set(p) = 
+                project <- p
+                application.State <- p.Application
         
     // write the project record to filesystem
     let writeRecord filename project =
