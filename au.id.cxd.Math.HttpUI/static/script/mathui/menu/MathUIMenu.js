@@ -57,6 +57,9 @@ define([
         	
         },
         
+        onMultiValueClick:function(evt) {
+        	
+        },
         
         onDefineClick: function(evt) {
         	
@@ -73,9 +76,9 @@ define([
         	
 		onTestClick: function(evt) {
         	
-       },
+       	},
        
-       onCompareClick: function(evt) {
+       	onCompareClick: function(evt) {
         	
         }
         

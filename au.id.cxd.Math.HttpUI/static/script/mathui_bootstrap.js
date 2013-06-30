@@ -6,10 +6,8 @@ require([
 		"dojo/ready",
 		"dojo/on",
         "dojo/Evented",
-                
-       
-
-		// templates
+        // templates
+		"mathui/transactions/ProjectList",
 		"mathui/upload_data/UploadData",
 		"mathui/menu/MathUIMenu",
 		"mathui/toolbar/MathUIToolbar"
