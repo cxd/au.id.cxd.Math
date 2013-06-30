@@ -50,6 +50,7 @@ module WordTokeniser =
         let line' = regex.Replace(line, "")
         line'.Split([|' '; '-'; '.'; '('; ')'; '\"'; ','; '?'; ';';'\t'; ':'|]) 
 
+
     /// <summary>
     /// Read all words from the supplied file into a sequence of lists
     /// use a splitter to convert the line to words (fun splitter (line:string) -> Array of string)
@@ -72,7 +73,7 @@ module WordTokeniser =
                     reader.Close()
                 }
         
-     /// <summary>
+    /// <summary>
     /// supply a line delimited file name
     /// the stop word filter will read in a list of stop words
     /// and will return a function that can be used to filter stopwords

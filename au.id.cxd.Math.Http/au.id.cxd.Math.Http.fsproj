@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{399CEF4C-3588-422C-99B1-7C970D07D44C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>au.id.cxd.Math.Http</RootNamespace>
+    <AssemblyName>au.id.cxd.Math.Http</AssemblyName>
+    <BuildOrder>
+      <BuildOrder>
+        <String>AssemblyInfo.fs</String>
+        <String>Filesystem.fs</String>
+        <String>Cache.fs</String>
+        <String>Project.fs</String>
+        <String>ProjectState.fs</String>
+        <String>CookieHelper.fs</String>
+        <String>Json.fs</String>
+        <String>HttpHandler/AsyncHelper.fs</String>
+        <String>HttpHandler/Handler.fs</String>
+        <String>HttpHandler/UploadFile.fs</String>
+      </BuildOrder>
+    </BuildOrder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <ConsolePause>false</ConsolePause>
+    <PlatformTarget />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <Tailcalls>true</Tailcalls>
+    <ConsolePause>false</ConsolePause>
+    <PlatformTarget />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="FSharp.Core">
+      <HintPath>Library\Frameworks\Mono.framework\Versions\Current\lib\mono\4.0\FSharp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\lib\json\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharp.PowerPack.Compatibility">
+      <HintPath>..\lib\FSharp.PowerPack\osx\FSharp.PowerPack.Compatibility.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharp.PowerPack.Linq">
+      <HintPath>..\lib\FSharp.PowerPack\osx\FSharp.PowerPack.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharp.PowerPack">
+      <HintPath>..\lib\FSharp.PowerPack\osx\FSharp.PowerPack.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.fs" />
+    <Compile Include="Json.fs" />
+    <Compile Include="CookieHelper.fs" />
+    <Compile Include="Project.fs" />
+    <Compile Include="Cache.fs" />
+    <Compile Include="Filesystem.fs" />
+    <Compile Include="ProjectState.fs" />
+    <Compile Include="HttpHandler\Handler.fs" />
+    <Compile Include="HttpHandler\UploadFile.fs" />
+    <Compile Include="HttpHandler\AsyncHelper.fs" />
+    <Compile Include="HttpHandler\ListProjects.fs" />
+    <Compile Include="HttpHandler\CreateProject.fs" />
+    <Compile Include="HttpHandler\SaveProject.fs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\au.id.cxd.Math\au.id.cxd.Math.Mono.fsproj">
+      <Project>{81916D72-D3EC-4D14-B18D-4C5A40988542}</Project>
+      <Name>au.id.cxd.Math.Mono</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="HttpHandler\" />
+  </ItemGroup>
+</Project>

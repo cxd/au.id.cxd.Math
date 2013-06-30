@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{f7d0118b-094d-4b76-b28d-ee4bf356e1d4}</ProjectGuid>
+    <ProjectGuid>{F7D0118B-094D-4B76-B28D-EE4BF356E1D4}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>au.id.cxd.Math.UI</RootNamespace>
     <AssemblyName>au.id.cxd.Math.UI</AssemblyName>
@@ -93,10 +93,6 @@
     <Reference Include="UIAutomationTypes" />
     <Reference Include="WindowsBase" />
     <Reference Include="WindowsFormsIntegration" />
-    <ProjectReference Include="..\au.id.Math.UIBuilder\au.id.Math.UIBuilder.fsproj">
-      <Name>au.id.Math.UIBuilder</Name>
-      <Project>{51521ed3-e37c-46d7-989c-95d8d5b0e659}</Project>
-    </ProjectReference>
   </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
 	     Other similar extension points exist, see Microsoft.Common.targets.

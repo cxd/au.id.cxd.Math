@@ -5,12 +5,28 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{87c2db25-60d5-4876-a9f5-3273a1fe26d7}</ProjectGuid>
+    <ProjectGuid>{87C2DB25-60D5-4876-A9F5-3273A1FE26D7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>au.id.cxd.Text</RootNamespace>
     <AssemblyName>au.id.cxd.Text</AssemblyName>
     <Name>au.id.cxd.Text</Name>
     <UsePartialTypes>False</UsePartialTypes>
+    <BuildOrder>
+      <BuildOrder>
+        <String>WordTokeniser.fs</String>
+        <String>HtmlTokeniser.fs</String>
+        <String>Edit1Counts.fs</String>
+        <String>LevensteinDistance.fs</String>
+        <String>DamerauLevensteinDistance.fs</String>
+        <String>Tokens.fs</String>
+        <String>LanguageModelUnigramLaplace.fs</String>
+        <String>LanguageModelBigramLaplace.fs</String>
+        <String>LanguageModelStupidBackoff.fs</String>
+        <String>ModelSpellCheck.fs</String>
+        <String>BigramLaplaceModelSpellCheck.fs</String>
+        <String>NaiveBayesTextClassifier.fs</String>
+      </BuildOrder>
+    </BuildOrder>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
@@ -88,7 +104,7 @@
 	-->
   <ItemGroup>
     <ProjectReference Include="..\au.id.cxd.Math\au.id.cxd.Math.Mono.fsproj">
-      <Project>{81916d72-d3ec-4d14-b18d-4c5a40988542}</Project>
+      <Project>{81916D72-D3EC-4D14-B18D-4C5A40988542}</Project>
       <Name>au.id.cxd.Math.Mono</Name>
     </ProjectReference>
   </ItemGroup>

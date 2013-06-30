@@ -10,6 +10,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>au.id.cxd.Math.OSX.UI</RootNamespace>
     <AssemblyName>au.id.cxd.Math.OSX.UI</AssemblyName>
+    <SuppressXamMacUpsell>True</SuppressXamMacUpsell>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>True</DebugSymbols>
@@ -25,6 +26,7 @@
     <CreatePackage>False</CreatePackage>
     <EnablePackageSigning>False</EnablePackageSigning>
     <IncludeMonoRuntime>False</IncludeMonoRuntime>
+    <UseSGen>False</UseSGen>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <DebugType>none</DebugType>
@@ -38,6 +40,7 @@
     <CreatePackage>False</CreatePackage>
     <EnablePackageSigning>False</EnablePackageSigning>
     <IncludeMonoRuntime>False</IncludeMonoRuntime>
+    <UseSGen>False</UseSGen>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -45,9 +48,6 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
-    <Reference Include="MonoMac">
-      <HintPath>..\..\build\ui\MonoMac.dll</HintPath>
-    </Reference>
     <Reference Include="FSharp.PowerPack.Compatibility">
       <HintPath>..\..\build\ui\FSharp.PowerPack.Compatibility.dll</HintPath>
     </Reference>
@@ -62,6 +62,9 @@
     </Reference>
     <Reference Include="FSharp.Core">
       <HintPath>..\..\..\..\..\..\..\..\..\Library\Frameworks\Mono.framework\Versions\Current\lib\mono\4.0\FSharp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMac, Version=0.0.0.0, Culture=neutral">
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -87,7 +90,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Mono\MonoMac\v0.0\Mono.MonoMac.targets" />
   <ItemGroup>
     <ProjectReference Include="..\..\au.id.cxd.Math\au.id.cxd.Math.Mono.fsproj">
-      <Project>{81916d72-d3ec-4d14-b18d-4c5a40988542}</Project>
+      <Project>{81916D72-D3EC-4D14-B18D-4C5A40988542}</Project>
       <Name>au.id.cxd.Math.Mono</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\au.id.cxd.MathOSXUI\au.id.cxd.MathOSXUI.fsproj">

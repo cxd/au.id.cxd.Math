@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{51521ed3-e37c-46d7-989c-95d8d5b0e659}</ProjectGuid>
+    <ProjectGuid>{51521ED3-E37C-46D7-989C-95D8D5B0E659}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>au.id.Math.UIBuilder</RootNamespace>
     <AssemblyName>au.id.Math.UIBuilder</AssemblyName>
@@ -40,7 +40,6 @@
       <HintPath>..\lib\FSharp.PowerPack\dn4\FSharp.PowerPack.Compatibility.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib" />
-    <Reference Include="FSharp.Core" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -50,6 +49,8 @@
     <Reference Include="System.Xml" />
     <Reference Include="WindowsBase" />
     <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Module1.fs" />

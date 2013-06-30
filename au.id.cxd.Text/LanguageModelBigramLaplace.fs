@@ -64,7 +64,7 @@ module LanguageModelBigramLaplace =
                                 let token' = setCount (token.Count + 1.0) token
                                 update grams key (NGram token')
                                 cnt
-                        ((cnt', instance+1.0, grams, unigram), wordB)) 
+                        ((cnt', instance+1.0, grams, unigram), wordB))
             |> fst
 
         data 

@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{8d67cbcf-e50a-470e-87c1-cf8962ea1374}</ProjectGuid>
+    <ProjectGuid>{8D67CBCF-E50A-470E-87C1-CF8962EA1374}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>au.id.cxd.ImageProcessor</RootNamespace>
     <AssemblyName>au.id.cxd.ImageProcessor</AssemblyName>
@@ -74,7 +74,7 @@ copy "$(ProjectDir)..\lib\blas.dll" $(TargetDir)
 	-->
   <ItemGroup>
     <ProjectReference Include="..\au.id.cxd.Math\au.id.cxd.Math.Mono.fsproj">
-      <Project>{81916d72-d3ec-4d14-b18d-4c5a40988542}</Project>
+      <Project>{81916D72-D3EC-4D14-B18D-4C5A40988542}</Project>
       <Name>au.id.cxd.Math.Mono</Name>
     </ProjectReference>
   </ItemGroup>

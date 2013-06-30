@@ -4,3 +4,4 @@ obj
 *.suo
 /*.DS_Store
 /*.id.cxd.Math.Mono.userprefs
+/.project

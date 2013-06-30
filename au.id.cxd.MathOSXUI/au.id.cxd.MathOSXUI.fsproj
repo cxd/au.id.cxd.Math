@@ -56,9 +56,6 @@
     <Reference Include="FSharp.PowerPack">
       <HintPath>..\build\ui\FSharp.PowerPack.dll</HintPath>
     </Reference>
-    <Reference Include="MonoMac">
-      <HintPath>..\build\ui\MonoMac.dll</HintPath>
-    </Reference>
     <Reference Include="org.graphdrawing.graphml">
       <HintPath>..\build\ui\org.graphdrawing.graphml.dll</HintPath>
     </Reference>
@@ -96,7 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\au.id.cxd.Math\au.id.cxd.Math.Mono.fsproj">
-      <Project>{81916d72-d3ec-4d14-b18d-4c5a40988542}</Project>
+      <Project>{81916D72-D3EC-4D14-B18D-4C5A40988542}</Project>
       <Name>au.id.cxd.Math.Mono</Name>
     </ProjectReference>
   </ItemGroup>

@@ -40,6 +40,16 @@ module TrainingData =
             | Continuous -> "Continuous"
             | Bool -> "Bool"
     
+    // <summary>
+    /// Get a label for the definition
+    /// </summary>
+    let labelToDefinition label =
+            match label with
+            | "NumericOrdinal" -> NumericOrdinal
+            | "String" -> String
+            | "Continuous" -> Continuous
+            | "Bool" -> Bool
+    
 
     
     /// <summary>
