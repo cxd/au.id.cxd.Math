@@ -1,0 +1,28 @@
+
+.nofloat {
+    float:none;
+}
+
+.central {
+    text-align: center;
+    vertical-align:middle;
+    alignment-adjust:central;
+
+}
+
+.left {
+    text-align: left;
+}
+
+.floatleft {
+    float: left;
+}
+
+.floatright {
+    float:right;
+}
+
+.right {
+    text-align:right;
+    float:right;
+}

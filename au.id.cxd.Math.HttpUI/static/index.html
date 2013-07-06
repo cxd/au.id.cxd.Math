@@ -2,17 +2,20 @@
 <html>
 	<head>
 		<title>Math UI</title>
-        <link rel="stylesheet" href="./style/grid.css"></link>
-        <link rel="stylesheet" href="./style/fonts.css"></link>
-        <link rel="stylesheet" href="./style/heights.css"></link>
-        <link rel="stylesheet" href="./style/menu.css"></link>
-        <link rel="stylesheet" href="./style/margins.css"></link>
-        
-<!--        
-        <link rel="stylesheet" href="style/debug.css"></link>
--->
+        <link rel="stylesheet" href="./style/grid.css"/>
+        <link rel="stylesheet" href="./style/fonts.css"/>
+        <link rel="stylesheet" href="./style/heights.css"/>
+        <link rel="stylesheet" href="./style/menu.css"/>
+        <link rel="stylesheet" href="./style/margins.css"/>
+        <link rel="stylesheet" href="./style/document.css"/>
+        <link rel="stylesheet" href="./style/dialog.css"/>
+        <link rel="stylesheet" href="./style/float.css"/>
+
+        <!--
+                <link rel="stylesheet" href="style/debug.css"></link>
+        -->
  
-    <link rel="stylesheet" href="./style/font-awesome/css/font-awesome.min.css"></link>
+    <link rel="stylesheet" href="./style/font-awesome/css/font-awesome.min.css"/>
    
 	</head>
 	<body>
@@ -27,8 +30,19 @@
             </div>
             
             <div class="col-span60 left10">
-            &nbsp;
+            
+                <div data-dojo-type="mathui/project/Project"></div>
+
+
+
+                <noscript>
+                    For full functionality of this site it is necessary to enable JavaScript.
+                </noscript>
+
             </div>
+
+            <div data-dojo-type="mathui/confirmation/Confirmation"></div>
+
             
         </div>
 	    

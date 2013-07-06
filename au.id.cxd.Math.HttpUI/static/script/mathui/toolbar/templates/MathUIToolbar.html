@@ -2,13 +2,13 @@
                 
                 <span class="middle heading">MathUI</span>
                 <span class="right">
-                    <a href="#" class="icon-2x icon-plus"></a>
-                    <select name="project_selection" class="project-list-select" disabled="true">
+                    <a href="#" class="icon-2x icon-plus" data-dojo-attach-event="onmousedown:onAddClick"></a>
+                    <select name="project_selection" class="project-list-select" disabled="true" data-dojo-attach-event="onchange:onSelectChange">
                         <optgroup>Choose a Project
                         <option>No Projects Created</option>
                         </optgroup>
                     </select>
-                    <a href="#" class="icon-2x icon-question"></a>
+                    <a href="#" class="icon-2x icon-question" data-dojo-attach-event="onmousedown:onHelpClick"></a>
                 </span>
                 
             </div>

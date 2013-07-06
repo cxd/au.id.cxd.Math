@@ -1,0 +1,39 @@
+
+.bar-title {
+	font-style:normal;
+}
+
+
+.button {
+	cursor:pointer;
+}
+
+.dialog {
+	opacity: 0.8;
+	background-color:#525252;
+	position: absolute;
+	top:0px;
+	left:0px;
+	z-index:1000;
+	width:100%;
+	
+}
+
+.dialog-contents {
+	opacity: 1.0;
+	margin:50px 50px 50px 50px;
+	color:#ffffff;
+	position: absolute;
+	top:0px;
+	left:0px;
+	z-index:1500;
+}
+
+.divider {
+	border-right: 1px solid #CBCBCB;
+}
+
+.dialog-heading {
+	opacity: 1.0;
+	color:#ffffff;
+}

@@ -38,48 +38,48 @@ define([
          * prevalidate the input before attempting to post the form.
          */
         onPropertiesClick: function(evt) {
-        	
+        	topic.publish("menu/properties");
         },
         
         onUploadClick: function(evt) {
-        	
+        	topic.publish("menu/upload");
         },
         
         onAttributesClick: function(evt) {
-        	
+        	topic.publish("menu/attributes");
         },
         	
         onSingleValueClick: function(evt) {
-        	
+        	topic.publish("menu/singleValue");
         },
         
         onDualValueClick: function(evt) {
-        	
+        	topic.publish("menu/dualValue");
         },
         
         onMultiValueClick:function(evt) {
-        	
+        	topic.publish("menu/multiValue");
         },
         
         onDefineClick: function(evt) {
-        	
+        	topic.publish("menu/define");
         },
 			
 		onPartitionClick: function(evt) {
-        	
+        	topic.publish("menu/partition");
         },
         	
 		onTrainClick: function(evt) {
-        	
+        	topic.publish("menu/train");
         },
         
         	
 		onTestClick: function(evt) {
-        	
+        	topic.publish("menu/test");
        	},
        
        	onCompareClick: function(evt) {
-        	
+        	topic.publish("menu/compare");
         }
         
         
