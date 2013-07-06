@@ -89,7 +89,7 @@ define([
                 for (var i in projects) {
                     this.addSelectOption(select, projects[i], projects[i]);
                 }
-                if (!this.isInit) {
+                if (!this.isInit || projects.length == 1) {
                     this.isInit = true;
                     topic.publish("project/selected", projects[0]);
                 }

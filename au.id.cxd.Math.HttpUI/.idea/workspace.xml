@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="217b5cee-ae77-4a79-8f32-80214a68f20f" name="Default" comment="" />
+    <list default="true" id="217b5cee-ae77-4a79-8f32-80214a68f20f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/script/mathui/confirmation/templates/Confirmation.html" afterPath="$PROJECT_DIR$/static/script/mathui/confirmation/templates/Confirmation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/script/mathui/confirmation/Confirmation.js" afterPath="$PROJECT_DIR$/static/script/mathui/confirmation/Confirmation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/script/mathui/toolbar/MathUIToolbar.js" afterPath="$PROJECT_DIR$/static/script/mathui/toolbar/MathUIToolbar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style/dialog.css" afterPath="$PROJECT_DIR$/static/style/dialog.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="au.id.cxd.Math.HttpUI.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="217b5cee-ae77-4a79-8f32-80214a68f20f" time="1373110906973" ignored="false" />
@@ -9,8 +15,11 @@
     <file path="$USER_HOME$/Nuance/SOW6_Dashboard/Dashboard/deskboard2/mockup/index.html" changelist="217b5cee-ae77-4a79-8f32-80214a68f20f" time="1373107517809" ignored="false" />
     <file path="/Project.js" changelist="217b5cee-ae77-4a79-8f32-80214a68f20f" time="1373109995242" ignored="false" />
     <file path="/MathUIToolbar.html" changelist="217b5cee-ae77-4a79-8f32-80214a68f20f" time="1373108573203" ignored="false" />
-    <file path="/MathUIToolbar.js" changelist="217b5cee-ae77-4a79-8f32-80214a68f20f" time="1373109669366" ignored="false" />
+    <file path="/MathUIToolbar.js" changelist="217b5cee-ae77-4a79-8f32-80214a68f20f" time="1373114269225" ignored="false" />
     <file path="/LoadProject.js" changelist="217b5cee-ae77-4a79-8f32-80214a68f20f" time="1373109891433" ignored="false" />
+    <file path="/dialog.css" changelist="217b5cee-ae77-4a79-8f32-80214a68f20f" time="1373113896726" ignored="false" />
+    <file path="/Confirmation.js" changelist="217b5cee-ae77-4a79-8f32-80214a68f20f" time="1373114013849" ignored="false" />
+    <file path="/Confirmation.html" changelist="217b5cee-ae77-4a79-8f32-80214a68f20f" time="1373114351070" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,37 +80,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Confirmation.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/script/mathui/confirmation/Confirmation.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="21" selection-start="2088" selection-end="2088" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Confirmation.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Confirmation.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/script/mathui/confirmation/templates/Confirmation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="21" selection-start="79" selection-end="79" vertical-scroll-proportion="-0.625">
+            <state line="15" column="35" selection-start="768" selection-end="768" vertical-scroll-proportion="0.33733132">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Project.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="grid.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/style/grid.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="388" column="19" selection-start="2537" selection-end="2537" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Project.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/script/mathui/project/Project.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="60" selection-start="251" selection-end="251" vertical-scroll-proportion="-1.9424778">
+            <state line="112" column="26" selection-start="3516" selection-end="3516" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProjectList.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/script/mathui/transactions/ProjectList.js">
+      <file leaf-file-name="MathUIToolbar.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/script/mathui/toolbar/MathUIToolbar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="95" column="16" selection-start="3102" selection-end="3102" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -125,15 +134,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeleteProject.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/script/mathui/transactions/DeleteProject.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AddProject.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/script/mathui/transactions/AddProject.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -143,19 +143,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MathUIToolbar.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/script/mathui/toolbar/MathUIToolbar.js">
+      <file leaf-file-name="dialog.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/style/dialog.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="13" selection-start="3389" selection-end="3389" vertical-scroll-proportion="0.0">
+            <state line="28" column="11" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dialog.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/style/dialog.css">
+      <file leaf-file-name="Confirmation.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/script/mathui/confirmation/Confirmation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="88" column="8" selection-start="1821" selection-end="1821" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="12" selection-start="1366" selection-end="1366" vertical-scroll-proportion="-26.875">
               <folding />
             </state>
           </provider>
@@ -196,14 +205,14 @@
         <option value="$PROJECT_DIR$/static/script/mathui/dom/Delay.js" />
         <option value="$PROJECT_DIR$/static/style/float.css" />
         <option value="$PROJECT_DIR$/static/index.html" />
-        <option value="$PROJECT_DIR$/static/script/mathui/confirmation/Confirmation.js" />
         <option value="$PROJECT_DIR$/static/script/mathui/toolbar/templates/MathUIToolbar.html" />
-        <option value="$PROJECT_DIR$/static/style/dialog.css" />
-        <option value="$PROJECT_DIR$/static/script/mathui/confirmation/templates/Confirmation.html" />
-        <option value="$PROJECT_DIR$/static/script/mathui/toolbar/MathUIToolbar.js" />
         <option value="$PROJECT_DIR$/static/script/mathui/project/Project.js" />
         <option value="$PROJECT_DIR$/static/script/mathui_bootstrap.js" />
         <option value="$PROJECT_DIR$/static/script/mathui/transactions/LoadProject.js" />
+        <option value="$PROJECT_DIR$/static/script/mathui/confirmation/Confirmation.js" />
+        <option value="$PROJECT_DIR$/static/style/dialog.css" />
+        <option value="$PROJECT_DIR$/static/script/mathui/toolbar/MathUIToolbar.js" />
+        <option value="$PROJECT_DIR$/static/script/mathui/confirmation/templates/Confirmation.html" />
       </list>
     </option>
   </component>
@@ -750,7 +759,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="8" y="22" width="1420" height="860" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -774,7 +783,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2496361" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2496361" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -849,13 +858,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/script/mathui/dom/Delay.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="14" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/script/mathui/dom/WhenReady.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="14" selection-start="44" selection-end="44" vertical-scroll-proportion="0.063025214">
@@ -870,13 +872,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="12" selection-start="1366" selection-end="1366" vertical-scroll-proportion="-22.166666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/script/mathui/project/templates/Project.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -887,34 +882,6 @@
     <entry file="file://$PROJECT_DIR$/static/script/mathui/toolbar/templates/MathUIToolbar.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="68" selection-start="457" selection-end="457" vertical-scroll-proportion="0.13293944">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/script/mathui/confirmation/Confirmation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="21" selection-start="2088" selection-end="2088" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/script/mathui/confirmation/templates/Confirmation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="21" selection-start="79" selection-end="79" vertical-scroll-proportion="-0.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/style/dialog.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/script/mathui/toolbar/MathUIToolbar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="13" selection-start="3389" selection-end="3389" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -954,9 +921,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/script/mathui/confirmation/Confirmation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="8" selection-start="1821" selection-end="1821" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/style/dialog.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="11" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="12" selection-start="1366" selection-end="1366" vertical-scroll-proportion="-26.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/style/grid.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="388" column="19" selection-start="2537" selection-end="2537" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/script/mathui/project/Project.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="60" selection-start="251" selection-end="251" vertical-scroll-proportion="-1.9424778">
+        <state line="112" column="26" selection-start="3516" selection-end="3516" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/script/mathui/toolbar/MathUIToolbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="16" selection-start="3102" selection-end="3102" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/script/mathui/confirmation/templates/Confirmation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="35" selection-start="768" selection-end="768" vertical-scroll-proportion="0.33733132">
           <folding />
         </state>
       </provider>

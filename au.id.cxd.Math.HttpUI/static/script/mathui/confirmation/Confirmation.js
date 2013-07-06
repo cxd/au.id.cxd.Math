@@ -86,6 +86,7 @@ return declare([_WidgetBase,
        display: function() {
        	domStyle.set(this.domNode, "opacity", "0.0");
        	dom.byId("confirmationMessage").innerHTML = this._currentMessage;
+
        	domClass.remove(this.domNode, "notdisplayed");
        	baseFx.animateProperty({
        		node:this.domNode,
@@ -139,6 +140,7 @@ return declare([_WidgetBase,
         },
         
         onCancelDialog: function(evt) {
+            var _self = this;
         	this.fadeOut(function() {
         		if (_self._cancelAction != null) {
 	        		_self._cancelAction();
