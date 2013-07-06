@@ -92,7 +92,7 @@
       <file leaf-file-name="Project.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/script/mathui/project/Project.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="60" selection-start="251" selection-end="251" vertical-scroll-proportion="0.24336283">
+            <state line="11" column="60" selection-start="251" selection-end="251" vertical-scroll-proportion="-1.9424778">
               <folding />
             </state>
           </provider>
@@ -956,7 +956,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/script/mathui/project/Project.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="60" selection-start="251" selection-end="251" vertical-scroll-proportion="0.24336283">
+        <state line="11" column="60" selection-start="251" selection-end="251" vertical-scroll-proportion="-1.9424778">
           <folding />
         </state>
       </provider>

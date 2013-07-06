@@ -5,6 +5,7 @@ open System.Configuration
 open System.Web
 open System.Runtime.Caching
 open System.Collections.Specialized
+open System.Collections.Generic
 
 (** application module **)
 
@@ -57,16 +58,18 @@ module Cache =
         cacheConfig.Add("pollingInterval", pollingInterval)
         new MemoryCache ("mathui_cache", cacheConfig)
        
+    let invalidatorList = new List<InvalidationChangeMonitor>()
+       
     let invalidationMonitorList () = 
-        let data = []
         let newMonitor = new InvalidationChangeMonitor(Guid.NewGuid())
-        newMonitor::data
+        invalidatorList.Insert(0, newMonitor)
+        invalidatorList
        
     /// a default caching policy
     let makeDefaultCachePolicy () =
         let policy = CacheItemPolicy ()
         policy.SlidingExpiration <- TimeSpan(0,30, 0)
-        policy.ChangeMonitors.Add(invalidationMonitorList() |> List.head)
+        policy.ChangeMonitors.Add(invalidationMonitorList().[0])
         policy 
         
     /// store an item in cache with the defined policy
@@ -86,8 +89,8 @@ module Cache =
     
     /// invalidate the cache
     let invalidate () =
-        invalidationMonitorList() 
-        |> List.iter (fun item -> item.Dispose())
+        invalidationMonitorList().ToArray()
+        |> Array.iter (fun item -> item.Dispose())
         
         
     
