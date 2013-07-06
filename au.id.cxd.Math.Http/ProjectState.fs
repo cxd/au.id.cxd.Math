@@ -42,8 +42,16 @@ module ProjectState =
         let project = new ProjectRecordState()
         project.Application.ProjectName <- name
         saveToFilesystem name project.Project
+        Cache.remove cacheProjectList |> ignore
         storeInCache cacheName project
-        
+       
+    (* external *)
+    /// delete a project from the filesystem and remove it from cache.
+    let delete name =
+        Filesystem.removeProjectDir name
+        Cache.invalidate ()
+          
+    /// save the current project  
     let saveCurrentProject () =
         let project = currentProject()
         match project with
@@ -81,7 +89,6 @@ module ProjectState =
         let project = new ProjectRecordState()
         project.Project <- record
         storeInCache cacheName project 
-        project
 
     
     ()

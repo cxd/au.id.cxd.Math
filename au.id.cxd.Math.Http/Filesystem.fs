@@ -23,6 +23,14 @@ module Filesystem =
         else 
             Directory.CreateDirectory(path)
 
+    /// remove the project directory and all files beneath it.
+    let removeProjectDir (name:string) =
+        let path = projectPath name
+        if Directory.Exists(path) then
+            Directory.Delete(path,true)
+        else ()
+        
+
     /// get the path to the file beneath the project directory
     let filePath name filename = Path.Combine((projectDir name).FullName, filename)
 
@@ -30,7 +38,7 @@ module Filesystem =
     let saveToFilesystem name filename item (writer:string -> 'a -> unit)  = 
         let fullpath = filePath name filename
         writer fullpath item
-
+    
     /// read a project from the filesystem
     let readFromFilesystem name filename (reader:string -> 'a) = 
         let fullpath = filePath name filename

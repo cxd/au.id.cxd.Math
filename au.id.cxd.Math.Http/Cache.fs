@@ -57,10 +57,16 @@ module Cache =
         cacheConfig.Add("pollingInterval", pollingInterval)
         new MemoryCache ("mathui_cache", cacheConfig)
        
+    let invalidationMonitorList () = 
+        let data = []
+        let newMonitor = new InvalidationChangeMonitor(Guid.NewGuid())
+        newMonitor::data
+       
     /// a default caching policy
     let makeDefaultCachePolicy () =
         let policy = CacheItemPolicy ()
         policy.SlidingExpiration <- TimeSpan(0,30, 0)
+        policy.ChangeMonitors.Add(invalidationMonitorList() |> List.head)
         policy 
         
     /// store an item in cache with the defined policy
@@ -77,5 +83,11 @@ module Cache =
         
     /// remove an item from cache
     let remove name = cache.Remove(name, null)
+    
+    /// invalidate the cache
+    let invalidate () =
+        invalidationMonitorList() 
+        |> List.iter (fun item -> item.Dispose())
+        
         
     

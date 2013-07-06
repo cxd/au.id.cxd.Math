@@ -13,6 +13,7 @@
       <BuildOrder>
         <String>AssemblyInfo.fs</String>
         <String>Filesystem.fs</String>
+        <String>InvalidationChangeMonitor.fs</String>
         <String>Cache.fs</String>
         <String>Project.fs</String>
         <String>ProjectState.fs</String>
@@ -21,6 +22,10 @@
         <String>HttpHandler/AsyncHelper.fs</String>
         <String>HttpHandler/Handler.fs</String>
         <String>HttpHandler/UploadFile.fs</String>
+        <String>HttpHandler/ListProjects.fs</String>
+        <String>HttpHandler/CreateProject.fs</String>
+        <String>HttpHandler/SaveProject.fs</String>
+        <String>HttpHandler/LoadProject.fs</String>
       </BuildOrder>
     </BuildOrder>
   </PropertyGroup>
@@ -83,6 +88,8 @@
     <Compile Include="HttpHandler\CreateProject.fs" />
     <Compile Include="HttpHandler\SaveProject.fs" />
     <Compile Include="HttpHandler\LoadProject.fs" />
+    <Compile Include="InvalidationChangeMonitor.fs" />
+    <Compile Include="HttpHandler\DeleteProject.fs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" />
   <ItemGroup>
