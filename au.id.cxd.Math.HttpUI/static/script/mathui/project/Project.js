@@ -23,11 +23,26 @@ define([
     "mathui/menu/MenuSupport"
 
 ],
-    function (declare, widgetBase, templateMixin, embedTemplateMixin, event, topic, dom, domConstruct, domClass, domAttr, domGeom, domStyle, query, domNode, template, menuSupport) {
+    function (declare,
+              widgetBase,
+              templatedMixin,
+              widgetsInTemplateMixin,
+              evented,
+              topic,
+              dom,
+              domConstruct,
+              domClass,
+              domAttr,
+              domGeometry,
+              domStyle,
+              query,
+              nodeListDom,
+              template,
+              menuSupport) {
         return declare([
             widgetBase,
-            templateMixin,
-            embedTemplateMixin
+            templatedMixin,
+            widgetsInTemplateMixin
         ], {
 
 

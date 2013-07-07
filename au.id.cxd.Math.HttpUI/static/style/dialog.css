@@ -42,3 +42,18 @@
 	opacity: 1.0;
 	color:#ffffff;
 }
+
+
+.dialog-button {
+    margin-top:20px;
+    margin-left:15px;
+    opacity:1.0;
+    cursor:pointer;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.dialog-button:hover {
+    cursor:hand;
+}
+

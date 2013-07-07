@@ -8,24 +8,45 @@ define([
     
     "dojo/Evented",
     "dojo/topic",
-    
-    "dojo/text!./templates/UploadData.html"
+
+    "dojo/dom",
+    "dojo/dom-construct",
+    "dojo/dom-class",
+    "dojo/dom-attr",
+    "dojo/dom-geometry",
+    "dojo/dom-style",
+    "dojo/query",
+    "dojo/NodeList-dom",
+
+    "dojo/text!./templates/UploadData.html" ,
+
+    "mathui/menu/MenuSupport"
     
 ],
 	function(
 		declare,
 		widgetBase,
-		templateMixin,
-		embedTemplateMixin,
-		event,
+		templatedMixin,
+		widgetsInTemplateMixin,
+		evented,
 		topic,
-		template
+
+        dom,
+        domConstruct,
+        domClass,
+        domAttr,
+        domGeometry,
+        domStyle,
+        query,
+        nodeListDom,
+
+		template,
+        menuSupport
 	) {
 		return(declare([
-			declare,
 			widgetBase,
-			templateMixin,
-			embedTemplateMixin
+            templatedMixin,
+            widgetsInTemplateMixin
 		], {
 			
 		/**
@@ -33,13 +54,47 @@ define([
          */
         widgetsInTemplate: true,
         templateString: template,
-		
-		/**
-         * prevalidate the input before attempting to post the form.
-         */
-        onUploadForm: function (evt) {
-        	
-        }
+
+            postCreate: function () {
+                var self = this;
+                topic.subscribe("project/load/result",
+                    function (response) {
+
+                    });
+
+                this.subscribeToMenu();
+
+                topic.subscribe("project/add/click", function (evt) { self.onHide(evt) ; });
+                topic.subscribe("project/selected", function(evt) { self.onHide(evt); });
+
+            },
+
+            onDisplay: function (evt) {
+                query(".upload-data")
+                    .removeClass("hidden")
+                    .addClass("block");
+            },
+
+            onHide: function (evt) {
+                query(".upload-data")
+                    .removeClass("block")
+                    .addClass("hidden");
+
+            },
+
+            subscribeToMenu: function () {
+                var self = this;
+                console.log(menuSupport);
+                menuSupport.attachToMenu("menu/upload", function (e) { self.onDisplay(e); }, function (e) { self.onHide(e); });
+            },
+
+
+            /**
+             * prevalidate the input before attempting to post the form.
+             */
+            onUploadForm: function (evt) {
+
+            }
         
 		}));
 		
