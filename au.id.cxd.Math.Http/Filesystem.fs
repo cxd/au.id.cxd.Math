@@ -48,4 +48,9 @@ module Filesystem =
     let enumerateProjectDirectories () = 
         (new DirectoryInfo(basePath)).GetDirectories()
         |> Array.map (fun info -> info.Name)
+        
+    /// process each file with a map function.
+    let mapFiles name baseDirectory mapFn =
+        (new DirectoryInfo(Path.Combine(Path.Combine(basePath, name), baseDirectory))).GetFiles()
+        |> Array.map mapFn  
 

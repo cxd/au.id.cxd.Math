@@ -17,6 +17,7 @@
         <String>Cache.fs</String>
         <String>Project.fs</String>
         <String>ProjectState.fs</String>
+        <String>DataState.fs</String>
         <String>CookieHelper.fs</String>
         <String>Json.fs</String>
         <String>HttpHandler/AsyncHelper.fs</String>
@@ -26,6 +27,7 @@
         <String>HttpHandler/CreateProject.fs</String>
         <String>HttpHandler/SaveProject.fs</String>
         <String>HttpHandler/LoadProject.fs</String>
+        <String>HttpHandler/DeleteProject.fs</String>
       </BuildOrder>
     </BuildOrder>
   </PropertyGroup>
@@ -90,6 +92,7 @@
     <Compile Include="HttpHandler\LoadProject.fs" />
     <Compile Include="InvalidationChangeMonitor.fs" />
     <Compile Include="HttpHandler\DeleteProject.fs" />
+    <Compile Include="DataState.fs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" />
   <ItemGroup>

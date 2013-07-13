@@ -90,6 +90,9 @@ module TrainingData =
     /// A set of attributes used to describe the data.
     /// </summary>
     type AttributeList = Attribute List
+    
+    /// an empty list of attributes
+    let emptyAttributes = []
 
     /// <summary>
     /// Identify the attribute at the supplied position

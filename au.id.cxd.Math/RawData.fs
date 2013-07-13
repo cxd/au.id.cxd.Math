@@ -58,7 +58,7 @@ module RawData =
                     ) rawDS.RawData
         dataSet.Tables.Add(dataTable)
         dataSet
-
+        
     /// <summary>
     /// Filter the raw data set and remove the ignored columns.
     /// </summary>

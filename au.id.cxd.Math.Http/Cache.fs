@@ -83,6 +83,11 @@ module Cache =
     /// read an item from cache
     let read name = cache.GetCacheItem (name, null)
         
+    /// read an item from the cache and return it as an option
+    let maybeRead name = 
+        let item = read name
+        if item.Value = null then None
+        else Some item.Value    
         
     /// remove an item from cache
     let remove name = cache.Remove(name, null)

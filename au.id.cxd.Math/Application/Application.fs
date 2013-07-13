@@ -51,8 +51,8 @@ module Application =
         let data = serializer.Deserialize(reader)
         reader.Close()
         data :?> ApplicationRecord
+        
           
-
     /// ui state instance
     type ApplicationState() = 
 
@@ -264,4 +264,26 @@ module Application =
               ReviewPair = appState.ReviewPair;
               }
 
-       
+       /// clear the attributes
+       /// for the state using the current data set.
+       member b.ClearAttributes () =
+            if (b.Data <> emptyDataSet) then
+                let attList = List.map (fun i -> { AttributeLabel = "Unnamed"; Column = i; AttributeType = String; }) [0..(b.Data.Columns - 1)]
+                b.Attributes <- attList
+            else 
+                b.Attributes <- emptyAttributes
+        
+       /// assign the attribute names from the raw data header.
+       member b.AssignAttributesFromRawDataHeader () =
+            let assignAttrNames names attributes =
+                let attList = List.mapi (fun i n -> 
+                                             let attr = attributeAt i attributes
+                                             let attr' =
+                                                        { AttributeLabel = n;
+                                                          Column = i;
+                                                          AttributeType = attr.AttributeType }
+                                             attr') names
+                attList
+            let firstRow = b.Data.RawData |> Seq.head |> Seq.toList
+            b.Attributes <- assignAttrNames firstRow b.Attributes
+                                                                                                            
