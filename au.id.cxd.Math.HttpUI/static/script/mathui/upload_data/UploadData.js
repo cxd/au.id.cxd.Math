@@ -18,6 +18,9 @@ define([
     "dojo/query",
     "dojo/NodeList-dom",
 
+    "dojo/request/iframe",
+    "dojox/form/Uploader",
+
     "dojo/text!./templates/UploadData.html" ,
 
     "mathui/menu/MenuSupport"
@@ -40,6 +43,9 @@ define([
         query,
         nodeListDom,
 
+        iframe,
+        uploader,
+
 		template,
         menuSupport
 	) {
@@ -54,6 +60,8 @@ define([
          */
         widgetsInTemplate: true,
         templateString: template,
+
+        project:{},
 
             postCreate: function () {
                 var self = this;
@@ -85,15 +93,54 @@ define([
             subscribeToMenu: function () {
                 var self = this;
                 console.log(menuSupport);
-                menuSupport.attachToMenu("menu/upload", function (e) { self.onDisplay(e); }, function (e) { self.onHide(e); });
+                menuSupport.attachToMenu("menu/upload", function (project) {
+                    self.onDisplay(project);
+                    self.project = project; },
+                    function (e) { self.onHide(e); });
             },
 
+
+            onHeadingCheckChange: function(evt) {
+                var hidden = dom.byId("containsHeader");
+                if (dom.byId("headingCheckbox").checked) {
+                    domAttr.set(hidden, "value", "True");
+
+                } else {
+                    domAttr.set(hidden, "value", "False");
+
+                }
+            },
 
             /**
              * prevalidate the input before attempting to post the form.
              */
             onUploadForm: function (evt) {
+                // store the current project name
+                domAttr.set(dom.byId("uploadProject"), "value", this.project.project);
 
+                // submit the form.
+                iframe("/upload/file",
+                      {
+                        form:"upload_data_form",
+                        handleAs:"json",
+                        method:"POST"
+                      }
+                  ).then(
+                          function(data) {
+                            // read the response and determine whether
+                            // to display an error.
+                            if (data.status == true) {
+                                // success.
+
+                            } else {
+                                // error.
+
+                            }
+                          },
+                      function(error) {
+                           // handle the error response.
+                           console.log("Error: ", error);
+                      });
             }
         
 		}));

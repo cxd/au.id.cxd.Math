@@ -82,7 +82,7 @@
     <Reference Include="System.Numerics" />
     <Reference Include="System.Xml" />
     <Reference Include="FSharp.Core">
-      <HintPath>..\..\..\..\..\..\..\..\Library\Frameworks\Mono.framework\Versions\Current\lib\mono\4.0\FSharp.Core.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\Library\Frameworks\Mono.framework\Versions\Current\lib\mono\Microsoft F#\v4.0\FSharp.Core.dll</HintPath>
     </Reference>
     <Reference Include="FSharp.PowerPack.Linq">
       <HintPath>..\lib\FSharp.PowerPack\osx\FSharp.PowerPack.Linq.dll</HintPath>

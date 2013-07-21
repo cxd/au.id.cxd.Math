@@ -6,7 +6,7 @@ open au.id.cxd.Math
 
 /// the data module handles data assets for projects
 /// there is only one data asset per project.
-module Data =
+module DataState =
 
     /// a record that is used to describe the data.
     type DataDescriptor = 
@@ -30,10 +30,18 @@ module Data =
         |> fun parent -> Path.Combine(parent, filename)
     
     /// save the file as the current working file to the filesystem
-    let saveWorkingFile (descriptor:DataDescriptor) (file:FileInfo) = 
-        let writer (path:string) (file:FileInfo) = file.CopyTo(path) |> ignore
-        Filesystem.saveToFilesystem tempBaseDir file.Name file writer
+    let saveWorkingFile (descriptor:DataDescriptor) (file:Stream) = 
+        let writer (path:string) (stream:Stream) = 
+            let reader = new StreamReader(stream)
+            let data = reader.ReadToEnd()
+            let write = new StreamWriter(path)
+            write.Write(data)
+            write.Flush()
+            write.Close()
+        let path = Filesystem.saveToFilesystem tempBaseDir descriptor.Filename file writer
         Cache.store workingFileNameCache descriptor
+        path
+        
     
     /// update the data descriptor.
     let updateWorkingFileDescription (descriptor:DataDescriptor) =

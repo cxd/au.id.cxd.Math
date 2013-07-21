@@ -1,9 +1,18 @@
 <div class="upload-data hidden">
 <h1>Upload File</h1>
-<form action="#" id="upload_data_form">
-    <label>Select a data file to upload</label>
-    <input type="file" name="dataFile"/>
-    <br/>
-    <input type="button" name="uploadButton" data-dojo-attach-event="onmousedown:onUploadForm"/>
+<form action="/upload/file" method="POST" id="upload_data_form" enctype="multipart/form-data">
+    <p>
+        <label>The file contains a csv header:</label>
+        <input type="checkbox" name="headingCheckbox" id="headingCheckbox" checked data-dojo-attach-event="onchange:onHeadingCheckChange"/>
+    </p>
+    <p>
+        <label>Select a data file to upload</label>
+        <!--  data-dojo-type="dojox.form.Uploader" -->
+        <input type="file" name="dataFile" id="dataFile"/>
+    </p>
+    <input type="hidden" name="wrapInTextArea" value="True"/>
+    <input type="hidden" name="project" id="uploadProject" value=""/>
+    <input type="hidden" name="containsHeader" id="containsHeader" value="True"/>
+    <input type="button" name="uploadButton" data-dojo-attach-event="onmousedown:onUploadForm" value="Upload Data"/>
 </form>
 </div>

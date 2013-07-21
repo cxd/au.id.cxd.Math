@@ -22,6 +22,7 @@
     <CustomCommands>
       <CustomCommands>
         <Command type="AfterBuild" command="rm bin/System*" workingdir="${ProjectDir}" externalConsole="True" />
+        <Command type="AfterBuild" command="rm bin/FSharp.Core.dll" workingdir="${ProjectDir}" externalConsole="True" />
       </CustomCommands>
     </CustomCommands>
   </PropertyGroup>

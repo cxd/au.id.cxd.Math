@@ -16,4 +16,11 @@ module AsyncHelper =
         context.Response.StatusCode <- 200 
         context.Response.Write(item)
         context.Response.Flush()
+        
+     // write string to context.
+     let writeStringToContext (context:HttpContext) (mediaType:string) (item:string) =
+        context.Response.ContentType <- mediaType
+        context.Response.StatusCode <- 200
+        context.Response.Write(item)
+        context.Response.Flush()
       

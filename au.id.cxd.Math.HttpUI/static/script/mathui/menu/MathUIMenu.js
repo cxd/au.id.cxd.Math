@@ -55,6 +55,16 @@ define([
         widgetsInTemplate: true,
         templateString: template,
 
+        selectedProject:"",
+
+
+        postCreate: function() {
+            var menu = this;
+            topic.subscribe("project/selected", function(project) {
+               menu.selectedProject = project;
+            });
+        },
+
         onSetAllDefaultStyle: function() {
           query(".menuBox")
               .removeClass("menuBox-active")
@@ -72,68 +82,90 @@ define([
          * prevalidate the input before attempting to post the form.
          */
         onPropertiesClick: function(evt) {
-        	topic.publish("menu/properties");
+        	topic.publish("menu/properties", {
+                project:this.selectedProject
+            });
             this.onSetAllDefaultStyle();
             this.onSetActive(".menu-properties");
         },
         
         onUploadClick: function(evt) {
-        	topic.publish("menu/upload");
+        	topic.publish("menu/upload", {
+                project:this.selectedProject
+            });
             this.onSetAllDefaultStyle();
             this.onSetActive(".menu-uploadData");
         },
         
         onAttributesClick: function(evt) {
-        	topic.publish("menu/attributes");
+        	topic.publish("menu/attributes", {
+                project:this.selectedProject
+            });
             this.onSetAllDefaultStyle();
             this.onSetActive(".menu-defineAttributes");
         },
         	
         onSingleValueClick: function(evt) {
-        	topic.publish("menu/singleValue");
+        	topic.publish("menu/singleValue", {
+                project:this.selectedProject
+            });
             this.onSetAllDefaultStyle();
             this.onSetActive(".menu-singleValue");
         },
         
         onDualValueClick: function(evt) {
-        	topic.publish("menu/dualValue");
+        	topic.publish("menu/dualValue", {
+                project:this.selectedProject
+            });
             this.onSetAllDefaultStyle();
             this.onSetActive(".menu-dualValue");
         },
         
         onMultiValueClick:function(evt) {
-        	topic.publish("menu/multiValue");
+        	topic.publish("menu/multiValue", {
+                project:this.selectedProject
+            });
             this.onSetAllDefaultStyle();
             this.onSetActive(".menu-multiValue");
         },
         
         onDefineClick: function(evt) {
-        	topic.publish("menu/define");
+        	topic.publish("menu/define", {
+                project:this.selectedProject
+            });
             this.onSetAllDefaultStyle();
             this.onSetActive(".menu-defineModel");
         },
 			
 		onPartitionClick: function(evt) {
-        	topic.publish("menu/partition");
+        	topic.publish("menu/partition", {
+                project:this.selectedProject
+            });
             this.onSetAllDefaultStyle();
             this.onSetActive(".menu-partitionData");
         },
         	
 		onTrainClick: function(evt) {
-        	topic.publish("menu/train");
+        	topic.publish("menu/train", {
+                project:this.selectedProject
+            });
             this.onSetAllDefaultStyle();
             this.onSetActive(".menu-trainModel");
         },
         
         	
 		onTestClick: function(evt) {
-        	topic.publish("menu/test");
+        	topic.publish("menu/test", {
+                project:this.selectedProject
+            });
             this.onSetAllDefaultStyle();
             this.onSetActive(".menu-testModel");
        	},
        
        	onCompareClick: function(evt) {
-        	topic.publish("menu/compare");
+        	topic.publish("menu/compare", {
+                project:this.selectedProject
+            });
             this.onSetAllDefaultStyle();
             this.onSetActive(".menu-compareModel");
         }
