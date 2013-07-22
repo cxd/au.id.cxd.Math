@@ -17,21 +17,23 @@ module Project =
         } 
     
     /// a wrapper class around the record for internal use
-    type ProjectRecordState () = 
+    [<Serializable>]
+    type ProjectRecordState = 
+        inherit ApplicationState
         
-        let application = new ApplicationState()
         
-        let mutable project = {
-                Application = application.State
-            }
-        
-        member m.Application with get() = application
-            
+       
+        /// access the project 
         member m.Project 
-            with get() = project
-            and set(p) = 
-                project <- p
-                application.State <- p.Application
+            with get() = { Application = m.State }
+            
+        
+        new() = { inherit ApplicationState() }
+        
+        new(app:ApplicationRecord, file:String) = { inherit ApplicationState(app,file) }
+        
+        override b.StoreData(info:SerializationInfo, context:StreamingContext) =
+                    base.StoreData(info, context)
         
     // write the project record to filesystem
     let writeRecord filename project =
@@ -48,4 +50,4 @@ module Project =
         let serializer = new BinaryFormatter()
         let data = serializer.Deserialize(reader)
         reader.Close()
-        data :?> ProjectRecord
+        data :?> ProjectRecordState

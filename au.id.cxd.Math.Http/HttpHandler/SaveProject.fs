@@ -22,7 +22,7 @@ module SaveProject =
             match project with
             | None -> Json.makeError("Could not save the current project.") |> Json.toString |> respond
             | Some item ->
-                let name = item.Application.ProjectName
+                let name = item.ProjectName
                 Json.makeSuccess(String.Format("Created Project {0}", name)) |> Json.toString |> respond
                 
         

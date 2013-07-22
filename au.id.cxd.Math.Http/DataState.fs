@@ -79,16 +79,16 @@ module DataState =
         match data with 
         | None -> false
         | Some data -> 
-            project.Application.Data <- data
+            project.Data <- data
             // default the attributes
-            project.Application.ClearAttributes() 
+            project.ClearAttributes() 
             // if the first row contains headers extract the attributes.
             match Cache.maybeRead workingFileNameCache with
             | None -> ()
             | Some obj ->
                 let descriptor = obj :?> DataDescriptor
                 if (descriptor.IncludesHeader) then
-                    project.Application.AssignAttributesFromRawDataHeader ()
+                    project.AssignAttributesFromRawDataHeader ()
             projectWriterFn project
             
     

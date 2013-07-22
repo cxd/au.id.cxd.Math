@@ -23,7 +23,7 @@ module LoadProject =
         match project with 
         | None ->
             let nextproject = loadProject name
-            let nextname = nextproject.Application.ProjectName
+            let nextname = nextproject.ProjectName
             Json.makeSuccess(String.Format("Loaded Project {0}", nextname)) |> Json.toString |> respond
         | Some item ->
             let project = ProjectState.saveCurrentProject ()
@@ -31,7 +31,7 @@ module LoadProject =
             | None -> Json.makeError("Could not save the current project.") |> Json.toString |> respond
             | Some item ->
                 let nextproject = loadProject name
-                let nextname = nextproject.Application.ProjectName
+                let nextname = nextproject.ProjectName
                 Json.makeSuccess(String.Format("Loaded Project {0}", nextname)) |> Json.toString |> respond
                 
         

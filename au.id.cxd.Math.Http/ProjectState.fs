@@ -40,8 +40,8 @@ module ProjectState =
     /// create a new project
     let create name = 
         let project = new ProjectRecordState()
-        project.Application.ProjectName <- name
-        saveToFilesystem name project.Project
+        project.ProjectName <- name
+        saveToFilesystem name project.Project |> ignore
         Cache.remove cacheProjectList |> ignore
         storeInCache cacheName project
        
@@ -57,7 +57,7 @@ module ProjectState =
         match project with
         | None -> None
         | Some item ->
-            saveToFilesystem item.Application.ProjectName item.Project
+            saveToFilesystem item.ProjectName item |> ignore
             Some item
     
     (* internal *)
@@ -85,9 +85,7 @@ module ProjectState =
     
     (* external *)
     let load name = 
-        let record = loadFromFilesystem name 
-        let project = new ProjectRecordState()
-        project.Project <- record
+        let project = loadFromFilesystem name 
         storeInCache cacheName project 
 
     

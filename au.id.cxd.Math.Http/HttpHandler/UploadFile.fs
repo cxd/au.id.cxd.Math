@@ -25,7 +25,7 @@ module UploadFile =
         let projectOption = ProjectState.currentProject ()
         match projectOption with
         | Some project ->
-            match (project.Application.ProjectName.Equals(projectName, StringComparison.OrdinalIgnoreCase)) with
+            match (project.ProjectName.Equals(projectName, StringComparison.OrdinalIgnoreCase)) with
             | false -> Error "The project name does not match"
             | true ->
                 let containsHeader = Boolean.Parse( context.Request.["containsHeader"] )

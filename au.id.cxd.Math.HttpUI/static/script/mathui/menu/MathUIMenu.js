@@ -49,7 +49,7 @@ define([
 		],{
 		
 		
-		 /**
+		/**
          * the dojo template system needs widgetsInTemplate to be true for nested templates
          */
         widgetsInTemplate: true,
@@ -152,8 +152,7 @@ define([
             this.onSetAllDefaultStyle();
             this.onSetActive(".menu-trainModel");
         },
-        
-        	
+
 		onTestClick: function(evt) {
         	topic.publish("menu/test", {
                 project:this.selectedProject

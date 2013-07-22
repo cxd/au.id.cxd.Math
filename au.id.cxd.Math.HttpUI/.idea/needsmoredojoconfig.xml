@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="NeedsMoreDojoConfiguration">
+    <option name="dojoSourcesDirectory" value="$PROJECT_DIR$/static/script" />
+    <option name="projectSourcesDirectory" value="$PROJECT_DIR$/static/script" />
+  </component>
+</project>
+

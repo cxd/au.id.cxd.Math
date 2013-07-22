@@ -4,6 +4,7 @@ namespace au.id.cxd.Math
 open System
 open System.IO
 open System.Runtime.Serialization.Formatters.Binary
+open System.Runtime.Serialization
 open au.id.cxd.Math.MathProject
 open au.id.cxd.Math.RawData
 open au.id.cxd.Math.TrainingData
@@ -54,23 +55,36 @@ module Application =
         
           
     /// ui state instance
-    type ApplicationState() = 
-
-       let mutable appState = { 
-           ProjectName = String.Empty;
-           Data = emptyDataSet; 
-           Attributes = List.empty;
-           ClassColumn = { Label = ""; Column = -1; };
-           TrainPercent = 1.0;
-           IgnoreColumns = List.empty;
-           ReviewPair = None;
-           }
-
+    [<Serializable>]
+    type ApplicationState(appl:ApplicationRecord, filename:String) = 
+        
+       let mutable appState = appl
+       
        /// <summary>
        /// The file resource associated with the ui.
        /// </summary>
-       let mutable fileResource = System.String.Empty
-     
+       let mutable fileResource  = filename
+       
+       // default
+       new() = 
+            ApplicationState(
+                    { 
+                       ProjectName = String.Empty;
+                       Data = emptyDataSet; 
+                       Attributes = List.empty;
+                       ClassColumn = { Label = ""; Column = -1; };
+                       TrainPercent = 1.0;
+                       IgnoreColumns = List.empty;
+                       ReviewPair = None;
+                    }, 
+                    System.String.Empty) 
+       
+       // construct from serialization context.
+       new(info:SerializationInfo, context:StreamingContext) =
+            ApplicationState(info.GetValue("appState", typeof<ApplicationRecord>) :?> ApplicationRecord, info.GetString("fileResource"))
+            
+       
+        
        /// <summary>
        /// Save the application state to file.
        /// </summary>
@@ -286,4 +300,13 @@ module Application =
                 attList
             let firstRow = b.Data.RawData |> Seq.head |> Seq.toList
             b.Attributes <- assignAttrNames firstRow b.Attributes
-                                                                                                            
+      
+       abstract StoreData : info:SerializationInfo * context:StreamingContext -> unit
+       
+       default b.StoreData(info:SerializationInfo, context:StreamingContext) =
+                    info.AddValue("appState", appState)
+                    info.AddValue("fileResource", fileResource)
+      
+       interface ISerializable with
+           member b.GetObjectData(info:SerializationInfo, context:StreamingContext) =
+                    b.StoreData(info, context)                                                                                                             
