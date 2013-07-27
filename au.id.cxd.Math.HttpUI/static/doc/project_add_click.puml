@@ -1,0 +1,5 @@
+@startuml
+UploadData -> project_add_click:subscribe
+Project -> project_add_click:subscribe
+MathUIToolbar -> project_add_click:publish
+@enduml

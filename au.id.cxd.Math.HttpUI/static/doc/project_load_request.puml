@@ -1,0 +1,9 @@
+@startuml
+LoadProject -> project_load_request:subscribe
+Project -> project_load_request:raise
+LoadProject <-- project_load_request:notify
+LoadProject -> http_project_load:request
+LoadProject <-- http_project_load:result
+LoadProject -> project_load_result:raise
+
+@enduml

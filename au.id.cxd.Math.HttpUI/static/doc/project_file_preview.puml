@@ -1,0 +1,6 @@
+@startuml
+DataLoader -> project_file_preview_request:subscribe
+
+UploadData -> project_file_preview_request:publish
+
+@enduml

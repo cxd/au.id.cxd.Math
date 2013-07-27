@@ -1,0 +1,9 @@
+@startuml
+autonumber
+AddProject -> project_create_request:subscribe
+Project -> project_create_request:raise
+AddProject -> http_project_create:request
+AddProject <-- http_project_create:result
+AddProject -> project_create_result:raise
+
+@enduml

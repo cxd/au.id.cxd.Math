@@ -32,6 +32,10 @@ module Project =
         
         new(app:ApplicationRecord, file:String) = { inherit ApplicationState(app,file) }
         
+        // construct from serialization context.
+        new(info:SerializationInfo, context:StreamingContext) = { inherit ApplicationState(info, context) }
+        
+        // store data
         override b.StoreData(info:SerializationInfo, context:StreamingContext) =
                     base.StoreData(info, context)
         

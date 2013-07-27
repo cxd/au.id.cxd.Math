@@ -1,0 +1,11 @@
+@startuml
+autonumber
+DeleteProject -> project_delete_request:subscribe
+Project -> project_delete_request:raise
+DeleteProject <-- project_delete_request:notify
+DeleteProject -> http_project_delete:request
+DeleteProject <-- http_project_delete:response
+DeleteProject -> project_delete_result:raise
+
+
+@enduml

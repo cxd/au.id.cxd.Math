@@ -1,0 +1,12 @@
+@startuml
+autonumber
+ProjectList -> load_projects_list:subscribe
+Project -> projects_list:subscribe
+MathUIToolbar -> projects_list:subscribe
+AddProject -> load_projects_list:publish
+DeleteProject -> load_projects_list:publish
+ProjectList <-- load_projects_list:notification
+ProjectList -> http_projects_list:GET
+ProjectList <-- http_projects_list:result
+ProjectList -> projects_list:raise
+@enduml

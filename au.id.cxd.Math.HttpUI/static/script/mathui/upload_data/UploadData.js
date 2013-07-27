@@ -67,6 +67,7 @@ define([
                 var self = this;
                 topic.subscribe("project/load/result",
                     function (response) {
+                          // TODO: load data to display preview.
 
                     });
 
@@ -131,9 +132,13 @@ define([
                             // to display an error.
                             if (data.status == true) {
                                 // success.
+                                // TODO: display a preview.
+                                topic.publish("project/file/preview/request", null);
 
                             } else {
                                 // error.
+                                // display an error.
+                                console.log("Error: " + data.message + " could not upload file.");
 
                             }
                           },

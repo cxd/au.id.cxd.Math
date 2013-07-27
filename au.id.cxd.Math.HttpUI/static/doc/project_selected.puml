@@ -1,0 +1,6 @@
+@startuml
+MathUIMenu -> project_selected:subscribe
+Project -> project_selected:subscribe
+UploadData ->  project_selected:subscribe
+MathUIToolbar -> project_selected:publish
+@enduml

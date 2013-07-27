@@ -41,7 +41,7 @@ module ProjectState =
     let create name = 
         let project = new ProjectRecordState()
         project.ProjectName <- name
-        saveToFilesystem name project.Project |> ignore
+        saveToFilesystem name project |> ignore
         Cache.remove cacheProjectList |> ignore
         storeInCache cacheName project
        
