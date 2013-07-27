@@ -5,28 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list id="217b5cee-ae77-4a79-8f32-80214a68f20f" name="Default" comment="" />
-    <list default="true" id="712723a0-c735-47c1-ba23-bf610f4022fd" name="au.id.cxd.Math-3 implement html ui" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../au.id.cxd.Math.Http.UnitTest/TestWriteProject.fs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../au.id.cxd.Math.Http.UnitTest/app.config" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../au.id.cxd.Math.Http.UnitTest/au.id.cxd.Math.Http.UnitTest.fsproj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/mathui/transactions/DataLoader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/doc/project_add_click.puml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/doc/project_create_request.puml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/doc/project_delete_request.puml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/doc/project_file_preview.puml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/doc/project_load_request.puml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/doc/project_selected.puml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/doc/projects_list.puml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../au.id.cxd.Math.Http/Project.fs" afterPath="$PROJECT_DIR$/../au.id.cxd.Math.Http/Project.fs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../au.id.cxd.Math.Http/ProjectState.fs" afterPath="$PROJECT_DIR$/../au.id.cxd.Math.Http/ProjectState.fs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../au.id.cxd.Math.Mono.sln" afterPath="$PROJECT_DIR$/../au.id.cxd.Math.Mono.sln" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/script/mathui/upload_data/UploadData.js" afterPath="$PROJECT_DIR$/static/script/mathui/upload_data/UploadData.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="712723a0-c735-47c1-ba23-bf610f4022fd" name="au.id.cxd.Math-3 implement html ui" comment="au.id.cxd.Math-3 added notes on events in UI and a small test for reading writing data">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="au.id.cxd.Math.HttpUI.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1374919902903" ignored="false" />
+    <file path="/Dummy.txt" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1374927762113" ignored="false" />
     <file path="/index.html" changelist="217b5cee-ae77-4a79-8f32-80214a68f20f" time="1373107549208" ignored="false" />
     <file path="$USER_HOME$/Nuance/SOW6_Dashboard/Dashboard/deskboard2/mockup/index.html" changelist="217b5cee-ae77-4a79-8f32-80214a68f20f" time="1373107517809" ignored="false" />
     <file path="/Project.js" changelist="217b5cee-ae77-4a79-8f32-80214a68f20f" time="1373179753729" ignored="false" />
@@ -151,7 +135,7 @@
       <file leaf-file-name="project_file_preview.puml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/doc/project_file_preview.puml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="63" selection-end="63" vertical-scroll-proportion="0.070754714">
+            <state line="5" column="22" selection-start="123" selection-end="123" vertical-scroll-proportion="0.1768868">
               <folding />
             </state>
           </provider>
@@ -312,156 +296,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="au.id.cxd.Math.HttpUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="au.id.cxd.Math.HttpUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="au.id.cxd.Math.HttpUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="au.id.cxd.Math.HttpUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="au.id.cxd.Math.HttpUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="script" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="au.id.cxd.Math.HttpUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="au.id.cxd.Math.HttpUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="script" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mathui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="upload_data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="au.id.cxd.Math.HttpUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="au.id.cxd.Math.HttpUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="script" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mathui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transactions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="au.id.cxd.Math.HttpUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="au.id.cxd.Math.HttpUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="script" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mathui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="au.id.cxd.Math.HttpUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="au.id.cxd.Math.HttpUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="script" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mathui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="au.id.cxd.Math.HttpUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="au.id.cxd.Math.HttpUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -653,7 +487,11 @@
       <option name="type" value="BUG" />
       <updated>1373184103804</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="au.id.cxd.Math-3 added notes on events in UI and a small test for reading writing data">
+      <created>1374927794445</created>
+      <updated>1374927794445</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers>
       <GitHub shared="false">
         <commitMessageFormat>{id} {summary}</commitMessageFormat>
@@ -671,9 +509,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="8" y="22" width="1420" height="860" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32884097" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32884097" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.78032345" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -696,6 +534,7 @@
       <window_info id="UML Diagrams" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Kotlin" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.78032345" order="20" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="RESTClient" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="19" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2489083" sideWeight="0.78032345" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32823873" sideWeight="0.671159" order="2" side_tool="false" content_ui="tabs" />
@@ -709,7 +548,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39892185" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -755,7 +593,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="begin work on upload data" />
+    <option name="LAST_COMMIT_MESSAGE" value="au.id.cxd.Math-3 added notes on events in UI and a small test for reading writing data" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -772,6 +610,7 @@
     <MESSAGE value="progressing work slowly on the ui" />
     <MESSAGE value="correcting behaviour of dialog" />
     <MESSAGE value="begin work on upload data" />
+    <MESSAGE value="au.id.cxd.Math-3 added notes on events in UI and a small test for reading writing data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -888,7 +727,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/doc/project_file_preview.puml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="63" selection-end="63" vertical-scroll-proportion="0.070754714">
+        <state line="5" column="22" selection-start="123" selection-end="123" vertical-scroll-proportion="0.1768868">
           <folding />
         </state>
       </provider>
