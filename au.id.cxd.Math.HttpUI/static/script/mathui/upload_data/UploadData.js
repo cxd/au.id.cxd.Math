@@ -94,7 +94,10 @@ define([
 
             // display a data grid for preview.
             onDataPreview: function(evt) {
-                var self = this;
+                query(".data-preview")
+                    .removeClass("hidden")
+                    .addClass("block");
+
                 var columnHeaders = {};
                 var dataObjects = [];
                 for(var i in evt.records.columns) {
@@ -132,6 +135,13 @@ define([
                     function (e) { self.onHide(e); });
             },
 
+            /**
+             * trigger the transaction to add to the current project.
+             * @param evt
+             */
+            onAddToProject: function(evt) {
+                 topic.publish("project/data/save", null);
+            },
 
             onHeadingCheckChange: function(evt) {
                 var hidden = dom.byId("containsHeader");

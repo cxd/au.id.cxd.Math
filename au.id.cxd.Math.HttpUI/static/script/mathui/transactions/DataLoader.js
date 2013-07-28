@@ -33,5 +33,17 @@ require(["dojo/request",
                 loadDataPreview();
             });
 
+
+            /**
+             * save project data.
+             */
+            var projectDataSave = function() {
+
+            };
+
+            topic.subscribe("project/data/save", function(e) {
+              projectDataSave();
+            });
+
         });
     });

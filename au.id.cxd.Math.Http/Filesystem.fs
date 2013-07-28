@@ -35,10 +35,10 @@ module Filesystem =
     let filePath name filename = Path.Combine((projectDir name).FullName, filename)
 
     /// save a project to the filesystem
-    let saveToFilesystem name filename item (writer:string -> 'a -> unit)  = 
+    let saveToFilesystem name filename item (writer:string -> 'a -> bool)  = 
         let fullpath = filePath name filename
-        writer fullpath item
-        fullpath
+        let flag = writer fullpath item
+        (flag, fullpath)
     
     /// read a project from the filesystem
     let readFromFilesystem name filename (reader:string -> 'a) = 

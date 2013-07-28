@@ -57,8 +57,12 @@ module ProjectState =
         match project with
         | None -> None
         | Some item ->
-            saveToFilesystem item.ProjectName item |> ignore
+            let (flag, path) = saveToFilesystem item.ProjectName item
             Some item
+            
+    /// save the project record to te filesystem        
+    let saveProject (project:ProjectRecordState) =
+        saveToFilesystem project.ProjectName project
     
     (* internal *)
     let enumerateDirectories () = 

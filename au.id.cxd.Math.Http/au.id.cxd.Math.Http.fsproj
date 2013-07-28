@@ -94,6 +94,7 @@
     <Compile Include="HttpHandler\DeleteProject.fs" />
     <Compile Include="DataState.fs" />
     <Compile Include="HttpHandler\PreviewData.fs" />
+    <Compile Include="HttpHandler\AssignData.fs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" />
   <ItemGroup>

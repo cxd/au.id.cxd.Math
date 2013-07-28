@@ -5,22 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list id="217b5cee-ae77-4a79-8f32-80214a68f20f" name="Default" comment="" />
-    <list default="true" id="712723a0-c735-47c1-ba23-bf610f4022fd" name="au.id.cxd.Math-3 implement html ui" comment="au.id.cxd.Math-3 added preview after data upload">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/dgrid.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/default/data/test123/project.ser" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/put-selector.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/xstyle.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/dgrid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/dojo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/put-selector.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/xstyle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/script/.gitignore" afterPath="$PROJECT_DIR$/static/script/.gitignore" />
+    <list default="true" id="712723a0-c735-47c1-ba23-bf610f4022fd" name="au.id.cxd.Math-3 implement html ui" comment="au.id.cxd.Math-3 added script dependencies">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/doc/project_data_save.puml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/script/mathui/transactions/DataLoader.js" afterPath="$PROJECT_DIR$/static/script/mathui/transactions/DataLoader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/script/mathui/upload_data/templates/UploadData.html" afterPath="$PROJECT_DIR$/static/script/mathui/upload_data/templates/UploadData.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/script/mathui/upload_data/UploadData.js" afterPath="$PROJECT_DIR$/static/script/mathui/upload_data/UploadData.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="au.id.cxd.Math.HttpUI.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375006113241" ignored="false" />
+    <file path="/Dummy.txt" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375006337505" ignored="false" />
     <file path="/index.html" changelist="217b5cee-ae77-4a79-8f32-80214a68f20f" time="1373107549208" ignored="false" />
     <file path="$USER_HOME$/Nuance/SOW6_Dashboard/Dashboard/deskboard2/mockup/index.html" changelist="217b5cee-ae77-4a79-8f32-80214a68f20f" time="1373107517809" ignored="false" />
     <file path="/Project.js" changelist="217b5cee-ae77-4a79-8f32-80214a68f20f" time="1373179753729" ignored="false" />
@@ -33,8 +27,8 @@
     <file path="/margins.css" changelist="217b5cee-ae77-4a79-8f32-80214a68f20f" time="1373176311125" ignored="false" />
     <file path="/MathUIMenu.js" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1374408758398" ignored="false" />
     <file path="/MathUIMenu.html" changelist="217b5cee-ae77-4a79-8f32-80214a68f20f" time="1373180154058" ignored="false" />
-    <file path="/UploadData.js" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375002162478" ignored="false" />
-    <file path="/UploadData.html" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1374999884883" ignored="false" />
+    <file path="/UploadData.js" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375008115548" ignored="false" />
+    <file path="/UploadData.html" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375007567208" ignored="false" />
     <file path="/Default.aspx.cs" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1374391555852" ignored="false" />
     <file path="/a.dummy" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1374927336856" ignored="false" />
     <file path="/init.puml" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1374925810366" ignored="false" />
@@ -44,12 +38,13 @@
     <file path="/project_selected.puml" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1374927315469" ignored="false" />
     <file path="/project_add_click.puml" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1374927490449" ignored="false" />
     <file path="/project_file_preview.puml" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375000270046" ignored="false" />
-    <file path="/DataLoader.js" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375000440408" ignored="false" />
+    <file path="/DataLoader.js" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375009294133" ignored="false" />
     <file path="$PROJECT_DIR$/../au.id.cxd.Math.Http/Project.fs" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1374927934203" ignored="false" />
     <file path="$PROJECT_DIR$/../au.id.cxd.Math.Mono.sln" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1374927934203" ignored="false" />
     <file path="$PROJECT_DIR$/../au.id.cxd.Math.Http/ProjectState.fs" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1374927934203" ignored="false" />
-    <file path="/.gitignore" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375006267349" ignored="false" />
+    <file path="/.gitignore" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375006321643" ignored="false" />
     <file path="/README.md" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375002552334" ignored="false" />
+    <file path="/project_data_save.puml" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375008333286" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,16 +118,16 @@
       <file leaf-file-name="UploadData.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/script/mathui/upload_data/UploadData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="44" selection-start="3211" selection-end="3211" vertical-scroll-proportion="0.0">
+            <state line="142" column="17" selection-start="3868" selection-end="3868" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static/script/.gitignore">
+      <file leaf-file-name="project_data_save.puml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/doc/project_data_save.puml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="54" selection-end="54" vertical-scroll-proportion="0.2476415">
+            <state line="2" column="31" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -142,15 +137,6 @@
         <entry file="file://$PROJECT_DIR$/static/script/README.md">
           <provider selected="true" editor-type-id="text-editor">
             <state line="17" column="13" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="project_add_click.puml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/doc/project_add_click.puml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="38" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -168,16 +154,16 @@
       <file leaf-file-name="UploadData.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/script/mathui/upload_data/templates/UploadData.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="35" selection-start="932" selection-end="950" vertical-scroll-proportion="-11.875">
+            <state line="18" column="16" selection-start="900" selection-end="913" vertical-scroll-proportion="-11.25">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataLoader.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DataLoader.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/script/mathui/transactions/DataLoader.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="38" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0">
+            <state line="37" column="33" selection-start="1041" selection-end="1041" vertical-scroll-proportion="0.7810219">
               <folding />
             </state>
           </provider>
@@ -241,8 +227,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Default.aspx.cs" />
-        <option value="$PROJECT_DIR$/static/script/mathui/menu/MathUIMenu.js" />
         <option value="$PROJECT_DIR$/static/script/mathui/toolbar/MathUIToolbar.js" />
         <option value="$PROJECT_DIR$/static/doc/init.puml" />
         <option value="$PROJECT_DIR$/static/doc/project_create_request.puml" />
@@ -251,12 +235,14 @@
         <option value="$PROJECT_DIR$/static/doc/project_selected.puml" />
         <option value="$PROJECT_DIR$/static/doc/project_add_click.puml" />
         <option value="$PROJECT_DIR$/static/doc/project_file_preview.puml" />
-        <option value="$PROJECT_DIR$/static/script/mathui/transactions/DataLoader.js" />
         <option value="$PROJECT_DIR$/static/script/mathui_bootstrap.js" />
-        <option value="$PROJECT_DIR$/static/script/mathui/upload_data/templates/UploadData.html" />
-        <option value="$PROJECT_DIR$/static/script/mathui/upload_data/UploadData.js" />
         <option value="$PROJECT_DIR$/static/script/README.md" />
         <option value="$PROJECT_DIR$/static/script/.gitignore" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/static/script/mathui/upload_data/templates/UploadData.html" />
+        <option value="$PROJECT_DIR$/static/script/mathui/upload_data/UploadData.js" />
+        <option value="$PROJECT_DIR$/static/doc/project_data_save.puml" />
+        <option value="$PROJECT_DIR$/static/script/mathui/transactions/DataLoader.js" />
       </list>
     </option>
   </component>
@@ -343,7 +329,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="script" />
+              <option name="myItemId" value="style" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -361,7 +347,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="doc" />
+              <option name="myItemId" value="script" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -560,7 +546,15 @@
       <created>1375006151741</created>
       <updated>1375006151741</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="au.id.cxd.Math-3 added script dependencies">
+      <created>1375006295755</created>
+      <updated>1375006295755</updated>
+    </task>
+    <task id="LOCAL-00007" summary="au.id.cxd.Math-3 added gitignore">
+      <created>1375006366451</created>
+      <updated>1375006366451</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers>
       <GitHub shared="false">
         <commitMessageFormat>{id} {summary}</commitMessageFormat>
@@ -578,9 +572,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="8" y="22" width="1420" height="860" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32884097" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32884097" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.78032345" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -662,7 +656,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="au.id.cxd.Math-3 added preview after data upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="au.id.cxd.Math-3 added gitignore" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -681,6 +675,8 @@
     <MESSAGE value="begin work on upload data" />
     <MESSAGE value="au.id.cxd.Math-3 added notes on events in UI and a small test for reading writing data" />
     <MESSAGE value="au.id.cxd.Math-3 added preview after data upload" />
+    <MESSAGE value="au.id.cxd.Math-3 added script dependencies" />
+    <MESSAGE value="au.id.cxd.Math-3 added gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -690,18 +686,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/doc/project_create_request.puml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="39" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/doc/project_load_request.puml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/doc/project_delete_request.puml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="44" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0">
@@ -758,30 +742,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/script/mathui/upload_data/templates/UploadData.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="35" selection-start="932" selection-end="950" vertical-scroll-proportion="-11.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/script/mathui/transactions/DataLoader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="38" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/doc/project_file_preview.puml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="16" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/script/mathui/upload_data/UploadData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="44" selection-start="3211" selection-end="3211" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -793,9 +756,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/script/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="0" selection-start="54" selection-end="54" vertical-scroll-proportion="0.2476415">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/script/mathui/upload_data/templates/UploadData.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="16" selection-start="900" selection-end="913" vertical-scroll-proportion="-11.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/script/mathui/upload_data/UploadData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="142" column="17" selection-start="3868" selection-end="3868" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/doc/project_data_save.puml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="31" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/script/mathui/transactions/DataLoader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="33" selection-start="1041" selection-end="1041" vertical-scroll-proportion="0.7810219">
           <folding />
         </state>
       </provider>

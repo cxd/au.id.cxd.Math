@@ -1,0 +1,10 @@
+@startuml
+autonumber
+DataLoader -> project_data_save:subscribe
+
+UploadData -> project_data_save:publish
+
+DataLoader -> http_project_data_save:request
+DataLoader <-- http_project_data_save:response
+
+@enduml

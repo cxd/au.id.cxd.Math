@@ -41,11 +41,15 @@ module Project =
         
     // write the project record to filesystem
     let writeRecord filename project =
-        let writer = File.OpenWrite(filename)
-        let serializer = new BinaryFormatter()
-        serializer.Serialize(writer, project)
-        writer.Flush()
-        writer.Close()
+        try 
+            let writer = File.OpenWrite(filename)
+            let serializer = new BinaryFormatter()
+            serializer.Serialize(writer, project)
+            writer.Flush()
+            writer.Close()
+            true
+        with
+        | e -> false
     
     
     /// read the project record from filesystem

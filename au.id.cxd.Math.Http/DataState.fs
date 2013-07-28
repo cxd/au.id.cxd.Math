@@ -33,13 +33,17 @@ module DataState =
     /// save the file as the current working file to the filesystem
     let saveWorkingFile (descriptor:DataDescriptor) (file:Stream) = 
         let writer (path:string) (stream:Stream) = 
-            let reader = new StreamReader(stream)
-            let data = reader.ReadToEnd()
-            let write = new StreamWriter(path)
-            write.Write(data)
-            write.Flush()
-            write.Close()
-        let path = Filesystem.saveToFilesystem tempBaseDir descriptor.Filename file writer
+            try
+                let reader = new StreamReader(stream)
+                let data = reader.ReadToEnd()
+                let write = new StreamWriter(path)
+                write.Write(data)
+                write.Flush()
+                write.Close()
+                true
+             with
+             | e -> false
+        let (flag, path) = Filesystem.saveToFilesystem tempBaseDir descriptor.Filename file writer
         Cache.store workingFileNameCache descriptor
         path
         
