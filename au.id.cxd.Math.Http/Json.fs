@@ -72,4 +72,41 @@ module Json =
             JProperty("label", clsAttribute.Label),
             JProperty("column", clsAttribute.Column)
         )
+       
+    /// convert a data sequence to a set of headers and data rows. 
+    /// results in a json object with property columns and property data
+    let dataSequenceToJson (header:string list) (data:seq<string list>) = 
+        // format headers
+        let formatHeaders (header:string list) = 
+            let totalSize = List.length header
+            let width = 100 / totalSize
+            let formatItem (headerItem:string) =
+                JObject(
+                    JProperty(headerItem.Replace(" ", ""), headerItem)
+                    ) :> JToken
+            toJsonArray header formatItem
+            
+        let formatDataRow ((column, datum):string * string) = 
+                JObject(
+                    JProperty(column.Replace(" ", ""), datum)
+                    ) :> JToken
+             
+        
+        let mapRows (header:string list) (data:seq<string list>) =
+            let mapRow (header:string list) (dataRow:string list) =
+                List.zip header dataRow
+            Seq.map (mapRow header) data
+             
+        let headersJson = formatHeaders header
+        let dataJson = mapRows header data 
+                        |> Seq.toList 
+                        |> (fun (dataList:((string * string) list list)) -> 
+                            toJsonArray dataList (fun data -> (toJsonArray data formatDataRow) :> JToken))
+        JObject(
+            JProperty("columns", headersJson),
+            JProperty("data", dataJson) )
+             
+        
+                  
+        
         

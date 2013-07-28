@@ -10,6 +10,7 @@ require([
     "mathui/transactions/AddProject",
     "mathui/transactions/DeleteProject",
     "mathui/transactions/LoadProject",
+    "mathui/transactions/DataLoader",
 
     // templates
     "mathui/upload_data/UploadData",

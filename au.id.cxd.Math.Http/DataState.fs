@@ -13,6 +13,7 @@ module DataState =
         { 
         IncludesHeader: bool;
         Filename: string;
+        TotalRows:int;
         }
         
     /// the data base directory
@@ -55,18 +56,18 @@ module DataState =
         | None -> None
         | Some obj ->
             let descriptor = obj :?> DataDescriptor 
-            Some (RawData.readFromCsv [|','|] descriptor.Filename)
+            Some (descriptor, (RawData.readFromCsv [|','|] (tempFilePath descriptor.Filename)))
     
     /// read the paged data for n number of records starting from the start page.
     let readPagedFile startpage recordsPerPage =
         match readWorkingFile () with
         | None -> None
-        | Some rawData -> 
+        | Some (descriptor, rawData) -> 
             //rawData.
             try 
                 let len = Seq.length rawData.RawData
                 let data = Seq.skip (startpage*recordsPerPage) rawData.RawData
-                Some (len, Seq.take recordsPerPage data)
+                Some ({Filename = descriptor.Filename; IncludesHeader = descriptor.IncludesHeader; TotalRows = len}, Seq.take recordsPerPage data)
             with
             // not enough data.
             | e -> None
@@ -78,7 +79,7 @@ module DataState =
         let data = readWorkingFile ()
         match data with 
         | None -> false
-        | Some data -> 
+        | Some (descriptor, data) -> 
             project.Data <- data
             // default the attributes
             project.ClearAttributes() 

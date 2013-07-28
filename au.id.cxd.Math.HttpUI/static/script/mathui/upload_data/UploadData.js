@@ -20,7 +20,7 @@ define([
 
     "dojo/request/iframe",
     "dojox/form/Uploader",
-
+    "dgrid/Grid",
     "dojo/text!./templates/UploadData.html" ,
 
     "mathui/menu/MenuSupport"
@@ -45,6 +45,7 @@ define([
 
         iframe,
         uploader,
+        Grid,
 
 		template,
         menuSupport
@@ -75,7 +76,7 @@ define([
 
                 topic.subscribe("project/add/click", function (evt) { self.onHide(evt) ; });
                 topic.subscribe("project/selected", function(evt) { self.onHide(evt); });
-
+                topic.subscribe("load/data/preview/success", function(evt) { self.onDataPreview(evt); });
             },
 
             onDisplay: function (evt) {
@@ -88,6 +89,37 @@ define([
                 query(".upload-data")
                     .removeClass("block")
                     .addClass("hidden");
+
+            },
+
+            // display a data grid for preview.
+            onDataPreview: function(evt) {
+                var self = this;
+                var columnHeaders = {};
+                var dataObjects = [];
+                for(var i in evt.records.columns) {
+                    var col = evt.records.columns[i];
+                    for(var j in col) {
+                        columnHeaders[j] = col[j];
+                    }
+                }
+                for(var i in evt.records.data) {
+                    var datum = {};
+                    var row = evt.records.data[i];
+                    for(var j in row) {
+                        for(var k in row[j]) {
+                            datum[k] = row[j][k];
+                        }
+                    }
+                    dataObjects.push(datum);
+
+                }
+                // request the data to preview.
+                var grid = new Grid({
+                    columns: columnHeaders
+
+                }, "data-preview-table");
+                grid.renderArray(dataObjects);
 
             },
 
@@ -133,18 +165,22 @@ define([
                             if (data.status == true) {
                                 // success.
                                 // TODO: display a preview.
-                                topic.publish("project/file/preview/request", null);
+                                topic.publish("upload/file/success", null);
 
                             } else {
                                 // error.
                                 // display an error.
                                 console.log("Error: " + data.message + " could not upload file.");
 
+                                topic.publish("upload/file/error", data);
+
                             }
                           },
                       function(error) {
                            // handle the error response.
                            console.log("Error: ", error);
+
+                          topic.publish("upload/file/error", {error: error});
                       });
             }
         

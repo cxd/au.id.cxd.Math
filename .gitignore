@@ -6,3 +6,11 @@ obj
 /*.DS_Store
 /*.id.cxd.Math.Mono.userprefs
 /.project
+test-results
+dojo
+put-selector
+xstyle
+dojox
+dijit
+dgrid
+

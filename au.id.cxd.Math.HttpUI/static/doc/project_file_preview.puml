@@ -1,6 +1,15 @@
 @startuml
-DataLoader -> project_file_preview_request:subscribe
+DataLoader -> upload_file_success:subscribe
+UploadData -> load_data_preview_success:subscribe
 
-UploadData -> project_file_preview_request:publish
+UploadData -> upload_file_success:publish
+
+DataLoader <-- upload_file_success:notify
+DataLoader -> http_load_data_preview:request
+DataLoader <-- http_load_data_preview:response
+DataLoader -> load_data_preview_success:publish
+
+UploadData <-- load_data_preview_success:notify
+
 
 @enduml

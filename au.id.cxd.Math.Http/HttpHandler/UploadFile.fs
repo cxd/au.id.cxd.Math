@@ -34,7 +34,8 @@ module UploadFile =
                 | false -> 
                     let path = DataState.saveWorkingFile {
                                 IncludesHeader = containsHeader;
-                                Filename = file.FileName
+                                Filename = file.FileName;
+                                TotalRows = 0
                                 } file.InputStream           
                     Success path
                 | true -> Error "The file is not supplied"
