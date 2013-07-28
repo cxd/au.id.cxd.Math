@@ -5,26 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list id="217b5cee-ae77-4a79-8f32-80214a68f20f" name="Default" comment="" />
-    <list default="true" id="712723a0-c735-47c1-ba23-bf610f4022fd" name="au.id.cxd.Math-3 implement html ui" comment="au.id.cxd.Math-3 added notes on events in UI and a small test for reading writing data">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../au.id.cxd.Math.Http/HttpHandler/PreviewData.fs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gitignore" afterPath="$PROJECT_DIR$/../.gitignore" />
+    <list default="true" id="712723a0-c735-47c1-ba23-bf610f4022fd" name="au.id.cxd.Math-3 implement html ui" comment="au.id.cxd.Math-3 added preview after data upload">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/dgrid.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/default/data/test123/project.ser" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/put-selector.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/xstyle.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/dgrid.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/dojo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/put-selector.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/xstyle.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/script/.gitignore" afterPath="$PROJECT_DIR$/static/script/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/script/mathui/transactions/DataLoader.js" afterPath="$PROJECT_DIR$/static/script/mathui/transactions/DataLoader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../au.id.cxd.Math.Http/DataState.fs" afterPath="$PROJECT_DIR$/../au.id.cxd.Math.Http/DataState.fs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../au.id.cxd.Math.Http/Json.fs" afterPath="$PROJECT_DIR$/../au.id.cxd.Math.Http/Json.fs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/script/README.md" afterPath="$PROJECT_DIR$/static/script/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/script/mathui/upload_data/templates/UploadData.html" afterPath="$PROJECT_DIR$/static/script/mathui/upload_data/templates/UploadData.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/script/mathui/upload_data/UploadData.js" afterPath="$PROJECT_DIR$/static/script/mathui/upload_data/UploadData.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../au.id.cxd.Math.Http/HttpHandler/UploadFile.fs" afterPath="$PROJECT_DIR$/../au.id.cxd.Math.Http/HttpHandler/UploadFile.fs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../au.id.cxd.Math.Http/au.id.cxd.Math.Http.fsproj" afterPath="$PROJECT_DIR$/../au.id.cxd.Math.Http/au.id.cxd.Math.Http.fsproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/script/mathui_bootstrap.js" afterPath="$PROJECT_DIR$/static/script/mathui_bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/doc/project_file_preview.puml" afterPath="$PROJECT_DIR$/static/doc/project_file_preview.puml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web.config" afterPath="$PROJECT_DIR$/web.config" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="au.id.cxd.Math.HttpUI.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1374999666581" ignored="false" />
+    <file path="/Dummy.txt" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375006113241" ignored="false" />
     <file path="/index.html" changelist="217b5cee-ae77-4a79-8f32-80214a68f20f" time="1373107549208" ignored="false" />
     <file path="$USER_HOME$/Nuance/SOW6_Dashboard/Dashboard/deskboard2/mockup/index.html" changelist="217b5cee-ae77-4a79-8f32-80214a68f20f" time="1373107517809" ignored="false" />
     <file path="/Project.js" changelist="217b5cee-ae77-4a79-8f32-80214a68f20f" time="1373179753729" ignored="false" />
@@ -52,7 +48,7 @@
     <file path="$PROJECT_DIR$/../au.id.cxd.Math.Http/Project.fs" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1374927934203" ignored="false" />
     <file path="$PROJECT_DIR$/../au.id.cxd.Math.Mono.sln" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1374927934203" ignored="false" />
     <file path="$PROJECT_DIR$/../au.id.cxd.Math.Http/ProjectState.fs" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1374927934203" ignored="false" />
-    <file path="/.gitignore" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375002519520" ignored="false" />
+    <file path="/.gitignore" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375006267349" ignored="false" />
     <file path="/README.md" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375002552334" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -133,19 +129,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/script/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="13" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0">
+            <state line="7" column="0" selection-start="54" selection-end="54" vertical-scroll-proportion="0.2476415">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/script/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="13" selection-start="346" selection-end="346" vertical-scroll-proportion="0.620438">
+            <state line="17" column="13" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -259,8 +255,8 @@
         <option value="$PROJECT_DIR$/static/script/mathui_bootstrap.js" />
         <option value="$PROJECT_DIR$/static/script/mathui/upload_data/templates/UploadData.html" />
         <option value="$PROJECT_DIR$/static/script/mathui/upload_data/UploadData.js" />
-        <option value="$PROJECT_DIR$/static/script/.gitignore" />
         <option value="$PROJECT_DIR$/static/script/README.md" />
+        <option value="$PROJECT_DIR$/static/script/.gitignore" />
       </list>
     </option>
   </component>
@@ -560,7 +556,11 @@
       <created>1374927794445</created>
       <updated>1374927794445</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="au.id.cxd.Math-3 added preview after data upload">
+      <created>1375006151741</created>
+      <updated>1375006151741</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers>
       <GitHub shared="false">
         <commitMessageFormat>{id} {summary}</commitMessageFormat>
@@ -602,6 +602,7 @@
       <window_info id="UML Diagrams" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Kotlin" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.78032345" order="20" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="RESTClient" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="19" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2489083" sideWeight="0.78032345" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32823873" sideWeight="0.671159" order="2" side_tool="false" content_ui="tabs" />
@@ -616,7 +617,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884097" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39892185" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -662,7 +662,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="au.id.cxd.Math-3 added notes on events in UI and a small test for reading writing data" />
+    <option name="LAST_COMMIT_MESSAGE" value="au.id.cxd.Math-3 added preview after data upload" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -680,6 +680,7 @@
     <MESSAGE value="correcting behaviour of dialog" />
     <MESSAGE value="begin work on upload data" />
     <MESSAGE value="au.id.cxd.Math-3 added notes on events in UI and a small test for reading writing data" />
+    <MESSAGE value="au.id.cxd.Math-3 added preview after data upload" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -785,16 +786,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/script/.gitignore">
+    <entry file="file://$PROJECT_DIR$/static/script/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0">
+        <state line="17" column="13" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/script/README.md">
+    <entry file="file://$PROJECT_DIR$/static/script/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="13" selection-start="346" selection-end="346" vertical-scroll-proportion="0.620438">
+        <state line="7" column="0" selection-start="54" selection-end="54" vertical-scroll-proportion="0.2476415">
           <folding />
         </state>
       </provider>
