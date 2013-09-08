@@ -37,12 +37,22 @@ require(["dojo/request",
             /**
              * save project data.
              */
-            var projectDataSave = function() {
+            var projectDataSave = function(name) {
+                 request("/assign/data", {
+                     handleAs:"json",
+                     method:"POST",
+                     data:"projectName="+name,
+                 }).then(function (response) {
+                       topic.publish("project/data/save/response", response);
+                     },
+                 function(error) {
+                       topic.publish("project/data/save/error", error);
+                 });
 
             };
 
             topic.subscribe("project/data/save", function(e) {
-              projectDataSave();
+              projectDataSave(e.projectName);
             });
 
         });

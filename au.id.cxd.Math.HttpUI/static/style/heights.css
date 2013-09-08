@@ -14,3 +14,12 @@
 .50p {
 	min-height: 50px;
 }
+
+
+.data-preview {
+    height: 500px;
+}
+
+.data-preview-table {
+    height: 400px;
+}

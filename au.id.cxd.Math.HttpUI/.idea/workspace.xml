@@ -6,16 +6,33 @@
   <component name="ChangeListManager">
     <list id="217b5cee-ae77-4a79-8f32-80214a68f20f" name="Default" comment="" />
     <list default="true" id="712723a0-c735-47c1-ba23-bf610f4022fd" name="au.id.cxd.Math-3 implement html ui" comment="au.id.cxd.Math-3 added script dependencies">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/doc/project_data_save.puml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/mathui/attributes/templates/Attribute.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/mathui/attributes/Attribute.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/mathui/attributes/templates/AttributeList.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/mathui/attributes/AttributeList.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../au.id.cxd.Math.Http/HttpHandler/ListAttributes.fs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/default/data/test123/project.ser" afterPath="$PROJECT_DIR$/default/data/test123/project.ser" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../au.id.cxd.Math/Application/Application.fs" afterPath="$PROJECT_DIR$/../au.id.cxd.Math/Application/Application.fs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../au.id.cxd.Math.Http/HttpHandler/AssignData.fs" afterPath="$PROJECT_DIR$/../au.id.cxd.Math.Http/HttpHandler/AssignData.fs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/script/mathui/transactions/DataLoader.js" afterPath="$PROJECT_DIR$/static/script/mathui/transactions/DataLoader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../au.id.cxd.Math.Http/Json.fs" afterPath="$PROJECT_DIR$/../au.id.cxd.Math.Http/Json.fs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/script/mathui/toolbar/templates/MathUIToolbar.html" afterPath="$PROJECT_DIR$/static/script/mathui/toolbar/templates/MathUIToolbar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../au.id.cxd.Math.Http/Project.fs" afterPath="$PROJECT_DIR$/../au.id.cxd.Math.Http/Project.fs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/script/mathui/project/templates/Project.html" afterPath="$PROJECT_DIR$/static/script/mathui/project/templates/Project.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../au.id.cxd.Math.Http/ProjectState.fs" afterPath="$PROJECT_DIR$/../au.id.cxd.Math.Http/ProjectState.fs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/script/mathui/upload_data/templates/UploadData.html" afterPath="$PROJECT_DIR$/static/script/mathui/upload_data/templates/UploadData.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/script/mathui/upload_data/UploadData.js" afterPath="$PROJECT_DIR$/static/script/mathui/upload_data/UploadData.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../au.id.cxd.Math.Http/au.id.cxd.Math.Http.fsproj" afterPath="$PROJECT_DIR$/../au.id.cxd.Math.Http/au.id.cxd.Math.Http.fsproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/au.id.cxd.Math.HttpUI.csproj" afterPath="$PROJECT_DIR$/au.id.cxd.Math.HttpUI.csproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style/heights.css" afterPath="$PROJECT_DIR$/static/style/heights.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/index.html" afterPath="$PROJECT_DIR$/static/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web.config" afterPath="$PROJECT_DIR$/web.config" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="au.id.cxd.Math.HttpUI.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375006337505" ignored="false" />
-    <file path="/index.html" changelist="217b5cee-ae77-4a79-8f32-80214a68f20f" time="1373107549208" ignored="false" />
+    <file path="/Dummy.txt" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1378635431073" ignored="false" />
+    <file path="/index.html" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1378638317956" ignored="false" />
     <file path="$USER_HOME$/Nuance/SOW6_Dashboard/Dashboard/deskboard2/mockup/index.html" changelist="217b5cee-ae77-4a79-8f32-80214a68f20f" time="1373107517809" ignored="false" />
     <file path="/Project.js" changelist="217b5cee-ae77-4a79-8f32-80214a68f20f" time="1373179753729" ignored="false" />
     <file path="/MathUIToolbar.html" changelist="217b5cee-ae77-4a79-8f32-80214a68f20f" time="1373108573203" ignored="false" />
@@ -27,8 +44,8 @@
     <file path="/margins.css" changelist="217b5cee-ae77-4a79-8f32-80214a68f20f" time="1373176311125" ignored="false" />
     <file path="/MathUIMenu.js" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1374408758398" ignored="false" />
     <file path="/MathUIMenu.html" changelist="217b5cee-ae77-4a79-8f32-80214a68f20f" time="1373180154058" ignored="false" />
-    <file path="/UploadData.js" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375008115548" ignored="false" />
-    <file path="/UploadData.html" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375007567208" ignored="false" />
+    <file path="/UploadData.js" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1378639774028" ignored="false" />
+    <file path="/UploadData.html" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1378638525082" ignored="false" />
     <file path="/Default.aspx.cs" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1374391555852" ignored="false" />
     <file path="/a.dummy" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1374927336856" ignored="false" />
     <file path="/init.puml" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1374925810366" ignored="false" />
@@ -38,13 +55,48 @@
     <file path="/project_selected.puml" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1374927315469" ignored="false" />
     <file path="/project_add_click.puml" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1374927490449" ignored="false" />
     <file path="/project_file_preview.puml" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375000270046" ignored="false" />
-    <file path="/DataLoader.js" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375009294133" ignored="false" />
-    <file path="$PROJECT_DIR$/../au.id.cxd.Math.Http/Project.fs" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1374927934203" ignored="false" />
+    <file path="/DataLoader.js" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1378639740625" ignored="false" />
     <file path="$PROJECT_DIR$/../au.id.cxd.Math.Mono.sln" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1374927934203" ignored="false" />
-    <file path="$PROJECT_DIR$/../au.id.cxd.Math.Http/ProjectState.fs" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1374927934203" ignored="false" />
     <file path="/.gitignore" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375006321643" ignored="false" />
     <file path="/README.md" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375002552334" ignored="false" />
     <file path="/project_data_save.puml" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375008333286" ignored="false" />
+    <file path="$USER_HOME$/workspace/au.id.cpd.algorithms/pom.xml" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375013838452" ignored="false" />
+    <file path="/pom.xml" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375013207777" ignored="false" />
+    <file path="/fragment.java" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375013320259" ignored="false" />
+    <file path="$USER_HOME$/workspace/au.id.cpd.algorithms/test/java/algebra/TestSolveLinearEquations.java" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375013451786" ignored="false" />
+    <file path="$USER_HOME$/workspace/au.id.cpd.algorithms/test/java/algebra/TestEigenDecomposition.java" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375013451786" ignored="false" />
+    <file path="$USER_HOME$/workspace/au.id.cpd.algorithms/test/java/classifier/TestNeuralNetwork.java" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375013451786" ignored="false" />
+    <file path="$USER_HOME$/workspace/au.id.cpd.algorithms/test/java/classifier/TestMlpNeuralNetwork.java" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375013451786" ignored="false" />
+    <file path="$USER_HOME$/workspace/au.id.cpd.algorithms/test/java/classifier/TestMlpNetTRwoClasses.java" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375013451786" ignored="false" />
+    <file path="$USER_HOME$/workspace/au.id.cpd.algorithms/test/java/classifier/TestPCMLearner.java" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375013451786" ignored="false" />
+    <file path="$USER_HOME$/workspace/au.id.cpd.algorithms/test/java/classifier/TestTrainNeuralNetworkWine.java" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375013451786" ignored="false" />
+    <file path="$USER_HOME$/workspace/au.id.cpd.algorithms/test/java/classifier/TestNeuralNetworkSpeed.java" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375013451786" ignored="false" />
+    <file path="$USER_HOME$/workspace/au.id.cpd.algorithms/test/java/data/TestMatrix.java" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375013451786" ignored="false" />
+    <file path="$USER_HOME$/workspace/au.id.cpd.algorithms/test/java/reason/TestMarkovModel.java" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375013457292" ignored="false" />
+    <file path="$USER_HOME$/workspace/au.id.cpd.algorithms/src/main/java/au/id/cpd/algorithms/classifier/NeuralNetwork.java" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375013566228" ignored="false" />
+    <file path="/NeuralNetwork.java" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375013565147" ignored="false" />
+    <file path="/Attributes.html" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375524099145" ignored="false" />
+    <file path="/AttributeList.html" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375530467881" ignored="false" />
+    <file path="/Attribute.html" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375529471840" ignored="false" />
+    <file path="/AttributeList.js" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1375530731839" ignored="false" />
+    <file path="/Project.html" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1376656847056" ignored="false" />
+    <file path="$USER_HOME$/Library/Application Support/IntelliJIdea12/Kotlin/lib/kotlin-plugin.jar!/jet/Enum.jet" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1376809237515" ignored="false" />
+    <file path="$USER_HOME$/Library/Application Support/IntelliJIdea12/Kotlin/lib/kotlin-plugin.jar!/jet/Arrays.jet" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1376809237515" ignored="false" />
+    <file path="$USER_HOME$/Library/Application Support/IntelliJIdea12/Kotlin/lib/kotlin-plugin.jar!/jet/KMemberFunctions.jet" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1376809237515" ignored="false" />
+    <file path="$USER_HOME$/Library/Application Support/IntelliJIdea12/Kotlin/lib/kotlin-plugin.jar!/jet/Unit.jet" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1376809237515" ignored="false" />
+    <file path="$USER_HOME$/Library/Application Support/IntelliJIdea12/Kotlin/lib/kotlin-plugin.jar!/jet/Numbers.jet" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1376809237515" ignored="false" />
+    <file path="$USER_HOME$/Library/Application Support/IntelliJIdea12/Kotlin/lib/kotlin-plugin.jar!/jet/Ranges.jet" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1376809237515" ignored="false" />
+    <file path="$USER_HOME$/Library/Application Support/IntelliJIdea12/Kotlin/lib/kotlin-plugin.jar!/jet/ExtensionFunctions.jet" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1376809237515" ignored="false" />
+    <file path="$USER_HOME$/Library/Application Support/IntelliJIdea12/Kotlin/lib/kotlin-plugin.jar!/jet/Any.jet" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1376809237516" ignored="false" />
+    <file path="$USER_HOME$/Library/Application Support/IntelliJIdea12/Kotlin/lib/kotlin-plugin.jar!/jet/Iterators.jet" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1376809237516" ignored="false" />
+    <file path="$USER_HOME$/Library/Application Support/IntelliJIdea12/Kotlin/lib/kotlin-plugin.jar!/jet/KFunctions.jet" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1376809237516" ignored="false" />
+    <file path="$USER_HOME$/Library/Application Support/IntelliJIdea12/Kotlin/lib/kotlin-plugin.jar!/jet/Progressions.jet" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1376809237516" ignored="false" />
+    <file path="$USER_HOME$/Library/Application Support/IntelliJIdea12/Kotlin/lib/kotlin-plugin.jar!/jet/Collections.jet" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1376809237516" ignored="false" />
+    <file path="$USER_HOME$/Library/Application Support/IntelliJIdea12/Kotlin/lib/kotlin-plugin.jar!/jet/Nothing.jet" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1376809237516" ignored="false" />
+    <file path="$USER_HOME$/Library/Application Support/IntelliJIdea12/Kotlin/lib/kotlin-plugin.jar!/jet/Functions.jet" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1376809237516" ignored="false" />
+    <file path="$USER_HOME$/Library/Application Support/IntelliJIdea12/Kotlin/lib/kotlin-plugin.jar!/jet/Library.jet" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1376809237516" ignored="false" />
+    <file path="$USER_HOME$/Library/Application Support/IntelliJIdea12/Kotlin/lib/kotlin-plugin.jar!/jet/KExtensionFunctions.jet" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1376809237516" ignored="false" />
+    <file path="/heights.css" changelist="712723a0-c735-47c1-ba23-bf610f4022fd" time="1378637685034" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,73 +167,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UploadData.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/script/mathui/upload_data/UploadData.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="142" column="17" selection-start="3868" selection-end="3868" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="project_data_save.puml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/doc/project_data_save.puml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="31" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/script/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="13" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="project_file_preview.puml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/doc/project_file_preview.puml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="16" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UploadData.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/script/mathui/upload_data/templates/UploadData.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="16" selection-start="900" selection-end="913" vertical-scroll-proportion="-11.25">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DataLoader.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/script/mathui/transactions/DataLoader.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="33" selection-start="1041" selection-end="1041" vertical-scroll-proportion="0.7810219">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mathui_bootstrap.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/script/mathui_bootstrap.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="35" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoadProject.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/script/mathui/transactions/LoadProject.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="26" selection-start="272" selection-end="813" vertical-scroll-proportion="0.0">
+            <state line="43" column="38" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.4692443">
               <folding />
             </state>
           </provider>
@@ -190,7 +179,70 @@
       <file leaf-file-name="AddProject.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/script/mathui/transactions/AddProject.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="56" selection-start="0" selection-end="782" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AttributeList.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/script/mathui/attributes/AttributeList.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="95" column="42" selection-start="2213" selection-end="2213" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="14" selection-start="806" selection-end="806" vertical-scroll-proportion="-3.5833333">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/style/bootstrap.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="265" column="0" selection-start="3959" selection-end="3959" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UploadData.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/script/mathui/upload_data/templates/UploadData.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="0" selection-start="1262" selection-end="1262" vertical-scroll-proportion="-16.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="heights.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/style/heights.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="4" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MathUIToolbar.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/script/mathui/toolbar/templates/MathUIToolbar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="18" selection-start="784" selection-end="784" vertical-scroll-proportion="-8.125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UploadData.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/script/mathui/upload_data/UploadData.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="143" column="87" selection-start="3939" selection-end="3939" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -227,21 +279,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/static/script/mathui/toolbar/MathUIToolbar.js" />
-        <option value="$PROJECT_DIR$/static/doc/init.puml" />
-        <option value="$PROJECT_DIR$/static/doc/project_create_request.puml" />
-        <option value="$PROJECT_DIR$/static/doc/project_load_request.puml" />
-        <option value="$PROJECT_DIR$/static/doc/project_delete_request.puml" />
-        <option value="$PROJECT_DIR$/static/doc/project_selected.puml" />
-        <option value="$PROJECT_DIR$/static/doc/project_add_click.puml" />
-        <option value="$PROJECT_DIR$/static/doc/project_file_preview.puml" />
-        <option value="$PROJECT_DIR$/static/script/mathui_bootstrap.js" />
         <option value="$PROJECT_DIR$/static/script/README.md" />
         <option value="$PROJECT_DIR$/static/script/.gitignore" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/static/doc/project_data_save.puml" />
+        <option value="$PROJECT_DIR$/static/script/mathui/attributes/templates/Attributes.html" />
+        <option value="$PROJECT_DIR$/static/script/mathui/attributes/templates/Attribute.html" />
+        <option value="$PROJECT_DIR$/static/script/mathui/attributes/Attribute.js" />
+        <option value="$PROJECT_DIR$/static/script/mathui/attributes/templates/AttributeList.html" />
+        <option value="$PROJECT_DIR$/static/script/mathui/attributes/AttributeList.js" />
+        <option value="$PROJECT_DIR$/static/script/mathui/project/templates/Project.html" />
+        <option value="$PROJECT_DIR$/static/script/mathui/toolbar/templates/MathUIToolbar.html" />
+        <option value="$PROJECT_DIR$/static/style/heights.css" />
+        <option value="$PROJECT_DIR$/static/index.html" />
         <option value="$PROJECT_DIR$/static/script/mathui/upload_data/templates/UploadData.html" />
         <option value="$PROJECT_DIR$/static/script/mathui/upload_data/UploadData.js" />
-        <option value="$PROJECT_DIR$/static/doc/project_data_save.puml" />
         <option value="$PROJECT_DIR$/static/script/mathui/transactions/DataLoader.js" />
       </list>
     </option>
@@ -250,10 +302,10 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="8" />
+    <option name="x" value="1" />
     <option name="y" value="22" />
-    <option name="width" value="1420" />
-    <option name="height" value="860" />
+    <option name="width" value="1277" />
+    <option name="height" value="774" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -281,8 +333,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -329,6 +379,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="au.id.cxd.Math.HttpUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="au.id.cxd.Math.HttpUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="style" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -351,23 +419,178 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="au.id.cxd.Math.HttpUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="au.id.cxd.Math.HttpUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="script" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mathui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="upload_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="au.id.cxd.Math.HttpUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="au.id.cxd.Math.HttpUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="script" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mathui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="transactions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="au.id.cxd.Math.HttpUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="au.id.cxd.Math.HttpUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="script" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mathui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="au.id.cxd.Math.HttpUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="au.id.cxd.Math.HttpUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="script" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mathui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="au.id.cxd.Math.HttpUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="au.id.cxd.Math.HttpUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="script" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mathui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="confirmation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="au.id.cxd.Math.HttpUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="au.id.cxd.Math.HttpUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="vcs.Git" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="com.chrisfolger.needsmoredojo.intellij.configurable.DojoSettingsConfigurable" />
-    <property name="MemberChooser.showClasses" value="true" />
-    <property name="FullScreen" value="false" />
-    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/workspace/au.id.cpd.algorithms.ui" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <PyConsoleSettings />
+    </option>
+    <option name="myDjangoConsoleState">
+      <PyConsoleSettings />
+    </option>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -490,6 +713,9 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value="ALPHA_COMPARATOR" />
+  </component>
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
@@ -571,10 +797,10 @@
     </servers>
   </component>
   <component name="ToolWindowManager">
-    <frame x="8" y="22" width="1420" height="860" extended-state="0" />
-    <editor active="true" />
+    <frame x="1" y="22" width="1277" height="774" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32884097" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3246951" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.78032345" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -587,7 +813,7 @@
       <window_info id="Gantt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22925764" sideWeight="0.671159" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25588953" sideWeight="0.6753049" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -595,11 +821,10 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UML Diagrams" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Kotlin" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.78032345" order="20" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
+      <window_info id="Kotlin" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884097" sideWeight="0.78032345" order="20" side_tool="false" content_ui="tabs" />
       <window_info id="RESTClient" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="19" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2489083" sideWeight="0.78032345" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32823873" sideWeight="0.671159" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24857838" sideWeight="0.78032345" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2489083" sideWeight="0.671159" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Execute" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="16" side_tool="true" content_ui="tabs" />
       <window_info id="Code Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.671159" order="1" side_tool="false" content_ui="tabs" />
@@ -611,6 +836,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884097" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39892185" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -686,51 +912,16 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/doc/project_delete_request.puml">
+    <entry file="file://$PROJECT_DIR$/static/script/mathui/menu/MathUIMenu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="44" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0">
+        <state line="100" column="42" selection-start="2290" selection-end="2305" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/script/mathui/project/Project.js">
+    <entry file="file://$PROJECT_DIR$/static/script/mathui/project/templates/Project.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="39" selection-start="2154" selection-end="2154" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/script/mathui/transactions/DeleteProject.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="32" selection-start="367" selection-end="367" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/doc/project_selected.puml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="41" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/doc/project_add_click.puml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="38" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/script/mathui/transactions/AddProject.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="56" selection-start="0" selection-end="782" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/script/mathui/transactions/LoadProject.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="26" selection-start="272" selection-end="813" vertical-scroll-proportion="0.0">
+        <state line="3" column="48" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -742,58 +933,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/doc/project_file_preview.puml">
+    <entry file="file://$PROJECT_DIR$/static/script/mathui/confirmation/Confirmation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="16" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/script/README.md">
+    <entry file="file://$PROJECT_DIR$/static/style/heights.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="13" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0">
+        <state line="10" column="4" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/static/style/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0">
+        <state line="265" column="0" selection-start="3959" selection-end="3959" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/script/.gitignore">
+    <entry file="file://$PROJECT_DIR$/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="54" selection-end="54" vertical-scroll-proportion="0.2476415">
+        <state line="23" column="14" selection-start="806" selection-end="806" vertical-scroll-proportion="-3.5833333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/script/mathui/attributes/AttributeList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="42" selection-start="2213" selection-end="2213" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/script/mathui/upload_data/templates/UploadData.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="16" selection-start="900" selection-end="913" vertical-scroll-proportion="-11.25">
+        <state line="26" column="0" selection-start="1262" selection-end="1262" vertical-scroll-proportion="-16.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/script/mathui/transactions/LoadProject.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.10720562">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/script/mathui/toolbar/templates/MathUIToolbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="18" selection-start="784" selection-end="784" vertical-scroll-proportion="-8.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/script/mathui/transactions/AddProject.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/script/mathui/upload_data/UploadData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="17" selection-start="3868" selection-end="3868" vertical-scroll-proportion="0.0">
+        <state line="143" column="87" selection-start="3939" selection-end="3939" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/doc/project_data_save.puml">
+    <entry file="file://$PROJECT_DIR$/static/script/mathui/transactions/DeleteProject.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="31" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
+        <state line="15" column="40" selection-start="301" selection-end="316" vertical-scroll-proportion="0.31107205">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/script/mathui/project/Project.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.191564">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/script/mathui/transactions/DataLoader.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="33" selection-start="1041" selection-end="1041" vertical-scroll-proportion="0.7810219">
+        <state line="43" column="38" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.4692443">
           <folding />
         </state>
       </provider>

@@ -92,6 +92,7 @@ define([
 
             },
 
+
             // display a data grid for preview.
             onDataPreview: function(evt) {
                 query(".data-preview")
@@ -140,7 +141,7 @@ define([
              * @param evt
              */
             onAddToProject: function(evt) {
-                 topic.publish("project/data/save", null);
+                 topic.publish("project/data/save", {"projectName":this.project.project});
             },
 
             onHeadingCheckChange: function(evt) {
